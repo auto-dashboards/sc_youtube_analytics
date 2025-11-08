@@ -26,5 +26,7 @@ jobs:
       - name: Run incremental script
         env:
           DB_URL: ${{ secrets.NEON_DB_URL }}
+          YI_API_KEY: ${{ secrets.YI_API_KEY }}
+          CHANNEL_KEY: ${{ secrets.CHANNEL_KEY }}
         run: |
           python data_preprocessing/youtube_data_api_incremental.py
