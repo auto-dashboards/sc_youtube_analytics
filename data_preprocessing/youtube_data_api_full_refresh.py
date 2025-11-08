@@ -89,16 +89,8 @@ df_dates = pd.DataFrame({'source_system': ['YOUTUBE_DATA_API'],
 
 
 # === Connect to Neon DB on Postgres ===
-conn = psycopg2.connect(
-    host=os.getenv("DB_HOST"),
-    port=os.getenv("DB_PORT"),
-    database=os.getenv("DB_NAME"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    sslmode=os.getenv("DB_SSLMODE", "require")
-)
+conn = psycopg2.connect(os.environ['DB_URL'])
 cur = conn.cursor()
-
 
 # === Copy video data into memory buffer ===
 cur.execute("TRUNCATE TABLE stage.sc_yt_video_data;") ## since full refresh, truncate table first
