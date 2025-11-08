@@ -1,0 +1,30 @@
+name: Weekly Incremental Update
+
+on:
+  schedule:
+    - cron: '0 9 * * 4'   # Every Thursday at 09:00 UTC
+  workflow_dispatch:       # Allows manual run from the Actions tab
+
+jobs:
+  run_incremental_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.4'  # or your preferred version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run incremental script
+        env:
+          DB_URL: ${{ secrets.NEON_DB_URL }}
+        run: |
+          python youtube_data_api_incremental.py
