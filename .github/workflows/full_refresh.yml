@@ -1,4 +1,4 @@
-name: Weekly Incremental Update
+name: Full Refresh Youtube Data API Table
 
 on:
   workflow_dispatch:       # Allows manual run from the Actions tab
