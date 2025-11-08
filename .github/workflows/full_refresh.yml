@@ -4,7 +4,7 @@ on:
   workflow_dispatch:       # Allows manual run from the Actions tab
 
 jobs:
-  run_incremental_script:
+  run_full_refresh:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run incremental script
+      - name: Run full refresh script
         env:
           DB_URL: ${{ secrets.NEON_DB_URL }}
           YI_API_KEY: ${{ secrets.YI_API_KEY }}
