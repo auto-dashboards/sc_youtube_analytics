@@ -27,4 +27,4 @@ jobs:
         env:
           DB_URL: ${{ secrets.NEON_DB_URL }}
         run: |
-          python youtube_data_api_incremental.py
+          python data_preprocessing/youtube_data_api_incremental.py
