@@ -3,3 +3,4 @@ my_env/
 test_scripts/
 credentials.json
 backup.dump
+token.json
