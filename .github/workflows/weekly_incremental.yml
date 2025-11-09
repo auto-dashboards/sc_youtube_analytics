@@ -28,5 +28,9 @@ jobs:
           DBL_URL: ${{ secrets.NEON_DBL_URL }}
           YI_API_KEY: ${{ secrets.YI_API_KEY }}
           CHANNEL_KEY: ${{ secrets.CHANNEL_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
           python data_preprocessing/youtube_data_api_incremental.py
+          python data_preprocessing/youtube_day_analytics_api_incremental.py
