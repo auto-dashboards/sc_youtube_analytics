@@ -17,7 +17,7 @@ channel_id = os.getenv('CHANNEL_KEY')
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 # === Connect to Neon DB on Postgres ===
-conn = psycopg2.connect(os.environ['DB_URL'])
+conn = psycopg2.connect(os.environ['DBL_URL'])
 cur = conn.cursor()
 
 # === Load youtube load metadata table and get latest date ===

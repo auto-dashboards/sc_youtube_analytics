@@ -93,7 +93,6 @@ df_dates = pd.DataFrame({'source_system': ['YOUTUBE_DATA_API'],
 conn = psycopg2.connect(os.environ['DBL_URL'])
 cur = conn.cursor()
 
-
 # === Copy video data into memory buffer ===
 cur.execute("TRUNCATE TABLE stage.sc_yt_video_data;") ## since full refresh, truncate table first
 

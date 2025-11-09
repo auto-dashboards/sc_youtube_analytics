@@ -25,7 +25,7 @@ jobs:
 
       - name: Run incremental script
         env:
-          DB_URL: ${{ secrets.NEON_DB_URL }}
+          DBL_URL: ${{ secrets.NEON_DBL_URL }}
           YI_API_KEY: ${{ secrets.YI_API_KEY }}
           CHANNEL_KEY: ${{ secrets.CHANNEL_KEY }}
         run: |
