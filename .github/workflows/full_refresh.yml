@@ -1,4 +1,4 @@
-name: Full Refresh Youtube Data API Table
+name: Full Refresh Youtube Stage Tables
 
 on:
   workflow_dispatch:       # Allows manual run from the Actions tab
