@@ -83,14 +83,16 @@ max_publish_dt = max(published_dates)
 
 # === Convert dates in to DataFrame ===
 df_dates = pd.DataFrame({'source_system': ['YOUTUBE_DATA_API'], 
+                         'stage_table': ['sc_yt_video_data'],
                          'last_run_date': [max_publish_dt], 
                          'record_count': [len(published_dates)], 
             })
 
 
 # === Connect to Neon DB on Postgres ===
-conn = psycopg2.connect(os.environ['DB_URL'])
+conn = psycopg2.connect(os.environ['DBL_URL'])
 cur = conn.cursor()
+
 
 # === Copy video data into memory buffer ===
 cur.execute("TRUNCATE TABLE stage.sc_yt_video_data;") ## since full refresh, truncate table first
@@ -105,14 +107,15 @@ cur.copy_expert(
 ) 
 
 # === Copy load metadata into memory buffer ===
-cur.execute("TRUNCATE TABLE stage.youtube_load_metadata;") ## since full refresh, truncate table first
+cur.execute("DELETE FROM stage.youtube_load_metadata WHERE stage_table='sc_yt_video_data'") ## since full refresh, truncate table first
+
 
 buffer = io.StringIO()
 df_dates.to_csv(buffer, index=False, header=True)
 buffer.seek(0)
 
 cur.copy_expert(
-    "COPY stage.youtube_load_metadata (source_system, last_run_date, record_count) FROM STDIN WITH CSV HEADER", ## specify json_rows so it knows which column to fill and rest will take default value
+    "COPY stage.youtube_load_metadata (source_system, stage_table, last_run_date, record_count) FROM STDIN WITH CSV HEADER", ## specify json_rows so it knows which column to fill and rest will take default value
     buffer
 ) 
 

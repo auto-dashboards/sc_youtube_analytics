@@ -21,7 +21,7 @@ conn = psycopg2.connect(os.environ['DB_URL'])
 cur = conn.cursor()
 
 # === Load youtube load metadata table and get latest date ===
-df_metadata = pd.read_sql("SELECT * FROM stage.youtube_load_metadata;", conn)
+df_metadata = pd.read_sql("SELECT * FROM stage.youtube_load_metadata where stage_table = 'sc_yt_video_data';", conn)
 
 max_load_date = df_metadata['last_run_date'].max()
 max_load_date_str = max_load_date.isoformat().replace('+00:00', 'Z')
