@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: stage
+    schema: stage
+    tables:
+      - name: sc_yt_video_data
+      - name: sc_yt_day_data

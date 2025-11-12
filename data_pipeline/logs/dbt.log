@@ -1,0 +1,106 @@
+[0m08:20:58.105231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D03D2570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201CFEF39B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201CFEF18E0>]}
+
+
+============================== 08:20:58.117231 | d850aa64-f80e-4796-a4fa-1ae5002fffb3 ==============================
+[0m08:20:58.117231 [info ] [MainThread]: Running with dbt=1.10.13
+[0m08:20:58.119235 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt init data_pipeline', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m08:20:58.181230 [debug] [MainThread]: Starter project path: C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\my_env\Lib\site-packages\dbt\include\starter_project
+[0m08:20:58.232234 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:20:58.235234 [info ] [MainThread]: Setting up your profile.
+[0m08:23:46.141761 [info ] [MainThread]: Profile data_pipeline written to C:\Users\adnan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:23:46.145762 [debug] [MainThread]: Command `dbt init` succeeded at 08:23:46.144764 after 168.32 seconds
+[0m08:23:46.147762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D03D2570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201D0067EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201CF70A9F0>]}
+[0m08:23:46.149762 [debug] [MainThread]: Flushing usage events
+[0m08:23:47.764047 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:24:11.513104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A0DEBB3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A10E13980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A10E11460>]}
+
+
+============================== 08:24:11.525143 | 4a7da30f-812a-4e2d-8c49-5f23ca3728c2 ==============================
+[0m08:24:11.525143 [info ] [MainThread]: Running with dbt=1.10.13
+[0m08:24:11.527102 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\adnan\\.dbt'}
+[0m08:24:11.581137 [info ] [MainThread]: dbt version: 1.10.13
+[0m08:24:11.582140 [info ] [MainThread]: python version: 3.12.4
+[0m08:24:11.584105 [info ] [MainThread]: python path: C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\my_env\Scripts\python.exe
+[0m08:24:11.586106 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m08:24:11.717099 [info ] [MainThread]: Using profiles dir at C:\Users\adnan\.dbt
+[0m08:24:11.719099 [info ] [MainThread]: Using profiles.yml file at C:\Users\adnan\.dbt\profiles.yml
+[0m08:24:11.720099 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\data_pipeline\dbt_project.yml
+[0m08:24:11.724106 [info ] [MainThread]: adapter type: postgres
+[0m08:24:11.726108 [info ] [MainThread]: adapter version: 1.9.1
+[0m08:24:11.728106 [info ] [MainThread]: Configuration:
+[0m08:24:11.730103 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:24:11.731109 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:24:11.734105 [info ] [MainThread]: Required dependencies:
+[0m08:24:11.736101 [debug] [MainThread]: Executing "git --help"
+[0m08:24:11.789099 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c name=value]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   reset      Reset current HEAD to the specified state\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   branch     List, create, or delete branches\n   checkout   Switch branches or restore working tree files\n   commit     Record changes to the repository\n   diff       Show changes between commits, commit and working tree, etc\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\n""
+[0m08:24:11.790099 [debug] [MainThread]: STDERR: "b''"
+[0m08:24:11.792101 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:24:11.793101 [info ] [MainThread]: Connection:
+[0m08:24:11.795101 [info ] [MainThread]:   host: ep-blue-rain-absi9a5i-pooler.eu-west-2.aws.neon.tech
+[0m08:24:11.797102 [info ] [MainThread]:   port: 5432
+[0m08:24:11.799103 [info ] [MainThread]:   user: neondb
+[0m08:24:11.801102 [info ] [MainThread]:   database: neondb
+[0m08:24:11.803102 [info ] [MainThread]:   schema: stage
+[0m08:24:11.804102 [info ] [MainThread]:   connect_timeout: 10
+[0m08:24:11.806104 [info ] [MainThread]:   role: None
+[0m08:24:11.808103 [info ] [MainThread]:   search_path: None
+[0m08:24:11.809104 [info ] [MainThread]:   keepalives_idle: 0
+[0m08:24:11.811103 [info ] [MainThread]:   sslmode: None
+[0m08:24:11.812104 [info ] [MainThread]:   sslcert: None
+[0m08:24:11.814104 [info ] [MainThread]:   sslkey: None
+[0m08:24:11.816107 [info ] [MainThread]:   sslrootcert: None
+[0m08:24:11.818107 [info ] [MainThread]:   application_name: dbt
+[0m08:24:11.820102 [info ] [MainThread]:   retries: 1
+[0m08:24:11.822105 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m08:24:12.550723 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m08:24:17.978223 [debug] [MainThread]: Using postgres connection "debug"
+[0m08:24:17.979227 [debug] [MainThread]: On debug: select 1 as id
+[0m08:24:17.980227 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:24:18.133224 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "ep-blue-rain-absi9a5i-pooler.eu-west-2.aws.neon.tech" (35.177.127.187), port 5432 failed: ERROR:  password authentication failed for user 'neondb'
+connection to server at "ep-blue-rain-absi9a5i-pooler.eu-west-2.aws.neon.tech" (35.177.127.187), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+
+[0m08:24:18.243224 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m08:24:18.244224 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m08:24:18.246226 [debug] [MainThread]: On debug: No close available on handle
+[0m08:24:18.247226 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m08:24:18.249227 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m08:24:18.250227 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\data_pipeline\dbt_project.yml> not found
+
+[0m08:24:18.253229 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "ep-blue-rain-absi9a5i-pooler.eu-west-2.aws.neon.tech" (35.177.127.187), port 5432 failed: ERROR:  password authentication failed for user 'neondb'
+  connection to server at "ep-blue-rain-absi9a5i-pooler.eu-west-2.aws.neon.tech" (35.177.127.187), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m08:24:18.258229 [debug] [MainThread]: Command `dbt debug` failed at 08:24:18.258229 after 7.00 seconds
+[0m08:24:18.260227 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:24:18.262226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A103F7950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A10922C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A10AE6510>]}
+[0m08:24:18.263225 [debug] [MainThread]: Flushing usage events
+[0m08:24:19.883296 [debug] [MainThread]: An error was encountered while trying to flush usage events
