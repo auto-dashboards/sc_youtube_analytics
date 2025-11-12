@@ -54,4 +54,4 @@ jobs:
           python data_preprocessing/youtube_day_analytics_api_incremental.py
 
           # Run incremental RDV models 
-          dbt run --project-dir data_pipeline --select rdv+
+          dbt run --project-dir data_pipeline/data_pipeline --select rdv+
