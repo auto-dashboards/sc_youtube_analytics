@@ -23,6 +23,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Set up dbt profiles
+        run: |
+          mkdir -p ~/.dbt
+          cat <<EOF > ~/.dbt/profiles.yml
+          sc_youtube_analytics:
+            target: dev
+            outputs:
+              dev:
+                type: postgres
+                host: ${{ secrets.DB_HOST }}
+                user: neondb_owner
+                password: ${{ secrets.DB_PASSWORD }}
+                dbname: neondb
+                schema: stage
+                threads: 1
+          EOF
+
       - name: Run incremental script
         env:
           DBL_URL: ${{ secrets.NEON_DBL_URL }}
@@ -37,4 +54,4 @@ jobs:
           python data_preprocessing/youtube_day_analytics_api_incremental.py
 
           # Run incremental RDV models 
-          dbt run --project-dir data_pipeline -- select rdv+
+          dbt run --project-dir data_pipeline --select rdv+
