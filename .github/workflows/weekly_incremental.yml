@@ -57,4 +57,4 @@ jobs:
           # Run incremental RDV models 
           cd data_pipeline/data_pipeline
           dbt deps --profiles-dir ~/.dbt
-          dbt run --project-dir data_pipeline/data_pipeline --select rdv+
+          dbt run --select rdv+
