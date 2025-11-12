@@ -37,6 +37,7 @@ jobs:
                 password: ${{ secrets.DB_PASSWORD }}
                 dbname: neondb
                 schema: stage
+                port: 5432
                 threads: 1
           EOF
 
