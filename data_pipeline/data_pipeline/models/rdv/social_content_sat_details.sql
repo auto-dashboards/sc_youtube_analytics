@@ -19,6 +19,7 @@ with social_content_hub as (
     select distinct
         sch.video_id
         , sch.platform
+        , stg.load_ts
         , json_rows -> 'snippet' ->> 'title' as video_title_raw
         , case
     	    when (json_rows -> 'snippet' ->> 'title') ilike 'SESSION%' or (json_rows -> 'snippet' ->> 'title') ILIKE 'Series%' 
@@ -112,6 +113,7 @@ with social_content_hub as (
         , src.likesCount
         , src.viewCount
         , src.commentCount
+        , src.load_ts
         , md5(
             coalesce(src.platform, '') || '|' ||
             coalesce(src.video_title, '') || '|' ||
@@ -138,7 +140,6 @@ with social_content_hub as (
 
 select 
     final_pull.*
-    , current_timestamp as load_ts
     , 'YOUTUBE_DATA_API' as record_source
 
 from final_pull 

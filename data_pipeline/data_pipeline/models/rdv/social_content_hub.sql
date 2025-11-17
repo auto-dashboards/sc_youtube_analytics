@@ -10,7 +10,7 @@ with src_stage_table as (
     select distinct 
         nullif(json_rows ->> 'id', '~~') as video_id
         , 'YOUTUBE' as platform
-        , current_timestamp as load_ts
+        , load_ts
 
     from {{ source('stage', 'sc_yt_video_data')}}
     where nullif(json_rows ->> 'id', '~~') is not null

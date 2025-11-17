@@ -19,6 +19,7 @@ with src_stage_table as (
         , (json_rows ->> 'averageViewDuration')::int as averageViewDuration
         , (json_rows ->> 'averageViewPercentage')::float as averageView_percentage
         , (json_rows ->> 'estimatedMinutesWatched')::float as estimatedMinutesWatched
+        , load_ts
         , 'YOUTUBE' as platform
         , 'YOUTUBE_ANALYTICS_API' as record_source
 
@@ -38,7 +39,7 @@ select
     , averageViewDuration
     , averageView_percentage
     , estimatedMinutesWatched
-    , current_timestamp as load_ts
+    , load_ts
     , record_source
 
 from src_stage_table
