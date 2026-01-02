@@ -5,7 +5,16 @@
     )
 }}
 
-with src as (
+with social_content_sat_health as (
+    select 
+        video_id
+        , platform 
+        , estimatedminuteswatched
+    
+    from {{ ref('social_content_sat_health') }}
+)
+
+, src as (
     select distinct
         src.video_id
         , src.platform
@@ -18,11 +27,16 @@ with src as (
         , src.video_type
         , src.video_speaker
         , src.likesCount as video_likes
-        , src.viewCount as video_counts
+        , src.viewCount as video_views
         , src.commentCount as video_comments
+        , health.estimatedminuteswatched as video_estimated_minutes_watched
         , row_number() over(partition by src.video_id, src.platform order by src.load_ts) as rn
 
     from {{ ref('social_content_sat_details') }} as src
+
+    left join social_content_sat_health as health 
+        on src.video_id = health.video_id
+
 )
 
 select distinct
@@ -37,8 +51,9 @@ select distinct
     , video_type
     , video_speaker
     , video_likes
-    , video_counts
+    , video_views
     , video_comments
+    , video_estimated_minutes_watched
 
 from src
 where rn = 1

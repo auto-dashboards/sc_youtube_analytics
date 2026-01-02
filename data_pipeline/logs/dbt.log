@@ -1,0 +1,15 @@
+[0m09:13:06.513964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F99E31F830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0F045F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0F07320>]}
+
+
+============================== 09:13:06.528965 | 10f98bab-776c-4d33-99df-1b738c170bab ==============================
+[0m09:13:06.528965 [info ] [MainThread]: Running with dbt=1.10.13
+[0m09:13:06.530967 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --select social_content_sat_min_viewers', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m09:13:06.533965 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:13:06.538965 [debug] [MainThread]: Command `dbt run` failed at 09:13:06.537967 after 0.36 seconds
+[0m09:13:06.540968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0F37A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0D08BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0C04560>]}
+[0m09:13:06.541967 [debug] [MainThread]: Flushing usage events
+[0m09:13:08.123902 [debug] [MainThread]: An error was encountered while trying to flush usage events

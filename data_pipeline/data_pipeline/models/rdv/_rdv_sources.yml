@@ -5,3 +5,5 @@ sources:
     tables:
       - name: sc_yt_video_data
       - name: sc_yt_day_data
+      - name: sc_yt_video_health
+      - name: sc_yt_video_min_viewers
