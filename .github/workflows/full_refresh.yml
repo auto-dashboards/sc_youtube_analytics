@@ -1,6 +1,8 @@
 name: Full Refresh Youtube Stage Tables
 
 on:
+  schedule:
+    - cron: '0 9 * * 4'   # Every Thursday at 09:00 UTC
   workflow_dispatch:       # Allows manual run from the Actions tab
 
 jobs:
@@ -30,5 +32,5 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
-          python data_preprocessing/youtube_data_api_full_refresh.py
-          python data_preprocessing/youtube_day_analytics_api_full_refresh.py
+          python data_preprocessing/fetch_day_data.py
+          python data_preprocessing/fetch_video_data.py
