@@ -10,7 +10,7 @@
 with social_content_hub as (
     select distinct
         video_id
-        , platform
+        , record_source
     
     from {{ ref('social_content_hub')}}
 )
@@ -18,29 +18,30 @@ with social_content_hub as (
 , src as (
     select distinct
         sch.video_id
-        , sch.platform
+        , sch.record_source
         , stg.load_ts
-        , json_rows -> 'snippet' ->> 'title' as video_title_raw
+        , video_data -> 'snippet' ->> 'title' as video_title_raw
         , case
-    	    when (json_rows -> 'snippet' ->> 'title') ilike 'SESSION%' or (json_rows -> 'snippet' ->> 'title') ILIKE 'Series%' 
-    			then trim(split_part(json_rows -> 'snippet' ->> 'title', '|', 2))
-    	    when (json_rows -> 'snippet' ->> 'title') ilike '[Luton%' 
-			    then trim(split_part(json_rows -> 'snippet' ->> 'title', '-', 1))    	
-		    else trim(split_part(json_rows -> 'snippet' ->> 'title', '|', 1))
+    	    when (video_data -> 'snippet' ->> 'title') ilike 'SESSION%' or (video_data -> 'snippet' ->> 'title') ILIKE 'Series%' 
+    			then trim(split_part(video_data -> 'snippet' ->> 'title', '|', 2))
+    	    when (video_data -> 'snippet' ->> 'title') ilike '[Luton%' 
+			    then trim(split_part(video_data -> 'snippet' ->> 'title', '-', 1))    	
+		    else trim(split_part(video_data -> 'snippet' ->> 'title', '|', 1))
         end as video_title
-        , nullif(json_rows -> 'snippet' ->> 'description', NULL) as video_description
-        , json_rows -> 'snippet' ->> 'publishedAt' as video_published_at
-        , EXTRACT(EPOCH from (json_rows -> 'contentDetails' ->> 'duration')::interval) as video_duration_sec
-        , json_rows -> 'topicDetails' ->> 'topicCategories' as video_topic
-        , json_rows -> 'snippet' ->> 'categoryId' as video_category
-        , (json_rows -> 'statistics' ->> 'likeCount')::int as likesCount
-        , (json_rows -> 'statistics' ->> 'viewCount')::int as viewCount
-        , (json_rows -> 'statistics' ->> 'commentCount')::int as commentCount
+        , nullif(video_data -> 'snippet' ->> 'description', NULL) as video_description
+        , video_data -> 'snippet' ->> 'publishedAt' as video_published_at
+        , EXTRACT(EPOCH from (video_data -> 'contentDetails' ->> 'duration')::interval) as video_duration_sec
+        , video_data -> 'topicDetails' ->> 'topicCategories' as video_topic
+        , video_data -> 'snippet' ->> 'categoryId' as video_category
+        , (video_data -> 'statistics' ->> 'likeCount')::int as likesCount
+        , (video_data -> 'statistics' ->> 'viewCount')::int as viewCount
+        , (video_data -> 'statistics' ->> 'commentCount')::int as commentCount
+        , estimatedminuteswatched 
 
     from {{ source('stage', 'sc_yt_video_data')}} as stg
 
     inner join social_content_hub as sch
-        on stg.json_rows ->> 'id' = sch.video_id
+        on stg.video_id = sch.video_id
 )
 
 , src_video_type as (
@@ -100,7 +101,7 @@ with social_content_hub as (
 , final_pull as (
     select distinct
         src.video_id
-        , src.platform
+        , src.record_source
         , src.video_title_raw
         , src.video_title
         , src.video_description
@@ -113,9 +114,10 @@ with social_content_hub as (
         , src.likesCount
         , src.viewCount
         , src.commentCount
+        , src.estimatedminuteswatched
         , src.load_ts
         , md5(
-            coalesce(src.platform, '') || '|' ||
+            coalesce(src.record_source, '') || '|' ||
             coalesce(src.video_title, '') || '|' ||
             coalesce(src.video_description, '') || '|' ||
             coalesce(src.video_published_at, '') || '|' ||
@@ -126,7 +128,8 @@ with social_content_hub as (
             coalesce(src_video_speaker_correction.video_speaker, '') || '|' ||
             coalesce(src.likesCount, NULL) || '|' ||
             coalesce(src.viewCount, NULL) || '|' ||
-            coalesce(src.commentCount, NULL)
+            coalesce(src.commentCount, NULL) || '|' ||
+            coalesce(src.estimatedminuteswatched, NULL)
         ) as hashdiff
 
     from src
@@ -140,7 +143,6 @@ with social_content_hub as (
 
 select 
     final_pull.*
-    , 'YOUTUBE_DATA_API' as record_source
 
 from final_pull 
 

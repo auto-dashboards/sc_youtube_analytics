@@ -9,7 +9,7 @@
 with social_content_hub as (
     select distinct
         video_id
-        , platform
+        , record_source
     
     from {{ ref('social_content_hub')}}
 )
@@ -17,32 +17,33 @@ with social_content_hub as (
 , src as (
     select distinct
         sch.video_id
-        , sch.platform
+        , sch.record_source
         , stg.load_ts
-        , (json_rows ->> 'livestreamPosition')::int as livestreamPosition
-        , (json_rows ->> 'peakConcurrentViewers')::int as peakConcurrentViewers
-        , (json_rows ->> 'averageConcurrentViewers')::int as averageConcurrentViewers
+        , key::int AS livestream_position
+	    , (value ->> 'peakConcurrentViewers') as peak_concurrent_viewers
+	    , (value ->> 'averageConcurrentViewers') as average_concurrent_viewers
 
-    from {{ source('stage', 'sc_yt_video_min_viewers')}} as stg
+    from {{ source('stage', 'sc_yt_video_data')}} as stg
 
     inner join social_content_hub as sch
-        on stg.json_rows ->> 'video_id' = sch.video_id
+        on stg.video_id = sch.video_id
+
+    cross join lateral jsonb_each(stg.minute_metrics)
 )
 
 , final_pull as (
     select distinct
         src.video_id
-        , src.platform
+        , src.record_source
         , src.load_ts
-        , src.livestreamPosition
-        , src.peakConcurrentViewers
-        , src.averageConcurrentViewers
+        , src.livestream_position
+        , src.peak_concurrent_viewers
+        , src.average_concurrent_viewers
 
     from src
 )
 
 select 
     final_pull.*
-    , 'YOUTUBE_ANALYTICS_API' as record_source
 
 from final_pull 

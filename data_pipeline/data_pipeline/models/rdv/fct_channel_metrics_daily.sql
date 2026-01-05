@@ -8,27 +8,25 @@
 
 with src_stage_table as (
     select distinct 
-        (json_rows ->> 'day')::date as day
-        , (json_rows ->> 'likes')::int as likes
-        , (json_rows ->> 'views')::int as views
-        , (json_rows ->> 'shares')::int as shares
-        , (json_rows ->> 'comments')::int as comments
-        , (json_rows ->> 'dislikes')::int as dislikes
-        , (json_rows ->> 'subscribersLost')::int as subscribersLost
-        , (json_rows ->> 'subscribersGained')::int as subscribersGained
-        , (json_rows ->> 'averageViewDuration')::int as averageViewDuration
-        , (json_rows ->> 'averageViewPercentage')::float as averageView_percentage
-        , (json_rows ->> 'estimatedMinutesWatched')::float as estimatedMinutesWatched
+        date
+        , (date_metrics ->> 'likes')::int as likes
+        , (date_metrics ->> 'views')::int as views
+        , (date_metrics ->> 'shares')::int as shares
+        , (date_metrics ->> 'comments')::int as comments
+        , (date_metrics ->> 'dislikes')::int as dislikes
+        , (date_metrics ->> 'subscribersLost')::int as subscribersLost
+        , (date_metrics ->> 'subscribersGained')::int as subscribersGained
+        , (date_metrics ->> 'averageViewDuration')::int as averageViewDuration
+        , (date_metrics ->> 'averageViewPercentage')::float as averageViewPercentage
+        , (date_metrics ->> 'estimatedMinutesWatched')::float as estimatedMinutesWatched
         , load_ts
-        , 'YOUTUBE' as platform
-        , 'YOUTUBE_ANALYTICS_API' as record_source
+        , record_source
 
     from {{ source('stage', 'sc_yt_day_data')}}
 )
 
 select
-    day
-    , platform
+    date
     , likes 
     , views
     , shares
@@ -37,7 +35,7 @@ select
     , subscribersLost
     , subscribersGained
     , averageViewDuration
-    , averageView_percentage
+    , averageViewPercentage
     , estimatedMinutesWatched
     , load_ts
     , record_source
@@ -45,7 +43,7 @@ select
 from src_stage_table
 
 {% if is_incremental() %}
-where day not in (
-    select day from {{ this }}
+where date not in (
+    select date from {{ this }}
 )
 {% endif %}
