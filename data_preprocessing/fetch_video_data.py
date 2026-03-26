@@ -7,7 +7,7 @@ from datetime import datetime, date
 import psycopg2
 import json
 import io
-from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api
+from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
 
 
 def fetch_video_ids():
@@ -32,17 +32,18 @@ def fetch_video_data(video_ids, youtube_api):
         ).execute()
 
         for item in video_response.get('items', []):
-            records.append(item)
+            records.append(json.dumps(item))
 
-    # Convert list of dicts to DataFrame
-    video_metrics = pd.DataFrame(records)
+    # Convert list of json records to DataFrame
+    video_metrics = pd.DataFrame(records, columns=['video_data'])
+    video_metrics['video_id'] = [json.loads(record)['id'] for record in records]
 
     return video_metrics
 
 
 def fetch_video_min_data(video_ids, analytics_api):
 
-    start_date = '2022-09-16'  # YouTube's earliest possible date
+    start_date = '2022-09-16'
     end_date = date.today().isoformat()
 
     all_videos_min_list = []
@@ -62,17 +63,18 @@ def fetch_video_min_data(video_ids, analytics_api):
         if not rows:
             continue
         
-        records = []
+        records = {}
         for row in rows:
             record = dict(zip(col_headers, row))
-            records.append(record)
+            key = record['livestreamPosition']
+            records[key] = record
 
         data = {
             'video_id': video_id, 
-            'minute_metrics': [records],
+            'minute_metrics': json.dumps(records),
         }
 
-        videos_min = pd.DataFrame(data)
+        videos_min = pd.DataFrame([data])
         all_videos_min_list.append(videos_min)
 
     videos_minute_metrics = pd.concat(all_videos_min_list, ignore_index=True)
@@ -120,16 +122,23 @@ if __name__ == "__main__":
     client_id = os.environ["YOUTUBE_CLIENT_ID"]
     client_secret = os.environ["YOUTUBE_CLIENT_SECRET"]
     refresh_token = os.environ["YOUTUBE_REFRESH_TOKEN"]
+    dbl_url = os.environ['DBL_URL']
+    print('Loaded environment variables')
 
     video_ids = fetch_video_ids()
+    print('Fetched video IDs')
     youtube_api = connect_yt_data_api(api_key)
     analytics_api = connect_yt_analytics_api(api_key, refresh_token, client_id, client_secret)
+    print('Connected to Youtube Data & Analytics APIs')
 
     video_data = fetch_video_data(video_ids, youtube_api)
     video_min_data = fetch_video_min_data(video_ids, analytics_api)
     video_est_watched = fetch_video_est_watched(video_ids, analytics_api)
+    print('Fetched all Youtube video data')
 
-    video_metrics_comb = video_data.merge(video_min_data, left_on='id', right_on='video_id', how='left').merge(video_est_watched, left_on='id', right_on='video', how='left')
+    video_metrics_comb = video_data.merge(video_min_data, left_on='video_id', right_on='video_id', how='left').merge(video_est_watched, left_on='video_id', right_on='video', how='left')
+    video_metrics_comb = video_metrics_comb[['video_id', 'video_data', 'minute_metrics', 'estimatedMinutesWatched']]
 
-
+    insert_records_to_postgres(dbl_url, 'sc_yt_video_data', video_metrics_comb)
+    print('Inserted records into Postgres')
 

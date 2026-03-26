@@ -7,7 +7,7 @@ from datetime import datetime, date
 import psycopg2
 import json
 import io
-from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api
+from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
 
 
 def fetch_day_data(analytics_api):
@@ -34,12 +34,16 @@ def fetch_day_data(analytics_api):
     rows = response.get('rows', [])
     col_headers = [col.get('name', []) for col in response['columnHeaders']]
     
-    records = []
+    records = {}
     for row in rows:
         record = dict(zip(col_headers, row))
-        records.append(record)
+        key = record['day']
+        records[key] = record
 
-    day_metrics = pd.DataFrame(records)
+    day_metrics = pd.DataFrame(
+        [(key, json.dumps(value)) for key, value in records.items()], 
+        columns=['date', 'date_metrics']
+    )
 
     return day_metrics
 
@@ -52,9 +56,16 @@ if __name__ == "__main__":
     client_id = os.environ["YOUTUBE_CLIENT_ID"]
     client_secret = os.environ["YOUTUBE_CLIENT_SECRET"]
     refresh_token = os.environ["YOUTUBE_REFRESH_TOKEN"]
+    dbl_url = os.environ['DBL_URL']
+    print('Loaded environment variables')
 
     analytics_api = connect_yt_analytics_api(api_key, refresh_token, client_id, client_secret)
+    print('Connected to the Analytics Youtube API')
 
     day_metrics = fetch_day_data(analytics_api)
+    print('Fetched day metrics')
+
+    insert_records_to_postgres(dbl_url, 'sc_yt_day_data', day_metrics)
+    print('Inserted records into Postgres')
 
 

@@ -77,6 +77,34 @@ def get_channel_videos_ids(api_key, channel_id):
     return video_ids
 
 
-    
+def insert_records_to_postgres(dbl_url, pg_table_name, df):
+
+    # === Connect to Neon DB on Postgres ===
+    dbl_url = os.environ['DBL_URL']
+
+    conn = psycopg2.connect(dbl_url)
+    cur = conn.cursor()
+
+    # === Copy video data into memory buffer ===
+    truncate_message = f"TRUNCATE TABLE stage.{pg_table_name};"
+    cur.execute(truncate_message) ## since full refresh, truncate table first
+
+    buffer = io.StringIO()
+    df.to_csv(buffer, index=False, header=True)
+    buffer.seek(0)
+
+    column_headers = df.columns
+    column_headers = ", ".join(c for c in column_headers)
+
+    copy_message = f"COPY stage.{pg_table_name} ({column_headers}) FROM STDIN WITH CSV HEADER"
+
+    cur.copy_expert(
+        copy_message, ## specify json_rows so it knows which column to fill and rest will take default value
+        buffer
+    ) 
+
+    conn.commit()
+    cur.close()
+    conn.close()
 
 
