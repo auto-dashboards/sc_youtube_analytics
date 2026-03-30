@@ -208,4 +208,3 @@ if __name__ == "__main__":
     # === Insert video data into postgreSQL ===
     insert_records_to_postgres(dbl_url, 'sc_yt_video_data', video_metrics_comb)
     print('Inserted records into Postgres')
-
