@@ -3,14 +3,29 @@ from dotenv import load_dotenv
 import os
 from isodate import parse_duration
 import pandas as pd
-from datetime import datetime, date
-import psycopg2
+from datetime import date, timedelta
 import json
-import io
-from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
+from helper_functions import connect_yt_analytics_api, insert_records_to_postgres
+import psycopg2
+from psycopg2 import sql
 
 
-def fetch_day_data(analytics_api):
+def table_max_date(pg_table_name):
+
+    dbl_url = os.environ['DBL_URL']
+    
+    conn = psycopg2.connect(dbl_url)
+    cur = conn.cursor()
+
+    max_date_query = sql.SQL(f'SELECT MAX(date) FROM stage.{pg_table_name}')
+    
+    cur.execute(max_date_query)
+    max_date = cur.fetchone()[0]        
+
+    return max_date
+
+
+def fetch_day_full_data(analytics_api, action):
 
     '''
     Fetches daily Youtube channel analytics metrics and returns a Pandas dataframe
@@ -29,8 +44,17 @@ def fetch_day_data(analytics_api):
             date_metrics: JSON string containing all daily metrics
     '''
 
-    start_date = '2022-09-16'  # YouTube's earliest possible date
-    end_date = date.today().isoformat()
+    if action not in ('truncate', 'append'):
+        raise ValueError('action must be truncate or append')
+    
+    if action == 'truncate':
+        start_date = '2022-09-16'  # YouTube's earliest possible date
+        end_date = date.today().isoformat()
+
+    else: 
+        start_date = table_max_date('sc_yt_day_data') - timedelta(days=7)
+        start_date = start_date.isoformat()
+        end_date = date.today().isoformat()
 
     metrics = (
         "views,likes,dislikes,comments,shares,"
@@ -63,27 +87,3 @@ def fetch_day_data(analytics_api):
     )
 
     return day_metrics
-
-
-if __name__ == "__main__":
-
-    # === Load environment variables from .env file ===
-    load_dotenv()
-    api_key = os.getenv('YI_API_KEY')
-    client_id = os.environ["YOUTUBE_CLIENT_ID"]
-    client_secret = os.environ["YOUTUBE_CLIENT_SECRET"]
-    refresh_token = os.environ["YOUTUBE_REFRESH_TOKEN"]
-    dbl_url = os.environ['DBL_URL']
-    print('Loaded environment variables')
-
-    # === Connect to the youtube analytics API's ===
-    analytics_api = connect_yt_analytics_api(refresh_token, client_id, client_secret)
-    print('Connected to the Analytics Youtube API')
-
-    # === Fetch youtube day metrics ===
-    day_metrics = fetch_day_data(analytics_api)
-    print('Fetched day metrics')
-
-    # === Insert video data into postgreSQL ===
-    insert_records_to_postgres(dbl_url, 'sc_yt_day_data', day_metrics)
-    print('Inserted records into Postgres')

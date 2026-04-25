@@ -2,11 +2,9 @@ from googleapiclient.discovery import build
 from dotenv import load_dotenv
 import os
 from isodate import parse_duration
-import pandas as pd
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 import psycopg2
-import json
 import io
 
 def connect_yt_data_api(api_key):
@@ -110,50 +108,55 @@ def get_channel_videos_ids(api_key, channel_id):
     return video_ids
 
 
-def insert_records_to_postgres(dbl_url, pg_table_name, df):
+def insert_records_to_postgres(dbl_url, pg_table_name, df, action):
 
     '''
     Inserts records from a Pandas Dataframe into a PostgreSQL staging table. 
 
-    This function performs a full refresh of the specified table: 
+    This function performs a full refresh / append of the specified table, depending on the argument called: 
     1. Connects to the database using the provided URL
-    2. Truncates the staging table to remove existing data
+    2. Truncates/appends the staging table
     3. Copies the dataframe into the table using an in memory CSV buffer. More efficient as it saves on your RAM instead of disk. 
 
     Args: 
         dbl_url (str): PostgreSQL connection URL
         pg_table_name (str): Name of the staging table to refresh 
         df: Pandas dataframe containing data to insert into the staging table 
-    
-    
+        action: truncate (full refresh) or append
     '''
 
-    # === Connect to Neon DB on Postgres ===
-    dbl_url = os.environ['DBL_URL']
+    if action not in ('truncate', 'append'):
+        raise ValueError('action must be truncate or append')
 
     conn = psycopg2.connect(dbl_url)
     cur = conn.cursor()
 
-    # === Copy video data into memory buffer ===
-    truncate_message = f"TRUNCATE TABLE stage.{pg_table_name};"
-    cur.execute(truncate_message) ## since full refresh, truncate table first
+    try:
+        # === Copy video data into memory buffer ===
+        if action == 'truncate':
+            truncate_message = f"TRUNCATE TABLE stage.{pg_table_name};"
+            cur.execute(truncate_message) ## since full refresh, truncate table first
 
-    buffer = io.StringIO()
-    df.to_csv(buffer, index=False, header=True)
-    buffer.seek(0)
+        buffer = io.StringIO()
+        df.to_csv(buffer, index=False, header=True)
+        buffer.seek(0)
 
-    column_headers = df.columns
-    column_headers = ", ".join(c for c in column_headers)
+        column_headers = df.columns
+        column_headers = ", ".join(c for c in column_headers)
 
-    copy_message = f"COPY stage.{pg_table_name} ({column_headers}) FROM STDIN WITH CSV HEADER"
+        copy_message = f"COPY stage.{pg_table_name} ({column_headers}) FROM STDIN WITH CSV HEADER"
 
-    cur.copy_expert(
-        copy_message, ## specify json_rows so it knows which column to fill and rest will take default value
-        buffer
-    ) 
+        cur.copy_expert(
+            copy_message, ## specify json_rows so it knows which column to fill and rest will take default value
+            buffer
+        ) 
 
-    conn.commit()
-    cur.close()
-    conn.close()
+        conn.commit()
+    
+    except Exception as e:
+        conn.rollback()
+        raise e
 
-
+    finally:
+        cur.close()
+        conn.close()

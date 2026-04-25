@@ -1,23 +1,13 @@
 from googleapiclient.discovery import build 
 from dotenv import load_dotenv
 import os
-from isodate import parse_duration
 import pandas as pd
-from datetime import datetime, date
-import psycopg2
+from datetime import date
 import json
-import io
-from utils.helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
+from helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
 
 
-def fetch_video_ids():
-        
-    video_ids = get_channel_videos_ids(api_key, channel_id)
-
-    return video_ids
-
-
-def fetch_video_data(video_ids, youtube_api):
+def fetch_video_full_data(video_ids, youtube_api):
 
     '''
     Fetches video data for a list of Youtube Videos and returns as a Pandas Dataframe. I.e. Video metadata, video statistics etc 
@@ -172,39 +162,3 @@ def fetch_video_est_watched(video_ids, analytics_api):
     videos_est_watched = pd.DataFrame(records)
 
     return videos_est_watched
-
-
-if __name__ == "__main__":
-
-    # === Load environment variables from .env file ===
-    load_dotenv()
-    api_key = os.getenv('YI_API_KEY')
-    channel_id = os.getenv('CHANNEL_KEY')
-    client_id = os.environ["YOUTUBE_CLIENT_ID"]
-    client_secret = os.environ["YOUTUBE_CLIENT_SECRET"]
-    refresh_token = os.environ["YOUTUBE_REFRESH_TOKEN"]
-    dbl_url = os.environ['DBL_URL']
-    print('Loaded environment variables')
-
-    # === Fetch youtube video IDs ===
-    video_ids = fetch_video_ids()
-    print('Fetched video IDs')
-
-    # === Connect to the youtube data and youtube analytics API's ===
-    youtube_api = connect_yt_data_api(api_key)
-    analytics_api = connect_yt_analytics_api(refresh_token, client_id, client_secret)
-    print('Connected to Youtube Data & Analytics APIs')
-
-    # === Fetch youtube video metrics ===
-    video_data = fetch_video_data(video_ids, youtube_api)
-    video_min_data = fetch_video_min_data(video_ids, analytics_api)
-    video_est_watched = fetch_video_est_watched(video_ids, analytics_api)
-    print('Fetched all Youtube video data')
-
-    # === Join video data into a single table ===
-    video_metrics_comb = video_data.merge(video_min_data, left_on='video_id', right_on='video_id', how='left').merge(video_est_watched, left_on='video_id', right_on='video', how='left')
-    video_metrics_comb = video_metrics_comb[['video_id', 'video_data', 'minute_metrics', 'estimatedMinutesWatched']]
-
-    # === Insert video data into postgreSQL ===
-    insert_records_to_postgres(dbl_url, 'sc_yt_video_data', video_metrics_comb)
-    print('Inserted records into Postgres')
