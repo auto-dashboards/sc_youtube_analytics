@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual run from the Actions tab
 
 jobs:
-  run_full_refresh:
+  run_yt_stage_pipeline:
     runs-on: ubuntu-latest
 
     steps:
