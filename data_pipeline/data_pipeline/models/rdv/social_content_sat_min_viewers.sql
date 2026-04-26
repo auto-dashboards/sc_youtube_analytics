@@ -2,43 +2,46 @@
     config(
         materialized='incremental',
         schema='rdv',
-        unique_key='video_id'
+        unique_key='video_id',
     )
 }}
 
-with social_content_hub as (
-    select distinct
-        video_id
-        , record_source
-    
-    from {{ ref('social_content_hub')}}
+with src_clean as (
+    select * 
+    from (
+        select 
+            *, 
+            row_number() over(partition by video_id, date(load_ts) order by load_ts desc) as rn
+        from {{ source('stage', 'sc_yt_video_data')}}
+    ) t
+    where rn = 1
 )
 
 , src as (
-    select distinct
-        sch.video_id
-        , sch.record_source
-        , stg.load_ts
+    select
+        video_id
+        , load_ts
         , key::int AS livestream_position
-	    , (value ->> 'peakConcurrentViewers') as peak_concurrent_viewers
-	    , (value ->> 'averageConcurrentViewers') as average_concurrent_viewers
+	    , (value ->> 'peakConcurrentViewers')::float as peak_concurrent_viewers
+	    , (value ->> 'averageConcurrentViewers')::float as average_concurrent_viewers
 
-    from {{ source('stage', 'sc_yt_video_data')}} as stg
+    from src_clean
 
-    inner join social_content_hub as sch
-        on stg.video_id = sch.video_id
-
-    cross join lateral jsonb_each(stg.minute_metrics)
+    cross join lateral jsonb_each(minute_metrics)
 )
 
 , final_pull as (
     select distinct
-        src.video_id
-        , src.record_source
-        , src.load_ts
-        , src.livestream_position
-        , src.peak_concurrent_viewers
-        , src.average_concurrent_viewers
+        video_id
+        , load_ts
+        , livestream_position
+        , peak_concurrent_viewers
+        , average_concurrent_viewers
+        , md5(
+            coalesce(livestream_position, NULL) || '|' ||
+            coalesce(peak_concurrent_viewers, NULL) || '|' ||
+            coalesce(average_concurrent_viewers, NULL)
+        ) as hashdiff
 
     from src
 )
@@ -47,3 +50,12 @@ select
     final_pull.*
 
 from final_pull 
+
+{% if is_incremental %}
+where not exists (
+    select 1 
+    from {{ this }} as sat
+    where sat.video_id = final_pull.video_id 
+        and sat.hashdiff = final_pull.hashdiff
+)
+{% endif %}
