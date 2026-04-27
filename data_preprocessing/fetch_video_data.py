@@ -65,7 +65,7 @@ def fetch_video_full_data(video_ids, youtube_api):
     # Create a video id column for each video data row. Pull from video data column
     video_metrics['video_id'] = [json.loads(record).get('id') for record in records]
 
-    print(f'Success: {len(records)} videos fetched')
+    print(f'Success: {len(records)} videos fetched - Full data')
 
     # If there are any failed batches, output the number of this
     if failed_batches:
@@ -146,7 +146,7 @@ def fetch_video_min_data(video_ids, analytics_api):
     
     videos_minute_metrics = pd.concat(all_videos_min_list, ignore_index=True)
 
-    print(f"Success: {videos_minute_metrics['video_id'].nunique()} videos fetched")
+    print(f"Success: {videos_minute_metrics['video_id'].nunique()} videos fetched - Minutes data")
 
     if failed_videos:
         print(f'Failed videos: {len(failed_videos)}')
@@ -220,7 +220,7 @@ def fetch_video_est_watched(video_ids, analytics_api):
 
     video_est_watched_all = pd.concat(video_est_watched_list, ignore_index=True)
 
-    print(f"Success: {video_est_watched_all['video_id'].nunique()} videos fetched")
+    print(f"Success: {video_est_watched_all['video_id'].nunique()} videos fetched - estimated watched data")
 
     if failed_videos:
         print(f'Failed videos: {len(failed_videos)}')
