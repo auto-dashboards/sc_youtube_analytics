@@ -33,7 +33,7 @@ def main(mode):
     print('Fetched all Youtube video data')
 
     # === Join video data into a single table ===
-    video_metrics_comb = video_data.merge(video_min_data, left_on='video_id', right_on='video_id', how='left').merge(video_est_watched, left_on='video_id', right_on='video', how='left')
+    video_metrics_comb = video_data.merge(video_min_data, left_on='video_id', right_on='video_id', how='left').merge(video_est_watched, left_on='video_id', right_on='video_id', how='left')
     video_metrics_comb = video_metrics_comb[['video_id', 'video_data', 'minute_metrics', 'estimatedMinutesWatched']]
     print('Combined Youtube video data')
 
