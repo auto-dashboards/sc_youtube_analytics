@@ -1,10 +1,12 @@
 from googleapiclient.discovery import build 
+from googleapiclient.errors import HttpError 
 from dotenv import load_dotenv
 import os
 import pandas as pd
 from datetime import date
 import json
-from helper_functions import get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
+import time
+from helper_functions import safe_execute, get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
 
 
 def fetch_video_full_data(video_ids, youtube_api):
@@ -34,19 +36,40 @@ def fetch_video_full_data(video_ids, youtube_api):
         for i in range(0, len(lst), n):
             yield lst[i:i+n]
 
+    # Add try and except logic. If batch fails then add to a list. 3 retry attempts
     records = []
+    failed_batches = []
     for batch in batch_video(video_ids, 50):
-        video_response = youtube_api.videos().list(
-            part="snippet,statistics,contentDetails,topicDetails,status,player",
-            id=",".join(batch), 
-        ).execute()
+        try:
+            video_response = safe_execute(
+                youtube_api.videos().list(
+                    part="snippet,statistics,contentDetails,topicDetails,status,player",
+                    id=",".join(batch), 
+                )
+            )
 
-        for item in video_response.get('items', []):
-            records.append(json.dumps(item))
+            for item in video_response.get('items', []):
+                records.append(json.dumps(item))
 
-    # Convert list of json records to DataFrame
+        except Exception as e:
+            print(f'Batch failed: {batch} | Error: {e}')
+            failed_batches.append(batch)
+
+    # Convert list of json records to DataFrame. Single column of data. If it doesn't exist then return empty DF. Otherwise carry on with rest of code. 
+    if not records:
+        print('No video data to insert - skipping')
+        return pd.DataFrame(columns=['video_id', 'video_data'])
+    
     video_metrics = pd.DataFrame(records, columns=['video_data'])
-    video_metrics['video_id'] = [json.loads(record)['id'] for record in records]
+
+    # Create a video id column for each video data row. Pull from video data column
+    video_metrics['video_id'] = [json.loads(record).get('id') for record in records]
+
+    print(f'Success: {len(records)} videos fetched')
+
+    # If there are any failed batches, output the number of this
+    if failed_batches:
+        print(f'Failed batches: {len(failed_batches)}')
 
     return video_metrics
 
@@ -79,37 +102,54 @@ def fetch_video_min_data(video_ids, analytics_api):
     end_date = date.today().isoformat()
 
     all_videos_min_list = []
+    failed_videos = []
     for video_id in video_ids:
-        response = analytics_api.reports().query(
-            ids='channel==MINE',
-            startDate=start_date,
-            endDate=end_date,
-            metrics='averageConcurrentViewers,peakConcurrentViewers',
-            dimensions='livestreamPosition',
-            filters=f"video=={video_id}"
-        ).execute()
+        try: 
+            response = safe_execute(
+                analytics_api.reports().query(
+                    ids='channel==MINE',
+                    startDate=start_date,
+                    endDate=end_date,
+                    metrics='averageConcurrentViewers,peakConcurrentViewers',
+                    dimensions='livestreamPosition',
+                    filters=f"video=={video_id}"
+                )
+            )
 
-        rows = response.get('rows', [])
-        col_headers = [col.get('name', []) for col in response['columnHeaders']]
+            rows = response.get('rows', [])
+            if not rows: # if data is empty, skip this video id and go to the next one in the try. Else carry on. Else is not required here when using continue
+                continue
 
-        if not rows:
-            continue
-        
-        records = {}
-        for row in rows:
-            record = dict(zip(col_headers, row))
-            key = record['livestreamPosition']
-            records[key] = record
+            col_headers = [col.get('name', []) for col in response['columnHeaders']]
 
-        data = {
-            'video_id': video_id, 
-            'minute_metrics': json.dumps(records),
-        }
+            records = {}
+            for row in rows:
+                record = dict(zip(col_headers, row))
+                key = record['livestreamPosition']
+                records[key] = record
 
-        videos_min = pd.DataFrame([data])
-        all_videos_min_list.append(videos_min)
+            data = {
+                'video_id': video_id, 
+                'minute_metrics': json.dumps(records),
+            }
 
+            videos_min = pd.DataFrame([data])
+            all_videos_min_list.append(videos_min)
+    
+        except Exception as e: 
+            print(f'Video failed: {video_id} | Error: {e}')
+            failed_videos.append(video_id)
+
+    if not all_videos_min_list: # If no minute data, return an empty DF. Otherwise carry on
+        print('No minute data to insert - skipping')
+        return pd.DataFrame(columns=['video_id', 'minute_metrics'])
+    
     videos_minute_metrics = pd.concat(all_videos_min_list, ignore_index=True)
+
+    print(f"Success: {videos_minute_metrics['video_id'].nunique()} videos fetched")
+
+    if failed_videos:
+        print(f'Failed videos: {len(failed_videos)}')
 
     return videos_minute_metrics
 
@@ -142,23 +182,47 @@ def fetch_video_est_watched(video_ids, analytics_api):
         "estimatedMinutesWatched"
     )
 
-    response = analytics_api.reports().query(
-        ids='channel==MINE',
-        startDate=start_date,
-        endDate=end_date,
-        metrics=metrics,
-        dimensions="video",
-        filters="video==" + ",".join(video_ids)
-    ).execute()
+    video_est_watched_list = []
+    failed_videos = []
+    for video_id in video_ids:
+        try: 
+            response = safe_execute(
+                analytics_api.reports().query(
+                    ids='channel==MINE',
+                    startDate=start_date,
+                    endDate=end_date,
+                    metrics=metrics,
+                    dimensions="video",
+                    filters=f"video=={video_id}"
+                )
+            )
 
-    rows = response.get('rows', [])
-    col_headers = [col.get('name', []) for col in response['columnHeaders']]
+            rows = response.get('rows', [])
+            if not rows: 
+                continue
+
+            data = {
+                'video_id': rows[0][0], 
+                'estimatedMinutesWatched': rows[0][1],
+            }
+
+            videos_est_watched = pd.DataFrame([data])
+            video_est_watched_list.append(videos_est_watched)
+
+        except Exception as e: 
+            print(f'Video failed: {video_id} | Error: {e}')
+            failed_videos.append(video_id)
+
     
-    records = []
-    for row in rows:
-        record = dict(zip(col_headers, row))
-        records.append(record)
+    if not video_est_watched_list: # If no data, return an empty DF. Otherwise carry on
+        print('No estimated min watched data to insert - skipping')
+        return pd.DataFrame(columns=['video_id', 'estimatedMinutesWatched'])
 
-    videos_est_watched = pd.DataFrame(records)
+    video_est_watched_all = pd.concat(video_est_watched_list, ignore_index=True)
 
-    return videos_est_watched
+    print(f"Success: {video_est_watched_all['video_id'].nunique()} videos fetched")
+
+    if failed_videos:
+        print(f'Failed videos: {len(failed_videos)}')
+
+    return video_est_watched_all

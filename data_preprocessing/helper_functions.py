@@ -1,4 +1,5 @@
 from googleapiclient.discovery import build 
+from googleapiclient.errors import HttpError 
 from dotenv import load_dotenv
 import os
 from isodate import parse_duration
@@ -6,6 +7,27 @@ from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 import psycopg2
 import io
+import time
+
+
+def safe_execute(request, retries=3):
+    '''
+    Retry logic to be used when executing APIs
+    3 attemps before we finally raise the error and stop executing the APIs
+
+    Args:
+        request: The youtube API client
+
+    '''
+    for attempt in range(retries):
+        try:
+            return request.execute()
+        except HttpError as e:
+            if attempt == retries - 1:
+                raise 
+            print(f'Retry {attempt + 1} failed: {e}')
+            time.sleep(2**attempt)
+
 
 def connect_yt_data_api(api_key):
     '''

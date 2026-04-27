@@ -2,12 +2,23 @@
     config(
         materialized='incremental',
         schema='rdv',
-        unique_key='day'
+        unique_key='date',
     )
 }}
 
-with src_stage_table as (
-    select distinct 
+with src_clean as (
+    select * 
+    from (
+        select 
+            *, 
+            row_number() over(partition by date, date(load_ts) order by load_ts desc) as rn
+        from {{ source('stage', 'sc_yt_day_data')}}
+    ) t
+    where rn = 1
+)
+
+, src as (
+    select 
         date
         , (date_metrics ->> 'likes')::int as likes
         , (date_metrics ->> 'views')::int as views
@@ -20,30 +31,50 @@ with src_stage_table as (
         , (date_metrics ->> 'averageViewPercentage')::float as averageViewPercentage
         , (date_metrics ->> 'estimatedMinutesWatched')::float as estimatedMinutesWatched
         , load_ts
-        , record_source
 
-    from {{ source('stage', 'sc_yt_day_data')}}
+    from src_clean
 )
 
-select
-    date
-    , likes 
-    , views
-    , shares
-    , comments
-    , dislikes
-    , subscribersLost
-    , subscribersGained
-    , averageViewDuration
-    , averageViewPercentage
-    , estimatedMinutesWatched
-    , load_ts
-    , record_source
+, final_pull as (
+    select
+        date
+        , likes 
+        , views
+        , shares
+        , comments
+        , dislikes
+        , subscribersLost
+        , subscribersGained
+        , averageViewDuration
+        , averageViewPercentage
+        , estimatedMinutesWatched
+        , load_ts
+        , md5(
+            coalesce(likes, NULL) || '|' ||
+            coalesce(views, NULL) || '|' ||
+            coalesce(shares, NULL) || '|' ||
+            coalesce(comments, NULL) || '|' ||
+            coalesce(dislikes, NULL) || '|' ||
+            coalesce(subscribersLost, NULL) || '|' ||
+            coalesce(subscribersGained, NULL) || '|' ||
+            coalesce(averageViewDuration, NULL) || '|' ||
+            coalesce(averageViewPercentage, NULL) || '|' ||
+            coalesce(estimatedMinutesWatched, NULL)
+        ) as hashdiff
 
-from src_stage_table
+    from src
+)
 
-{% if is_incremental() %}
-where date not in (
-    select date from {{ this }}
+select 
+    final_pull.*
+
+from final_pull 
+
+{% if is_incremental %}
+where not exists (
+    select 1 
+    from {{ this }} as fct
+    where fct.date = final_pull.date 
+        and fct.hashdiff = final_pull.hashdiff
 )
 {% endif %}

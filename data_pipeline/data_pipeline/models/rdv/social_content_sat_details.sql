@@ -6,20 +6,21 @@
     )
 }}
 
-
-with social_content_hub as (
-    select distinct
-        video_id
-        , record_source
-    
-    from {{ ref('social_content_hub')}}
+with src_clean as (
+    select * 
+    from (
+        select 
+            *, 
+            row_number() over(partition by video_id, date(load_ts) order by load_ts desc) as rn
+        from {{ source('stage', 'sc_yt_video_data')}}
+    ) t
+    where rn = 1
 )
 
+
 , src as (
-    select distinct
-        sch.video_id
-        , sch.record_source
-        , stg.load_ts
+    select
+        video_id
         , video_data -> 'snippet' ->> 'title' as video_title_raw
         , case
     	    when (video_data -> 'snippet' ->> 'title') ilike 'SESSION%' or (video_data -> 'snippet' ->> 'title') ILIKE 'Series%' 
@@ -29,7 +30,7 @@ with social_content_hub as (
 		    else trim(split_part(video_data -> 'snippet' ->> 'title', '|', 1))
         end as video_title
         , nullif(video_data -> 'snippet' ->> 'description', NULL) as video_description
-        , video_data -> 'snippet' ->> 'publishedAt' as video_published_at
+        , (video_data -> 'snippet' ->> 'publishedAt')::timestamp as video_published_at
         , EXTRACT(EPOCH from (video_data -> 'contentDetails' ->> 'duration')::interval) as video_duration_sec
         , video_data -> 'topicDetails' ->> 'topicCategories' as video_topic
         , video_data -> 'snippet' ->> 'categoryId' as video_category
@@ -37,21 +38,19 @@ with social_content_hub as (
         , (video_data -> 'statistics' ->> 'viewCount')::int as viewCount
         , (video_data -> 'statistics' ->> 'commentCount')::int as commentCount
         , estimatedminuteswatched 
+        , load_ts
 
-    from {{ source('stage', 'sc_yt_video_data')}} as stg
-
-    inner join social_content_hub as sch
-        on stg.video_id = sch.video_id
+    from src_clean
 )
 
 , src_video_type as (
     select distinct
         src.video_id
         , case
-            when (src.video_title_raw like '[Luton 2023]%') or (src.video_title_raw like '[Luton 2024]%') then 'Luton Livestream'
+            when src.video_title_raw ilike '%Luton%' then 'Luton Livestream'
             when (src.video_duration_sec)::int <= 60 then 'Shorts'
-            when ((src.video_duration_sec)::int > 60) and ((src.video_duration_sec)::int <= 1200) then 'Other'
-            when (src.video_duration_sec)::int > 1200 then 'Livestream'
+            when (((src.video_duration_sec)::int > 60) and ((src.video_duration_sec)::int <= 1200)) or src.video_title_raw ilike '%Taraweeh%' then 'Other'
+            when (src.video_duration_sec)::int > 1200 and src.video_title_raw not ilike '%Taraweeh%' then 'London Livestream'
         else null
         end as video_type    
 
@@ -59,11 +58,11 @@ with social_content_hub as (
 )
 
 , src_video_speaker as (
-    select distinct
+    select
 	    video_id
         , coalesce(
             case 
-                when video_type = 'Livestream' then pipe_parts
+                when video_type = 'London Livestream' then pipe_parts
                 when video_type = 'Luton Livestream' then dash_parts
             else null
             end, 
@@ -72,13 +71,13 @@ with social_content_hub as (
         ) as video_speaker_raw
 		
     from (
-        select distinct
+        select
             src.video_id
             , src_video_type.video_type
             , trim((string_to_array(video_title, '-'))[2]) as dash_parts
             , case 
-                when (video_title_raw like 'SESSION%') or (video_title_raw like 'Series%') then trim((string_to_array(video_title_raw, '|'))[4])
-                when (video_title_raw like '[Luton 2023]%') or (video_title_raw like '[Luton 2024]%') then trim((string_to_array(video_title_raw, '|'))[2]) 
+                when (video_title_raw ilike '%session%') or (video_title_raw ilike '&series%') then trim((string_to_array(video_title_raw, '|'))[4])
+                when video_title_raw ilike '%Luton%' then trim((string_to_array(video_title_raw, '|'))[2]) 
                 else coalesce(trim((string_to_array(video_title_raw, '|'))[3]), trim((string_to_array(video_title_raw, '|'))[2]))
             end as pipe_parts
         from src
@@ -89,7 +88,7 @@ with social_content_hub as (
 )
 
 , src_video_speaker_correction as (
-    select distinct
+    select
         src.video_id
         , nullif(crt.canonical_name, NULL) as video_speaker
     
@@ -101,7 +100,6 @@ with social_content_hub as (
 , final_pull as (
     select distinct
         src.video_id
-        , src.record_source
         , src.video_title_raw
         , src.video_title
         , src.video_description
@@ -117,10 +115,9 @@ with social_content_hub as (
         , src.estimatedminuteswatched
         , src.load_ts
         , md5(
-            coalesce(src.record_source, '') || '|' ||
             coalesce(src.video_title, '') || '|' ||
             coalesce(src.video_description, '') || '|' ||
-            coalesce(src.video_published_at, '') || '|' ||
+            coalesce(src.video_published_at::text, '') || '|' ||
             coalesce(src.video_duration_sec::text, '') || '|' ||
             coalesce(src.video_topic, '') || '|' ||
             coalesce(src.video_category, '') || '|' ||
