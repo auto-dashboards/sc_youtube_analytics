@@ -23,6 +23,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install dbt dependencies
+        run: | 
+          dbt deps --project-dir data_pipeline/data_pipeline
+
       - name: Run stage pipeline
         env:
           DBL_URL: ${{ secrets.NEON_DBL_URL }}
