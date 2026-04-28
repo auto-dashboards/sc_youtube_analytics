@@ -1,4 +1,4 @@
-name: Youtube Stage Pipeline
+name: Youtube Pipeline
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual run from the Actions tab
 
 jobs:
-  run_yt_stage_pipeline:
+  run_yt_pipeline:
     runs-on: ubuntu-latest
 
     steps:
