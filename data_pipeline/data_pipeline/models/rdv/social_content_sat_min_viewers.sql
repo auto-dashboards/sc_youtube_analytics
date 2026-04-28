@@ -46,16 +46,37 @@ with src_clean as (
     from src
 )
 
-select 
-    final_pull.*
+, final_pull_dedupe as (
+    select 
+        video_id
+        , livestream_position
+        , peak_concurrent_viewers
+        , average_concurrent_viewers
+        , load_ts
+        , hashdiff
+    
+    from (
+        select
+            *, 
+            row_number() over(
+                partition by video_id, hashdiff 
+                order by load_ts desc
+            ) as rn 
+        from final_pull
+    ) t
+    where rn=1
+)
 
-from final_pull 
+select 
+    final_pull_dedupe.*
+
+from final_pull_dedupe 
 
 {% if is_incremental %}
 where not exists (
     select 1 
     from {{ this }} as sat
-    where sat.video_id = final_pull.video_id 
-        and sat.hashdiff = final_pull.hashdiff
+    where sat.video_id = final_pull_dedupe.video_id 
+        and sat.hashdiff = final_pull_dedupe.hashdiff
 )
 {% endif %}

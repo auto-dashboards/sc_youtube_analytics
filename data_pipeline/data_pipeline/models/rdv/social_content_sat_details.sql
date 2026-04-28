@@ -6,6 +6,7 @@
     )
 }}
 
+-- Within each day, output the latest timestamp for every video
 with src_clean as (
     select * 
     from (
@@ -16,7 +17,6 @@ with src_clean as (
     ) t
     where rn = 1
 )
-
 
 , src as (
     select
@@ -44,7 +44,7 @@ with src_clean as (
 )
 
 , src_video_type as (
-    select distinct
+    select
         src.video_id
         , case
             when src.video_title_raw ilike '%Luton%' then 'Luton Livestream'
@@ -98,7 +98,7 @@ with src_clean as (
 )
 
 , final_pull as (
-    select distinct
+    select 
         src.video_id
         , src.video_title_raw
         , src.video_title
@@ -138,16 +138,48 @@ with src_clean as (
         on src.video_id = src_video_speaker_correction.video_id
 )
 
-select 
-    final_pull.*
+-- For each video, dedupe duplicate hash diffs
+, final_pull_dedupe as (
+    select 
+        video_id
+        , video_title_raw
+        , video_title
+        , video_description
+        , video_published_at
+        , video_duration_sec
+        , video_topic
+        , video_category
+        , video_type
+        , video_speaker
+        , likesCount
+        , viewCount
+        , commentCount
+        , estimatedminuteswatched
+        , load_ts
+        , hashdiff
 
-from final_pull 
+    from (
+        select 
+            *, 
+            row_number() over (
+                partition by video_id, hashdiff
+                order by load_ts desc
+            ) as rn
+        from final_pull
+    ) t
+    where rn = 1
+)
+
+select 
+    final_pull_dedupe.*
+
+from final_pull_dedupe 
 
 {% if is_incremental %}
 where not exists (
     select 1 
     from {{ this }} as sat
-    where sat.video_id = final_pull.video_id 
-        and sat.hashdiff = final_pull.hashdiff
+    where sat.video_id = final_pull_dedupe.video_id 
+        and sat.hashdiff = final_pull_dedupe.hashdiff
 )
 {% endif %}

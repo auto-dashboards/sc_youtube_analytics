@@ -65,16 +65,44 @@ with src_clean as (
     from src
 )
 
-select 
-    final_pull.*
+, final_pull_dedupe as (
+    select 
+        date
+        , likes 
+        , views
+        , shares
+        , comments
+        , dislikes
+        , subscribersLost
+        , subscribersGained
+        , averageViewDuration
+        , averageViewPercentage
+        , estimatedMinutesWatched
+        , load_ts
+        , hashdiff
 
-from final_pull 
+    from (
+        select 
+            *, 
+            row_number() over (
+                partition by date, hashdiff
+                order by load_ts desc
+            ) as rn
+        from final_pull
+    )
+    where rn = 1
+)
+
+select 
+    final_pull_dedupe.*
+
+from final_pull_dedupe 
 
 {% if is_incremental %}
 where not exists (
     select 1 
     from {{ this }} as fct
-    where fct.date = final_pull.date 
-        and fct.hashdiff = final_pull.hashdiff
+    where fct.date = final_pull_dedupe.date 
+        and fct.hashdiff = final_pull_dedupe.hashdiff
 )
 {% endif %}
