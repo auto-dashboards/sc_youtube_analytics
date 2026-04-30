@@ -48,13 +48,13 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
-          MODE='${{ github.event.inputs.full_refresh || 'false'}}'
+          MODE="${{ github.event.inputs.full_refresh || 'false'}}"
           
-          if [ '$MODE' = 'true' ]; then
-            echo 'RUNNING STAGE FULL REFRESH'
+          if [ "$MODE" = "true" ]; then
+            echo "RUNNING STAGE FULL REFRESH"
             python data_preprocessing/run.py --mode truncate
           else 
-            echo 'RUNNING STAGE FULL INCREMENTAL'
+            echo "RUNNING STAGE FULL INCREMENTAL"
           python data_preprocessing/run.py --mode append
           fi
 
@@ -69,12 +69,12 @@ jobs:
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_PORT: ${{ secrets.DB_PORT }}
         run: |
-          MODE='${{ github.event.inputs.full_refresh || 'false'}}'
-          
-          if [ '$MODE' = 'true' ]; then
-            echo 'RUNNING RDV FULL REFRESH'
+          MODE="${{ github.event.inputs.full_refresh || 'false' }}"
+
+          if [ "$MODE" = "true" ]; then
+            echo "RUNNING RDV FULL REFRESH"
             dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --full-refresh
           else 
-            echo 'RUNNING RDV FULL INCREMENTAL'
+            echo "RUNNING RDV FULL INCREMENTAL"
             dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv
           fi
