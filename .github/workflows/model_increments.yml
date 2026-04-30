@@ -50,7 +50,7 @@ jobs:
         run: |
           MODE='${{ github.event.inputs.full_refresh || 'false'}}'
           
-          if ['$MODE' = 'true']; then
+          if [ '$MODE' = 'true' ]; then
             echo 'RUNNING STAGE FULL REFRESH'
             python data_preprocessing/run.py --mode truncate
           else 
@@ -71,7 +71,7 @@ jobs:
         run: |
           MODE='${{ github.event.inputs.full_refresh || 'false'}}'
           
-          if ['$MODE' = 'true']; then
+          if [ '$MODE' = 'true' ]; then
             echo 'RUNNING RDV FULL REFRESH'
             dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --full-refresh
           else 
