@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual run from the Actions tab
     inputs:
       full_refresh:
-        description: "Run full pipeline refresh?"
+        description: "Run full refresh?"
         required: false
         default: "false"
         type: choice 
@@ -47,8 +47,15 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: |          
+        run: |
+          MODE="${{ github.event.inputs.full_refresh || 'false'}}"
+          
+          if [ "$MODE" = "true" ]; then
+            echo "RUNNING PIPELINE REFRESH -> SKIPPING STAGE"
+          else 
+            echo "RUNNING STAGE FULL INCREMENTAL"
           python data_preprocessing/run.py --mode append
+          fi
 
       # -----------------------
       # RDV (DBT Models)
@@ -64,8 +71,8 @@ jobs:
           MODE="${{ github.event.inputs.full_refresh || 'false' }}"
 
           if [ "$MODE" = "true" ]; then
-            echo "RUNNING RDV FULL REFRESH"
-            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --full-refresh
+            echo "RUNNING RDV FULL REFRESH (TRUNCATE AND RELOAD)"
+            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --vars '{"truncate_reload": true}'
           else 
             echo "RUNNING RDV FULL INCREMENTAL"
             dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv
