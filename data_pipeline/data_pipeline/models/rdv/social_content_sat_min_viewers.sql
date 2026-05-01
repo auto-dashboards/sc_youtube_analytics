@@ -3,6 +3,9 @@
         materialized='incremental',
         schema='rdv',
         unique_key='video_id',
+        pre_hook="TRUNCATE TABLE {{ this }}"
+        if var('truncate_reload', false)
+        else none
     )
 }}
 
