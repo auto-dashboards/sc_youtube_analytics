@@ -3,9 +3,11 @@
         materialized='incremental',
         schema='rdv',
         unique_key='date',
-        pre_hook="TRUNCATE TABLE {{ this }}"
-        if var('truncate_reload', false)
-        else none
+        pre_hook=(
+            "TRUNCATE TABLE {{ this }}"
+            if var('truncate_reload', false)
+            else ""
+        )
     )
 }}
 
@@ -103,7 +105,7 @@ select
 
 from final_pull_dedupe 
 
-{% if is_incremental %}
+{% if is_incremental() and not var('truncate_reload', false) %}
 where not exists (
     select 1 
     from {{ this }} as fct
