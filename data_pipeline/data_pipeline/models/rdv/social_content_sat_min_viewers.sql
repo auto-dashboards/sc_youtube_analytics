@@ -41,12 +41,15 @@ with src_clean as (
         , peak_concurrent_viewers
         , average_concurrent_viewers
         , md5(
-            coalesce(livestream_position, NULL) || '|' ||
-            coalesce(peak_concurrent_viewers, NULL) || '|' ||
-            coalesce(average_concurrent_viewers, NULL)
+            concat_ws('|', 
+                livestream_position::text,
+                peak_concurrent_viewers::text,
+                average_concurrent_viewers::text
+            )
         ) as hashdiff
 
     from src
+
 )
 
 , final_pull_dedupe as (

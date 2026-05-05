@@ -53,16 +53,18 @@ with src_clean as (
         , estimatedMinutesWatched
         , load_ts
         , md5(
-            coalesce(likes, NULL) || '|' ||
-            coalesce(views, NULL) || '|' ||
-            coalesce(shares, NULL) || '|' ||
-            coalesce(comments, NULL) || '|' ||
-            coalesce(dislikes, NULL) || '|' ||
-            coalesce(subscribersLost, NULL) || '|' ||
-            coalesce(subscribersGained, NULL) || '|' ||
-            coalesce(averageViewDuration, NULL) || '|' ||
-            coalesce(averageViewPercentage, NULL) || '|' ||
-            coalesce(estimatedMinutesWatched, NULL)
+            concat_ws('|', 
+                likes::text,
+                views::text,
+                shares::text,
+                comments::text,
+                dislikes::text,
+                subscribersLost::text,
+                subscribersGained::text,
+                averageViewDuration::text,
+                averageViewPercentage::text,
+                estimatedMinutesWatched::text
+            )
         ) as hashdiff
 
     from src
