@@ -118,18 +118,20 @@ with src_clean as (
         , src.estimatedminuteswatched
         , src.load_ts
         , md5(
-            coalesce(src.video_title, '') || '|' ||
-            coalesce(src.video_description, '') || '|' ||
-            coalesce(src.video_published_at::text, '') || '|' ||
-            coalesce(src.video_duration_sec::text, '') || '|' ||
-            coalesce(src.video_topic, '') || '|' ||
-            coalesce(src.video_category, '') || '|' ||
-            coalesce(src_video_type.video_type, '') || '|' ||
-            coalesce(src_video_speaker_correction.video_speaker, '') || '|' ||
-            coalesce(src.likesCount, NULL) || '|' ||
-            coalesce(src.viewCount, NULL) || '|' ||
-            coalesce(src.commentCount, NULL) || '|' ||
-            coalesce(src.estimatedminuteswatched, NULL)
+            concat_ws('|', 
+                src.video_title::text,
+                src.video_description::text,
+                src.video_published_at::text,
+                src.video_duration_sec::text,
+                src.video_topic::text,
+                src.video_category::text,
+                src_video_type.video_type::text,
+                src_video_speaker_correction.video_speaker::text,
+                src.likesCount::text,
+                src.viewCount::text,
+                src.commentCount::text,
+                src.estimatedminuteswatched::text
+            ) 
         ) as hashdiff
 
     from src
