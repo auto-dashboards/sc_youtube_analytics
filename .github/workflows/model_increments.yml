@@ -75,5 +75,5 @@ jobs:
             dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --vars '{"truncate_reload": true}'
           else 
             echo "RUNNING RDV FULL INCREMENTAL"
-            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv
+            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --vars '{"truncate_reload": false}'
           fi
