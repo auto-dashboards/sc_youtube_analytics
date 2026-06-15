@@ -48,60 +48,6 @@ with src_clean as (
     from src_clean
 )
 
-, src_video_type as (
-    select
-        src.video_id
-        , case
-            when src.video_title_raw ilike '%Luton%' then 'Luton Livestream'
-            when (src.video_duration_sec)::int <= 60 then 'Shorts'
-            when (((src.video_duration_sec)::int > 60) and ((src.video_duration_sec)::int <= 1200)) or src.video_title_raw ilike '%Taraweeh%' then 'Other'
-            when (src.video_duration_sec)::int > 1200 and src.video_title_raw not ilike '%Taraweeh%' then 'London Livestream'
-        else null
-        end as video_type    
-
-    from src 
-)
-
-, src_video_speaker as (
-    select
-	    video_id
-        , coalesce(
-            case 
-                when video_type = 'London Livestream' then pipe_parts
-                when video_type = 'Luton Livestream' then dash_parts
-            else null
-            end, 
-            pipe_parts, 
-            dash_parts
-        ) as video_speaker_raw
-		
-    from (
-        select
-            src.video_id
-            , src_video_type.video_type
-            , trim((string_to_array(video_title, '-'))[2]) as dash_parts
-            , case 
-                when (video_title_raw ilike '%session%') or (video_title_raw ilike '&series%') then trim((string_to_array(video_title_raw, '|'))[4])
-                when video_title_raw ilike '%Luton%' then trim((string_to_array(video_title_raw, '|'))[2]) 
-                else coalesce(trim((string_to_array(video_title_raw, '|'))[3]), trim((string_to_array(video_title_raw, '|'))[2]))
-            end as pipe_parts
-        from src
-
-        left join src_video_type
-            on src.video_id = src_video_type.video_id
-    ) as a 
-)
-
-, src_video_speaker_correction as (
-    select
-        src.video_id
-        , nullif(crt.canonical_name, NULL) as video_speaker
-    
-    from src_video_speaker as src
-    left join {{ ref('speaker_name_correction')}} as crt
-        on src.video_speaker_raw = crt.original_name
-)
-
 , final_pull as (
     select 
         src.video_id
@@ -112,8 +58,6 @@ with src_clean as (
         , src.video_duration_sec
         , src.video_topic
         , src.video_category
-        , src_video_type.video_type
-        , src_video_speaker_correction.video_speaker
         , src.likesCount
         , src.viewCount
         , src.commentCount
@@ -127,8 +71,6 @@ with src_clean as (
                 src.video_duration_sec::text,
                 src.video_topic::text,
                 src.video_category::text,
-                src_video_type.video_type::text,
-                src_video_speaker_correction.video_speaker::text,
                 src.likesCount::text,
                 src.viewCount::text,
                 src.commentCount::text,
@@ -138,11 +80,6 @@ with src_clean as (
 
     from src
 
-    left join src_video_type
-        on src.video_id = src_video_type.video_id
-
-    left join src_video_speaker_correction
-        on src.video_id = src_video_speaker_correction.video_id
 )
 
 -- For each video, dedupe duplicate hash diffs
@@ -156,8 +93,6 @@ with src_clean as (
         , video_duration_sec
         , video_topic
         , video_category
-        , video_type
-        , video_speaker
         , likesCount
         , viewCount
         , commentCount
