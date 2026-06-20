@@ -1,0 +1,749 @@
+[0.00 -> 7.00]  In the name of Allah, the Most Gracious, the Most Merciful.
+[30.00 -> 34.00]  And when it comes to the body, they say,
+[34.00 -> 38.00]  Our Lord, give us mercy from Yourself,
+[38.00 -> 42.00]  and make us ready for Our command.
+[42.00 -> 45.00]  And our Lord, on their foreheads,
+[45.00 -> 48.00]  in the body are many years.
+[48.00 -> 51.00]  Then We raise them up so that We know
+[51.00 -> 54.00]  which of the two parties will be counted
+[54.00 -> 58.00]  and which will last forever.
+[58.00 -> 83.00]  In the name of Allah, the Most Gracious, the Most Merciful.
+[83.00 -> 90.00]  And we were attached to their hearts when they stood up and said,
+[90.00 -> 97.00]  They said, Our Lord, the Lord of the heavens and the earth, we will not call upon any other than Him.
+[97.00 -> 101.00]  Now we have said, then, that He has broken.
+[101.00 -> 111.00]  These are the people we have taken as gods besides Him.
+[111.00 -> 117.00]  lawla yatun alayhim bisultanin bayyin,
+[117.00 -> 123.00]  fa man azlamu mman iftara ala Allahi kathiba?
+[123.00 -> 129.00]  wa idhi irtazaltumuhum wa ma ya'buduna illa Allaha,
+[129.00 -> 134.00]  fa amu ila al-kahfi yanshur lakum
+[134.00 -> 140.00]  yanshur lakum rabbukum min rahmatihi
+[140.00 -> 148.88]  wa yuhayyi lakum, wa yuhayyi lakum min amrikum nirfaqa.
+[148.88 -> 154.32]  wa tarashshamsa ida tula'a tazawaru anka fihim dha'atil yamini
+[154.32 -> 157.60]  wa ida aghrabat taqriduhum dha'atil shimaali
+[157.60 -> 165.92]  wuhum fi fajwati min dha'alika min ayaatil lah.
+[165.92 -> 170.62]  Who guides Allah, He is the Rightly Guided.
+[170.62 -> 179.62]  And whoever goes astray, you will not find for him a guardian or a guide.
+[179.62 -> 182.82]  And you think of them as naked, and they are naked.
+[182.82 -> 187.12]  And We turn them to the right and to the left.
+[187.12 -> 192.32]  And their dogs are long, and their claws are long, and their claws are long.
+[192.32 -> 199.76]  When she looked at them, you turned away from them in secret, and you turned away from them in fear.
+[199.76 -> 205.32]  And thus We raised them so that they would ask each other.
+[205.32 -> 209.60]  A group of them said, How long have you stayed?
+[209.60 -> 215.48]  They said, We stayed one day or the other.
+[215.48 -> 220.00]  They said, Your Lord knows what you stayed for.
+[220.00 -> 226.80]  fa ba'athoo ahadakum biwariqikum hazeenal madinati
+[226.80 -> 232.32]  fa liyanzur, fa liyanzur ayyuhazka tu'aman
+[232.32 -> 236.92]  fa liyattikum, fa liyattikum bi rizqin min huwa
+[236.92 -> 241.80]  liyatala ttaf, wa la yush'irun nabikum ahada.
+[241.80 -> 255.04]  Inna ummi yadharu alaykum yarjumukum aw yu'eedukum fi millatihim walal tuflihu idhan abada
+[255.04 -> 267.00]  Wa kathalika atharuna alayhum liha'alamu anna wa'da Allahi haqqun wa anna sa'atana raibafiha
+[267.00 -> 270.46]  And when they were discussing their matters, they said,
+[270.46 -> 273.90]  They will build a building on them.
+[273.90 -> 276.46]  Their Lord knows best about them.
+[276.46 -> 279.30]  Those who have overcome their matters said,
+[279.30 -> 284.34]  We will surely take upon them a place of refuge.
+[284.34 -> 285.50]  They will say,
+[285.50 -> 289.36]  Three of their four are their dogs,
+[289.36 -> 290.60]  And they will say,
+[290.60 -> 293.44]  Five of their six are their dogs,
+[293.44 -> 304.44]  rajman bil ghaib, wayaghooloon sab'atun wa thaminuhum kalbuhum, qur rabbi ya'lamu
+[304.44 -> 318.44]  ba'iddatihim ma ya'lamuhum illa qaleel, fala tumarifihim illa miraham ghahira, wala
+[318.44 -> 329.64]  Testafti fihim minhun ahada, wa la taqulanna lishayin inni fa'ilun dhalika ghoda, illa
+[329.64 -> 343.64]  an yashaa Allah, wa dhkul rabbika ida nasi't, wa qul asaa an yahdiyani rabbili akuraba min
+[373.64 -> 377.30]  You will not find any one other than Him.
+[377.30 -> 384.68]  And be patient with those who pray to their Lord in the morning and in the evening.
+[384.68 -> 390.68]  They pray to their Lord in the morning and in the evening.
+[390.68 -> 396.68]  They turn away from Him and do not turn away from them.
+[396.68 -> 400.68]  You want the adornment of this worldly life.
+[400.68 -> 416.14]  wa la tuti' man aghfanna qalbahu ʿan dhikrina wa attabaʿ hawaa wa attabaʿ hawaa huwa kaana amruhu furuta
+[416.14 -> 424.70]  wa qulil haqqu mir rabbikum fa man sha'a fal yu'min wa man sha'a fal yakfur
+[424.70 -> 432.70]  إِنَّا أَعْتَدْنَا إِنَّا أَعْتَدْنَا لِظَالِمِينَ نَارٌ حَاطَ بِهِمْ سُرَاذِقُهَا
+[432.70 -> 438.10]  وَإِنْ يَسْتَغِيثُوا يُغَاثُوا بِمَا إِنْ كَالْمُهْنِ يَشْمِي الْبُجُوءِ
+[438.10 -> 443.30]  بِئسَ الشَّرَابُ وَسَاءَتْ مُرْتَفَقًا
+[443.30 -> 457.06]  Inna allatheena manu aminu salihati, inna laa nuzeen wajrman ahsana amala, ulaa ika lahum
+[457.06 -> 464.46]  jannatu adinin tajri min tahti mul anhaa, yuhallawna fiihaa, yuhallawna fiihaa min
+[464.46 -> 473.02]  asabir min dhaabin, wa yalbasoon fiyaban khudran min sundusin, wa istabraqin muttakiin
+[473.02 -> 483.02]  In it are the bounties of reward, and the good deeds of the righteous.
+[484.02 -> 486.02]  And set forth for them the example of two men.
+[486.02 -> 489.02]  We made for one of them two gardens of grapevines,
+[489.02 -> 491.02]  and we plowed them with a palm tree,
+[491.02 -> 494.02]  and we made a farm between them.
+[494.02 -> 497.02]  You ate the two gardens, and you came to eat them,
+[497.02 -> 499.02]  and you did not wrong them at all,
+[499.02 -> 502.02]  and during them We caused a river to burst.
+[502.02 -> 503.66]  I have no fruit.
+[503.66 -> 506.66]  So he said to his friend, while he was talking,
+[506.66 -> 513.54]  I have more than you, and I am more powerful than you.
+[513.54 -> 517.10]  And he entered Paradise, and he was unjust to himself.
+[517.10 -> 522.30]  He said, I do not think that you will ever be like this.
+[522.30 -> 526.86]  And I do not think that you will ever be like this.
+[526.86 -> 534.86]  wa la irrudittu ila rabbi la jidanna khayran min amun qanaba
+[534.86 -> 539.18]  qan lahoo sahibu huwa yuhabiru huwa katharka billadhee
+[539.18 -> 545.66]  fanaqaka min turabin thumma min nutufatin
+[545.66 -> 548.46]  thumma sawaka rajula
+[548.46 -> 554.94]  lakin nawallahu rabbi wa la ushriku bi rabbi ahada
+[554.94 -> 566.06]  wa lawla idh dakhalta jannataka qulta ma sha'a Allahu la quwwata illa billa
+[566.06 -> 572.58]  im ta ra liyana qull min kamala wa walada
+[572.58 -> 578.02]  fa asaa rabbi ya yu'tiyani khayrun min jannatika wa yurusina alayha
+[578.02 -> 582.50]  wa yurusina alayha kusbana min al-samai
+[582.50 -> 588.50]  fa tusbiha su'eedan zanaqa
+[588.50 -> 590.98]  aw yusbha ma'a ghawma
+[590.98 -> 593.58]  fa lankastati ala hum talaba
+[593.58 -> 595.10]  fa ahita bithamarihi
+[595.10 -> 598.62]  fa usbahi qallimu kafai ala man faqafiha
+[598.62 -> 600.10]  wa hiya khawiyah
+[600.10 -> 602.58]  wa hiya khawiyatun ala a'rooshiha
+[602.58 -> 605.98]  wa yaqoolu ya laytani na muskrik min rabbiya hada
+[605.98 -> 608.62]  wa lam takullahu fiyatun yansoonahu
+[608.62 -> 611.90]  min duni Allahi wa ma kaana muntasirah
+[611.90 -> 618.78]  This is the truth for Allah, He is the best reward and the best punishment.
+[618.78 -> 625.10]  And set for them the example of the life of this world as if we sent it down from the sky,
+[625.10 -> 632.62]  and the plant of the earth was confused, and the winds blew it away.
+[632.62 -> 638.30]  And Allah is the One who is the One who knows all things.
+[638.30 -> 648.30]  Al-Mal and Al-Banoon are the adornment of the life of this world and the rest of the righteous are the best among your Lord,
+[648.30 -> 654.80]  the best among your Lord as reward and the best of hope.
+[654.80 -> 660.80]  On the Day when we will climb the mountains and you will see the earth clear and we will gather them so that we will not leave any of them,
+[660.80 -> 663.80]  and you will be presented to your Lord in a row.
+[663.80 -> 671.56]  Laqad ji'tumuna kama khalaqunakuma walamurratin bal za'amtumman lannajala lakum maw'ida
+[671.56 -> 676.72]  Fa udi'a al-kitabu fata'u al-mujlimina mushbiqina mimma fee
+[676.72 -> 684.96]  Wa yaquluna ya'uilatana ma li'aadha al-kitabi la yuqaadiru saghiratan wa la kabiratan illa aqsa
+[684.96 -> 692.76]  Wa wajadu ma'amilu hadira wa la ya'zlimu rabbuka ahada
+[692.76 -> 695.32]  And when We said to the angels,
+[695.32 -> 697.40]  "'Prostrate yourselves before Adam,'
+[697.40 -> 700.80]  they prostrated themselves except for Iblis.
+[700.80 -> 702.44]  He was one of the jinn,
+[702.44 -> 704.84]  so he disobeyed the command of his Lord.
+[704.84 -> 708.64]  Will you then take him and his offspring as allies
+[708.64 -> 711.44]  besides Me, while they are your enemies?
+[711.44 -> 714.00]  Wretched are the wrongdoers, instead of us!
+[714.00 -> 716.76]  You do not desire to create the heavens and the earth,
+[716.76 -> 718.88]  nor to create themselves.
+[718.88 -> 733.20]  وَمَا كُنتُ مُتَّخِذَ الْمُضْضِلِّينَ عَضُودًا وَيَوْمَ يَقُولُوا نَادُوا شُرَكَائِيَ الَّذِينَ زَعَمْتُوا فَذَعَوْهُمْ فَلَمْ يَسْتَجِيبُوا لَهُمْ وَجَعَلْنَا بَيْنَهُمْ مَوْبِقًا
+[733.20 -> 739.20]  And the criminals saw the Fire, and they thought that they would meet it, but they did not find a way out of it.
+[739.20 -> 743.70]  And indeed, in this Qur'an, We have explained to people all kinds of examples.
+[743.70 -> 747.20]  And man is the most controversial thing.
+[747.20 -> 753.20]  And what prevented people from believing when guidance came to them, and they asked their Lord for forgiveness,
+[753.20 -> 759.20]  except that the Sunnah would come to them at the beginning, and the punishment would come to them at the end.
+[759.20 -> 763.04]  وَمَا نُرْسِلُ الْمُرْسَرِينَ إِلَّا مُبَشِّرِينَ وَمُنْذِرِينَ
+[763.04 -> 767.84]  وَيُجَادِلُ الَّذِينَ كَفَرُوا بِالْمَاطِلِ لِيُدَحِظُوا بِهِ الْحَقَّ وَتَخُذُوا
+[767.84 -> 770.56]  آيَاتِ وَمَا مُنْذِرُوا هُزُوَّةً
+[770.56 -> 778.32]  And whoever is wronged by those who remember the signs of their Lord, turn away from them and forget what they have done.
+[778.32 -> 784.76]  We have made a place for them in their hearts, full of understanding, full of ears and ears.
+[784.76 -> 789.60]  And if you call them to guidance, they will never be guided.
+[789.60 -> 791.96]  And your Lord is the Forgiving, the Merciful.
+[791.96 -> 798.00]  If they had taken what they have earned, the punishment would have been hastened for them.
+[798.00 -> 802.60]  but for them is a promise that they will not find any other than it.
+[802.60 -> 806.84]  And those cities We destroyed when they wronged,
+[806.84 -> 812.48]  and We made a promise to their King.
+[812.48 -> 814.88]  And when Moses said to him,
+[814.88 -> 820.88]  I do not know until I have completed the assembly of the two seas on the Day of Judgment.
+[820.88 -> 826.12]  But when he had completed the assembly between them, he forgot about them,
+[826.12 -> 829.98]  So he took his way in the sea,
+[829.98 -> 833.82]  and when he crossed, he said to our young men,
+[833.82 -> 836.32]  and not to us.
+[836.32 -> 841.22]  We have met on our journey, and this is our destiny.
+[841.22 -> 844.66]  He said, I wish when we went to the rock,
+[844.66 -> 847.78]  I had forgotten the fish.
+[847.78 -> 851.26]  And the devil has not forgotten me,
+[851.26 -> 852.82]  to mention him.
+[852.82 -> 856.82]  He took his way in the sea in wonder.
+[856.82 -> 863.42]  He said, That is what we were seeking, and he turned back on their footsteps.
+[863.42 -> 870.22]  He found a servant of our servants. We gave him mercy from us.
+[870.22 -> 874.42]  We taught him from our knowledge.
+[874.42 -> 881.02]  Moses said to him, Shall we follow you to teach me something?
+[881.02 -> 885.42]  Mimma ullimta ushda.
+[885.42 -> 890.40]  Qoona innaka nan taistatiya ma'ya sabra,
+[890.40 -> 894.80]  wa kayfa tasbiru ala ma lam tuhit bihi khubra.
+[894.80 -> 901.84]  Qoona satajiduni in shaa Allahu sabira,
+[901.84 -> 904.92]  wa la a'asee laka amra.
+[904.92 -> 908.92]  Qoona fain ittaba'tani fala tas'alni,
+[908.92 -> 915.20]  So do not ask me about a thing until I give you a reminder of it.
+[915.20 -> 923.00]  So he set off until, when he got on the road, he crushed it.
+[923.00 -> 927.08]  He said, Have you crushed it so that you could drown its people?
+[927.08 -> 929.88]  You have come with a command.
+[929.88 -> 937.72]  He said, I did not say that you will not be able to be patient with me.
+[937.72 -> 947.72]  He said, ''Do not take me for what I have forgotten, and do not deprive me of my duty in haste.''
+[947.72 -> 949.72]  So he set off.
+[949.72 -> 953.72]  Until he met a boy and he killed him.
+[953.72 -> 959.72]  He said, ''You have killed a pure soul without a soul.
+[959.72 -> 962.72]  You have come to a bad thing.''
+[962.72 -> 964.72]  He said, ''I did not tell you.
+[964.72 -> 966.72]  He said to him,
+[966.72 -> 968.72]  If I ask you about anything after that,
+[968.72 -> 970.72]  do not tell me.
+[970.72 -> 972.72]  You have already received
+[972.72 -> 974.72]  a warning from me.
+[974.72 -> 976.72]  So he set off
+[976.72 -> 978.72]  until he reached
+[978.72 -> 980.72]  the people of Qaryat
+[980.72 -> 982.72]  who were able to feed their families
+[982.72 -> 984.72]  and they came to visit them
+[984.72 -> 986.72]  and he found a wall in it.
+[986.72 -> 988.72]  He found a wall in it
+[988.72 -> 990.72]  and he found a wall in it
+[990.72 -> 992.72]  and he found a wall
+[992.72 -> 998.72]  So he found a wall in it that he wanted to break, and he stood up.
+[998.72 -> 1002.72]  He said, If you wanted, you would have taken a reward for it.
+[1002.72 -> 1006.72]  He said, This is the separation between me and you.
+[1006.72 -> 1012.72]  I will tell you how to interpret what you could not do with patience.
+[1012.72 -> 1018.72]  As for the ship, it was for the poor who worked in the sea.
+[1018.72 -> 1033.02]  fa arattu ayn ʿayibaha wa kaan wa kaan wara'ahum malikun yaxhuthu kulla safinatin ghasba
+[1033.02 -> 1042.62]  wa anna l-ghulamu fakana abawa'hu mu'minaini fa khashina an yurhi qawma tughyanan wa kufra
+[1042.62 -> 1052.62]  So we thought that their Lord would give them a better reward, and closer to the Most Merciful.
+[1052.62 -> 1063.62]  And as for Jilal, he had two sons and two orphans in the city, and beneath them was their treasure, and their father was righteous.
+[1063.62 -> 1076.62]  So your Lord wanted to reach their strength, and to take out their treasure as a mercy from your Lord.
+[1076.62 -> 1085.62]  And what I did for my cause, that is the explanation of what you could not understand.
+[1085.62 -> 1090.18]  And they ask you about Dhul-Qarnayn.
+[1090.18 -> 1091.14]  Say,
+[1091.14 -> 1093.14]  Keep it a secret from him.
+[1093.14 -> 1097.70]  Indeed, we have placed him in the earth and he has given us of all things a reason.
+[1097.70 -> 1099.70]  So listen to what he has said.
+[1099.70 -> 1101.70]  Until when he reached the sunset of Maghrib,
+[1101.70 -> 1103.70]  he found her in a warm spring,
+[1103.70 -> 1105.70]  and he found a people with her.
+[1105.70 -> 1106.66]  We said,
+[1106.66 -> 1108.66]  O Dhul-Qarnayn,
+[1108.66 -> 1110.66]  Either you will be tortured,
+[1110.66 -> 1112.66]  or you will take good care of them.
+[1142.66 -> 1149.66]  So when they reached the two fronts, they found beside them a people who could barely understand a single word.
+[1149.66 -> 1154.66]  They said, O the two fronts, you are a scoundrel and a scoundrel, you are a scoundrel and a scoundrel, you are a scoundrel in the world,
+[1154.66 -> 1162.66]  so should we give you a reward for giving us a front?
+[1162.66 -> 1170.74]  Qala ma makani fihi rabbi khayran fa a'inuni bi quwa fa a'inuni bi quwatina ja'al baynakum
+[1170.74 -> 1180.26]  wa baynahum radmah a'tuni zubaral hadid hatta iza sawa bayna asfada fain qala manfukhu
+[1180.26 -> 1190.10]  hatta hatta iza ja'alahu naran qala a'tuni qala a'tuni uffrid alayhi kitra
+[1190.10 -> 1195.42]  So they did not see him, and they could not see him even if they stood up.
+[1195.42 -> 1199.06]  He said, This is a mercy from my Lord.
+[1199.06 -> 1205.18]  So when the promise of my Lord came, He made it come true.
+[1205.18 -> 1207.90]  And the promise of my Lord was true.
+[1207.90 -> 1210.46]  And We left some of them on that Day,
+[1210.46 -> 1213.34]  He will rise in the past, and He will rise in the future.
+[1213.34 -> 1216.18]  So We gathered them together.
+[1216.18 -> 1220.64]  ma'aradna jahannama yawma idhillil kafirin arda
+[1220.64 -> 1226.44]  allatheena kaana ta'iyunuhum fi ghita'in an dhikri
+[1226.44 -> 1232.60]  wa kaanuna yastati'una sam'a
+[1232.60 -> 1237.44]  afa hasba allatheena kafiru anniyyattakhidhu
+[1237.44 -> 1242.92]  anniyyattakhidhu ibadih min dun yawliya
+[1242.92 -> 1248.22]  إنا أعتدنا جهنم للكافرين نزولا
+[1248.22 -> 1253.22]  قل هل ننبئكم بالأخصرين أعمالا
+[1253.22 -> 1257.02]  الذين ضل سعيهم في الحياة الدنيا
+[1257.02 -> 1261.62]  وهم يحسبون أنهم يحسنون
+[1261.62 -> 1266.22]  وهم يحسبون أنهم يحسنون صنعة
+[1266.22 -> 1272.42]  أولئك الذين كفروا بآيات ربي ولقاء
+[1272.42 -> 1276.74]  wa liqa'ihi fahabtata a'manuhum
+[1276.74 -> 1280.90]  fa laa nuqeemu lahum yawmal qiyamati wazna
+[1280.90 -> 1286.42]  bithalika jaza'uhum jahannamu bima kafaru
+[1286.42 -> 1292.42]  wa attakhudhu ayaati wa rusuli huzuwa
+[1292.42 -> 1297.30]  inna allatheena amanu
+[1297.30 -> 1303.30]  Inna allatheena amanoo amiloo sualihaat
+[1303.30 -> 1307.80]  kaanat lahum jannaatul firdausi nuzula
+[1307.80 -> 1312.30]  Qalideena fia laa yabghoon anhaa hiwala
+[1312.30 -> 1317.80]  Qul lau kaana al-bahru midaadan likalimaati rabbi lanafida al-bahru
+[1317.80 -> 1322.30]  qabla an tanfada kalimaati rabbi
+[1322.30 -> 1325.80]  wa laujinaa bimithlihi madada
+[1325.80 -> 1338.52]  Qul innama ana bashurun mislukum yuha ilayya annama ilahukum ilahun wahid
+[1338.52 -> 1345.72]  فَمَنْ كَنَ يَرْجُلِقَ رَبِّي فَلْيَ عَمَلْ عَمَلًا صَالِحًا
+[1345.72 -> 1355.72]  وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّي أَحَدًا
+[1355.72 -> 1359.72]  سُبَقَ اللَّهُ الْعَوْمِينَ
+[1359.72 -> 1388.60]  May Allah grant us light and light and enlighten our hearts, our souls and our minds through
+[1388.60 -> 1397.10]  Through the blessings of Surah Al-Kahf, all our loved ones, those who know well, grant them Shifa-e-Kamlah.
+[1397.10 -> 1405.10]  Through the Noor of Surah Al-Kahf, all our loved ones, those who departed from this Dunya, elevate their rajaat in Jannat-ul-Fidha.
+[1405.10 -> 1412.60]  Through the Surah Al-Kahf, the blessings that you have granted us in the form of Mashallah Scholars and the Mashayikhs are here.
+[1412.60 -> 1414.60]  through the knowledge, through the
+[1414.60 -> 1416.60]  work, through the
+[1416.60 -> 1418.60]  Islam, through the knowledge of Iman
+[1418.60 -> 1420.60]  through the knowledge of Ihsan
+[1420.60 -> 1422.60]  forgive all sins
+[1422.60 -> 1424.60]  O our Lord, accept our Surah Kaff,
+[1424.60 -> 1426.60]  the one you have given us
+[1426.60 -> 1428.60]  the company of your scholars
+[1428.60 -> 1430.60]  with its blessings
+[1430.60 -> 1432.60]  with the blessings of Surah Kaff
+[1432.60 -> 1434.60]  in our life, in the hereafter
+[1434.60 -> 1436.60]  O our Lord, grant us light
+[1436.60 -> 1438.60]  cure the sick
+[1438.60 -> 1440.60]  our people, O our Lord
+[1470.60 -> 1472.66]  you
+[1500.60 -> 1524.04]  Now we have come to the last Jum'ah of Ramadan and MashaAllah we can see many familiar faces
+[1524.04 -> 1526.16]  from the Tarawi programs that we've been doing
+[1526.16 -> 1531.16]  over the last three weeks that we've been together.
+[1533.24 -> 1536.76]  Now I have the privilege of introducing
+[1536.76 -> 1541.48]  for many of you who recognize the familiar faces
+[1541.48 -> 1543.20]  of Shaykh Muhammad Mahmood,
+[1543.20 -> 1546.44]  who's been teaching and leading all of you in Tarawi,
+[1546.44 -> 1548.12]  Shaykh Salman Hassan,
+[1548.12 -> 1551.32]  who has been also sharing reminders and teachings
+[1551.32 -> 1556.02]  teaching us how to connect to Allah subhanahu wa ta'ala. Ustad Hamza who
+[1556.02 -> 1561.66]  Masha'Allah has been leading the Tarawi with his beautiful recitation where he
+[1561.66 -> 1566.42]  has taken that from much of the Nabawi, no other better place where he
+[1566.42 -> 1573.34]  received his Ijazah. Now Alhamdulillah all of these are fruits, fruits from a
+[1573.34 -> 1578.82]  greater tree and that tree is if you have benefited from their teachings then
+[1578.82 -> 1583.34]  know that alhamdulillah we have been blessed with the company of their
+[1583.34 -> 1588.62]  teachers and their teacher is none other than Sheikh Ahmed al-Bagh who alhamdulillah
+[1588.62 -> 1592.18]  will be gracing us with some nasiha and also will be gracing us with some
+[1592.18 -> 1596.70]  program this weekend which I'll be mentioning later today. Now for those who
+[1596.70 -> 1600.50]  want to familiarize themselves who haven't seen the teachings that we teach
+[1600.50 -> 1606.54]  at this mosque about presence of Allah, Sheikh Ahmed al-Bagh is a Islamic
+[1606.54 -> 1610.46]  scholar, teacher, and humanitarian leader.
+[1610.46 -> 1613.02]  So they are multi-dynamic.
+[1613.02 -> 1615.54]  Alhamdulillah, they have founded many organizations
+[1615.54 -> 1620.54]  dealing with international charity and welfare work.
+[1620.66 -> 1622.90]  They have founded organizations that teach people
+[1622.90 -> 1626.66]  how to practically connect to Allah Subh'anaHu Wa Ta-A'la.
+[1626.66 -> 1630.74]  And they have organizations that give dawah to non-Muslims.
+[1632.46 -> 1635.94]  Alhamdulillah, Shah Mubarak has come from a background
+[1635.94 -> 1640.50]  traditional Islamic training with over 70 teachers and authorizations to teach
+[1640.50 -> 1646.22]  in Quran, Hadith and across the major sciences of Islam. We'd like to
+[1646.22 -> 1650.98]  inshallah welcome Sheikh Ahmed Abba so that they can bless us with some
+[1650.98 -> 1656.02]  guidance at the last portion of this Ramadan so that we can benefit from this
+[1656.02 -> 1660.26]  last Jum'a. So without further ado I'll be giving it to Imam so he can give the Urdu translations.
+[1665.94 -> 1673.14]  In the blessed hours of Ramadan, MashaAllah, Allah has given us the opportunity to spend
+[1673.14 -> 1674.14]  time.
+[1674.14 -> 1680.26]  And Alhamdulillah, some hours are blessed with the blessings of Ramadan, along with the
+[1680.26 -> 1686.14]  blessings of Jummahul Wida, and when some saints of Allah and scholars come to the gathering,
+[1686.14 -> 1689.14]  Allah gives them a chance to spend some time.
+[1689.14 -> 1695.94]  It is our good fortune, praise be to Allah, that we have Sheikh Ahmad Tabak Sahib,
+[1696.02 -> 1700.98]  Madadil-ul-Ali, who has given us time.
+[1701.06 -> 1713.94]  He is spreading the teachings of spirituality and knowledge in almost 60 countries.
+[1714.02 -> 1718.66]  May Allah give him complete health and support to the Muslim Ummah.
+[1718.66 -> 1723.78]  So without further ado, we will not take much time, God willing.
+[1723.86 -> 1725.74]  Takbeer.
+[1725.82 -> 1727.42]  Takbeer.
+[1727.50 -> 1729.34]  Arisa Allah.
+[1748.66 -> 1750.66]  In the name of Allah, the Gracious, the Merciful.
+[1750.66 -> 1752.66]  All praise belongs to Allah, the Lord of all the worlds.
+[1752.66 -> 1754.66]  And peace and blessings be upon the Messenger of Allah,
+[1754.66 -> 1756.66]  and upon his family and companions, all of you.
+[1756.66 -> 1758.66]  After this, I seek refuge with Allah from Satan, the accursed.
+[1758.66 -> 1760.66]  Peace be upon him.
+[1778.66 -> 1781.66]  In the name of Allah, the Entirely Merciful, the Especially Merciful.
+[1784.66 -> 1792.66]  O mankind, worship your Lord, who created you and those before you, so that you may be righteous.
+[1794.66 -> 1796.66]  The truth of Allah is great.
+[1797.66 -> 1803.66]  May Allah bless Muhammad and his family and companions.
+[1803.66 -> 1810.66]  We are present on a blessed day, of a blessed month, of blessed last ten days, of blessed
+[1833.66 -> 1855.94]  days. So now anyone who saw some seeds, who starts some business or any project,
+[1855.94 -> 1862.74]  they all want to see some fruits at the end of it, that I have been doing
+[1862.74 -> 1869.66]  business what is the my profit at the end of the day. The farmer saw seeds that I
+[1869.66 -> 1878.42]  have planted apple fruit trees or wheat or whatever what how are the crops now
+[1878.42 -> 1886.74]  you know they keep an eye on that. Same is the situation of myself and yourself
+[1886.74 -> 1897.78]  yourself now. They are coming towards the end of Ramadan. It's time to see that what
+[1897.78 -> 1910.86]  fruits we have attained or how they are ripening and ripened. And obviously we have to turn
+[1910.86 -> 1915.82]  to Allah subhanahu wa ta'ala and the Prophet Muhammad sallallahu alaihi wa sallam to know
+[1915.82 -> 1918.78]  that.
+[1918.78 -> 1930.74]  I was just reading one hadith today, Musanna Ibn Abi Shaiba, a book of hadith, holds this
+[1930.74 -> 1942.50]  hadiths that the Prophet of Islam was mentioned about someone particularly a lady that now
+[1942.50 -> 1956.14]  she has fasted and end of Ramadan obviously is coming. So the hadiths actually the implication
+[1956.14 -> 1960.80]  of the hadith is the prophet of Islam this is my interpretation now not the
+[1960.80 -> 1965.72]  wordings or anything just to make you understand I mentioning that the prophet
+[1965.72 -> 1972.36]  of Islam said that okay that's fine she has been fasting but how is her speech
+[1972.36 -> 1982.84]  with her household and family and things his speech her speech yes
+[1982.84 -> 1986.84]  That's not very good, but she is very, very good otherwise.
+[1986.84 -> 1992.84]  But speech is harsh and we've asked, the people are not very much happy.
+[1992.84 -> 1999.84]  The Prophet, peace be upon him, said, if you're asking my view, she has not fasted.
+[1999.84 -> 2004.84]  She has not fasted.
+[2004.84 -> 2017.84]  But when she heard this, obviously she became concerned and she tried now to control.
+[2017.84 -> 2024.84]  So because they were very concerned, so they again reported to the Prophet, peace be upon him,
+[2024.84 -> 2030.84]  that she is trying now to control it.
+[2030.84 -> 2040.24]  He said, still she has not fasted, but she is on the way to achieve a fast.
+[2040.24 -> 2048.06]  Then some days later, they said, Ya Rasulullah, she has totally now, she remains for example
+[2048.06 -> 2052.62]  silent mostly and speaks goodness.
+[2052.62 -> 2057.78]  He sallallahu alayhi wa sallam mentioned that now she has fasted.
+[2057.78 -> 2070.72]  So in light of reports and hadiths and like this we can, meaning reflect upon ourselves
+[2070.72 -> 2081.18]  as well that it's not that we do fast and then we do not achieve anything at the end
+[2081.18 -> 2083.46]  of the month.
+[2083.46 -> 2092.50]  So by which you can, obviously Allah Azza wa Jal will judge you, but a person should
+[2092.50 -> 2102.10]  judge oneself as well and hold oneself accountable before Allah Azza wa Jal holds a person accountable.
+[2102.10 -> 2107.42]  So few of the lessons which you should be carrying from the fruits, so I can mention
+[2107.42 -> 2112.98]  that this is what you should have achieved, if not then this is the way to achieve, so
+[2112.98 -> 2116.82]  that at least you are aware of that, what we have been doing.
+[2120.58 -> 2122.46]  So one of the lessons which you have been hearing
+[2122.46 -> 2126.62]  from very beginning of Ramadan, the first 10 days is Rahma,
+[2126.62 -> 2132.06]  the second 10 days is Mughfirah, and the last 10 days
+[2132.06 -> 2136.10]  is ithqu min an naaru, freedom of fire.
+[2136.10 -> 2138.42]  Now, these were not quotes only.
+[2138.42 -> 2147.18]  these were the actually lessons and virtues and attributes that you were
+[2147.18 -> 2156.14]  given ten days each to cultivate each of them. So basically you can also look at
+[2156.14 -> 2160.70]  these that how I carried on these three I was not given like sometime you are
+[2160.70 -> 2166.10]  given something to do one day that one day brother you should do this you have
+[2166.10 -> 2171.10]  one day to practice this surah and you should actually then read it to me but
+[2171.10 -> 2184.42]  here you are giving ten days so first ten days Rahma what is Rahma? Rahma means
+[2184.42 -> 2194.18]  that you care for someone without them asking you without any expectation of
+[2194.18 -> 2201.18]  of any thankfulness, of any reward whatsoever, that's rahmah.
+[2201.18 -> 2206.82]  It's like coming from the word rahm, the womb of the mother,
+[2206.82 -> 2211.62]  that which looks after the baby without baby even knowing.
+[2214.50 -> 2220.82]  So that is something which Allah subhanahu wa ta'ala wants us
+[2220.82 -> 2229.10]  to have, that you want me to shower mercy and rahma upon you, care for you, already
+[2229.10 -> 2238.50]  Allah is caring for us, but now if you want me to have mercy upon you, ten days are given
+[2238.50 -> 2247.86]  or thirty days are given, show that mercy to others, reflect that mercy to others and
+[2247.86 -> 2256.42]  mercy will descend upon you from the heavens but when we say oh that person is not good with us
+[2256.42 -> 2265.62]  that person have not done any good to us he speaks he is jealous he this relative is not good etc etc
+[2265.62 -> 2269.30]  so allah subhanahu wa ta'ala answered this question he said in the quran
+[2269.30 -> 2292.06]  and be good to people, why they are not good to me, Allah said, am I not good to you?
+[2292.06 -> 2300.06]  My servant, forget about people, I am the giver, the taker, everything.
+[2300.06 -> 2309.90]  Look at me, look at me, am I not good with, I created you, sustaining you, giving you
+[2309.90 -> 2315.46]  the golden opportunity to be forever with me in the heavenly kingdom with the prophets
+[2315.46 -> 2318.46]  and the siddiqun, shuhada and salihin.
+[2318.46 -> 2320.46]  Am I not good with you?
+[2320.46 -> 2328.86]  Yes, Ya Rabbal Alameen, you are, so Allah says, wa aqsin them, be good to others because
+[2328.86 -> 2333.50]  I am good to you, kama aqsin allahu ilayh.
+[2333.50 -> 2339.98]  It's not being said, wa aqsin kama aqsin an-nas ilayh, that be good to people because they
+[2339.98 -> 2341.26]  are good to you.
+[2341.26 -> 2346.46]  This is the theory, this is the philosophy we are working on, whoever you say to brother
+[2346.46 -> 2353.78]  have mercy have compassion join ties etc etc the answer you get normally oh they
+[2353.78 -> 2359.10]  don't like us they hate us they speak bad about us I can't get on with them
+[2359.10 -> 2364.10]  they do this that's what the story is which we hear we hear the stories of the
+[2364.10 -> 2372.06]  creation Allah says that reflect on the story the love story between me and you
+[2372.06 -> 2379.78]  how you were just nothing, were a dust, were a sperm, magic fluid, what I have
+[2379.78 -> 2388.74]  done to you and what I have and to give you. There's a hadith, Imam Hakim, Imam
+[2388.74 -> 2395.86]  Hakim is a great muhaddis and he has written a book which has Sahih hadiths
+[2395.86 -> 2404.38]  in them, in that he says that once Rasulullah sallallahu alaihi wasallam said that there
+[2404.38 -> 2414.10]  are people, since Allah has created them and have not looked upon them with mercy, he is
+[2414.10 -> 2424.58]  not pleased with them, is not, Allah is not pleased with them and have not looked upon
+[2424.58 -> 2434.96]  them with mercy. But Allah increases their risk and give baraka in their life
+[2434.96 -> 2443.78]  and risk. Now the Sahaba-e-Karam were startled as well, surprised as well,
+[2443.78 -> 2450.42]  curious as well. How can that be? That Rasulullah alayhi salatu was-salam is
+[2450.42 -> 2457.74]  mentioning that there are certain people that Allah is not pleased with them, but
+[2457.74 -> 2466.10]  he keeps on increasing their life and their risk, gives baraka in their life.
+[2466.10 -> 2473.92]  They said, Ya Rasulullah, sallallahu alayhi wa sallam, how is that possible, for what
+[2473.92 -> 2478.32]  reason then when Allah is not pleased with them, he should be having
+[2478.32 -> 2488.72]  less of everything. The Prophet, peace be upon him, said just because of one virtue, this person,
+[2488.72 -> 2496.44]  this person, particular person is good with his relatives, his behavior, his silat-ur-rahams,
+[2496.44 -> 2502.68]  he helps and he is good with the relatives. Otherwise, he might not have been praying,
+[2502.68 -> 2507.00]  not might, as the hadith mentioned that Allah is not pleased with the person,
+[2507.00 -> 2515.00]  But this one virtue is such virtue that even though you are not pious, you are not very good,
+[2515.00 -> 2522.00]  but Allah subhanahu wa ta'ala gives you baraka and rizq.
+[2522.00 -> 2530.00]  So this is such a virtue because Allah had promised this relationship, this rahm,
+[2530.00 -> 2532.00]  That I will
+[2532.52 -> 2539.06]  Join I will actually that person wherever will join ties. I will have mercy upon the person
+[2539.88 -> 2541.88]  so
+[2542.04 -> 2547.60]  Have you carried on this lesson and you are supposed to really carry on this lesson and take
+[2548.44 -> 2551.28]  This virtue to the grave. It's no good
+[2551.84 -> 2557.44]  Carrying up until Ramadan or actually five year ten year because Allah said in the Quran
+[2557.44 -> 2564.32]  and Imam Hassan al-Basri says that don't be fooled by good deeds. Don't be fooled
+[2564.32 -> 2572.40]  by good deeds because Allah said man jaa abil hasanati falahu ashram salihah
+[2572.40 -> 2579.88]  Allah said whoever will come with one I will give him ten. Where will he come? On
+[2579.88 -> 2587.92]  on the day of judgment so that means that you have to safeguard and preserve
+[2587.92 -> 2592.84]  your good deed and make sure you die with Iman and you have at that time and
+[2592.84 -> 2598.20]  in the grave and on the day of judgment after all transactions once you reach
+[2598.20 -> 2605.60]  finally Allah whatever you have he will reward you but if it is lost here and on
+[2605.60 -> 2609.60]  and in the grave, and in the hisaab and kitab, then actually.
+[2609.60 -> 2614.60]  So, this is something which you can consider that I should be taking.
+[2614.60 -> 2617.60]  If I do not have, I should cultivate now,
+[2617.60 -> 2622.60]  that doing good with no expectation of reward,
+[2622.60 -> 2628.60]  thankfulness, la nuridu minkum jazaaw wa la shukura.
+[2628.60 -> 2631.60]  Why then do good then if I can't actually?
+[2631.60 -> 2634.60]  I don't want, I can't, I want thankfulness.
+[2634.60 -> 2637.40]  I want appreciation, then how will I do?
+[2637.40 -> 2639.40]  Allah says, I will give you.
+[2639.40 -> 2641.40]  I will appreciate you.
+[2641.40 -> 2643.40]  Innallaha shakoor
+[2643.40 -> 2645.40]  Innallaha shakir
+[2645.40 -> 2650.20]  There's no one who can appreciate your good deeds or anything
+[2650.20 -> 2652.20]  more than Allah says than me.
+[2652.20 -> 2655.20]  I am the shakoor, the infinitely appreciated.
+[2655.20 -> 2657.20]  Why you are begging with a bowl?
+[2657.20 -> 2660.40]  Can you thank you? I give in masjid ten pounds.
+[2660.40 -> 2662.00]  Can you thank you?
+[2662.00 -> 2667.88]  Can you give me some thanks and a few words? I have done this by a begging bowl
+[2667.88 -> 2674.08]  You are actually just going around the creation to the relatives sending a Ramadan gift than waiting
+[2674.12 -> 2676.48]  When it is a text coming for thankfulness
+[2677.48 -> 2684.28]  You know or that you know that person I've done so good. I've done it for Allah, but he should also at least actually
+[2685.04 -> 2687.16]  Just send a text. Just say thank you
+[2688.96 -> 2691.88]  This is a disease in you not in the other person
+[2692.00 -> 2699.00]  Because the person is a receiver, yes, that's up to the matter, it's up to him, but actually you.
+[2699.00 -> 2706.00]  So this is the issue. So Allah is not saying that don't want appreciation, don't want recognition.
+[2706.00 -> 2713.00]  He's just saying you are asking fuqara, beggars like you, to appreciate you.
+[2713.00 -> 2718.00]  Why you don't ask me? I am shakoor, I am the giver, tell it to me.
+[2718.00 -> 2723.00]  So this is one thing. I think the time has come, has it?
+[2723.00 -> 2728.00]  Yes, okay. That's what I was thinking when you were introducing me.
+[2728.00 -> 2734.00]  They give me 20 minutes and then they start introducing. I thought 10 minutes they will take introduction.
+[2734.00 -> 2738.00]  And when the real thing comes, there's no time for it.
+[2738.00 -> 2740.00]  Sometimes this happens anyway.
+[2740.00 -> 2741.00]  JazakAllah.
+[2741.00 -> 2742.00]  Subhanatullahu wa bihamdihi.
+[2742.00 -> 2744.00]  Nashadu wa la ilaha illa anta.
+[2744.00 -> 2746.00]  Nasta'u filuqu wa ma natubu ilayhi.
+[2746.00 -> 2747.00]  MashaAllah.
+[2747.00 -> 2753.00]  I ask that you excuse us for a while.
+[2753.00 -> 2755.00]  Brother I want to say I know this is not enough.
+[2755.00 -> 2759.00]  InshaAllah you have three days for this blessed company.
+[2759.00 -> 2761.00]  So you can always get attention.
+[2761.00 -> 2766.00]  Allahumma akbar. Allahumma akbar.
+[2766.00 -> 2777.00]  Allah is the greatest. Allah is the greatest. Allah is the greatest.
+[2777.00 -> 2782.00]  I bear witness that there is none worthy of worship except Allah.
+[2782.00 -> 2790.00]  I bear witness that there is none worthy of worship except Allah.
+[2790.00 -> 2795.00]  I bear witness that Muhammad is the Messenger of Allah.
+[2796.00 -> 2806.00]  I bear witness that Muhammad is the Messenger of Allah
+[2806.00 -> 2810.00]  Come to prayer
+[2810.00 -> 2819.00]  Come to prayer
+[2819.00 -> 2825.00]  Come to success
+[2825.00 -> 2835.00]  Come to success.
+[2835.00 -> 2842.00]  Allah is the Greatest, Allah is the Greatest.
+[2842.00 -> 2851.00]  There is no god but Allah.
+[2855.00 -> 2869.12]  But there is a busy day, can I kindly ask you please fill the cups, support our management
+[2869.12 -> 2870.12]  and volunteers.
+[2870.12 -> 2871.12]  Fill the cups.
+[2871.12 -> 2873.12]  In the name of Allah, the Gracious, the Merciful.
+[3141.12 -> 3143.12]  Peace be upon you.
+[3171.12 -> 3188.44]  As-salamu alaykum wa rahmatullahi wa barakatuhu Brothers, give generously to the brothers who
+[3188.44 -> 3193.04]  are coming around to do the collection, grant us one of the local blessings into your lives
+[3193.04 -> 3195.72]  and into the lives of all of your loved ones.
+[3195.72 -> 3199.52]  This is the last Jummah of Ramzan Shiekh, Khadeed Deep,
+[3199.52 -> 3203.12]  while I go through this very long list of Du'as.
+[3203.12 -> 3205.44]  Please do Dua'a al-Makfara for Taiba al-Siddiq,
+[3205.44 -> 3208.12]  Qamar Ahmad al-Siddiq, and Zafar al-Qar'a.
+[3208.12 -> 3210.28]  For Haji Muhammad al-Siddiq, Haji Naim al-Ali,
+[3210.28 -> 3214.36]  Haji Shahr al-Zumar, Nadeem Ahmed, Haji Adal al-Khan,
+[3214.36 -> 3218.76]  Sameer Ashraf al-Jazbati, who's the uncle of Riaz Baki.
+[3218.76 -> 3222.80]  For our auntie, Firmita Sharwani, Muhammad Aslam,
+[3222.80 -> 3225.68]  Raja Muhammad Khaliq, Bahrain Akhtar,
+[3225.68 -> 3229.04]  Haji Muhammad Khaliq, Haji Muhammad Mishraq,
+[3229.04 -> 3231.08]  Hami Muhammad Rizraq,
+[3231.08 -> 3234.04]  Qasir Ahmad, the sister of Fazal Bay,
+[3234.04 -> 3237.52]  Sarah Bay who passed away a couple of days ago,
+[3237.52 -> 3240.52]  Haji Sufi Sadiq, Haji Muhammad Ibrahim,
+[3240.52 -> 3243.88]  Haji Muqtar, and Fatima Bint Ahm.
+[3243.88 -> 3246.16]  Do I say five please for our sister in the community
+[3246.16 -> 3248.80]  who is very ill, and I just want to tell her to give her
+[3248.80 -> 3250.04]  full shifa.
+[3250.04 -> 3256.04]  Haji Walisheh, who's not here today, who's a little bit ill, may Allah give him full healing.
+[3256.04 -> 3265.04]  Haji Bashir Khan, Haji Nazir Shah and his wife, Haji Muhammad Ilyas, Haji Muhammad Rafique,
+[3265.04 -> 3270.04]  Glam Sovereign, who's having all the cancer at this moment, may Allah give him full shifa,
+[3270.04 -> 3275.04]  Muhammad Saleem, Hussein and his family and especially their young sister Aisha,
+[3275.04 -> 3278.68]  affecting some results for our complication
+[3278.68 -> 3281.08]  that has gone on to give a full healing
+[3281.08 -> 3285.04]  for sister Shamin Akhter and brother Farid's children.
+[3285.04 -> 3287.84]  We ask Allah to protect the innocents around the world,
+[3287.84 -> 3290.24]  especially at this time, the people of Iran,
+[3290.24 -> 3293.04]  the Middle East, Palestine, and Yemen.
+[3293.04 -> 3296.56]  We ask Allah to protect them and ease their suffering.
+[3296.56 -> 3298.96]  O Allah, as you have allowed us to experience
+[3298.96 -> 3302.32]  the month of Ramadan, allow us to be forgiven.
+[3302.32 -> 3305.76]  Forgive us, be with us, do not punish us.
+[3305.76 -> 3308.88]  Forgive us, forgive our parents and our children
+[3308.88 -> 3311.52]  and all of the believing men and women.
+[3311.52 -> 3313.64]  O Allah, make us people of paradise
+[3313.64 -> 3315.96]  and protect us from the fire.
+[3315.96 -> 3320.54]  Protect us, our families and our ummah from all evil
+[3320.54 -> 3322.84]  and heal the hearts of the believing people.
+[3322.84 -> 3324.40]  Allah, my Amin.
+[3324.40 -> 3327.72]  Finally, brothers, at £7 a person,
+[3327.72 -> 3330.16]  please try and pay that as quickly as possible
+[3330.16 -> 3334.40]  as we do like to distribute it before Eid.
+[3334.40 -> 3337.56]  Please also remember Hufaz and Ali Nans
+[3337.56 -> 3340.76]  who have led us through this whole month.
+[3340.76 -> 3343.36]  And if you wish to contribute towards a gift to them,
+[3343.36 -> 3345.20]  please do so in the office.
+[3345.20 -> 3347.56]  And finally, if you haven't yet distributed
+[3347.56 -> 3350.16]  your sadaka, your lidda, and your zakat,
+[3350.16 -> 3353.80]  Al-Madinah will be doing a project in Uganda in September
+[3353.80 -> 3357.32]  where we're trying to raise 130,000 pounds
+[3357.32 -> 3360.84]  to build three new masjids, two new schools,
+[3360.84 -> 3365.84]  eight water projects, and some medical equipment for babies
+[3366.24 -> 3368.04]  to help them with their breathing when they're born.
+[3368.04 -> 3370.28]  So you can contribute towards that.
+[3370.28 -> 3371.36]  Jadakumullah here.
+[3375.36 -> 3377.40]  Bismillah, Salat wa Salam ala Rasulillah
+[3377.40 -> 3380.36]  wa ala alihi wa sahbihi wa jama'in.
+[3380.36 -> 3382.24]  The Prophet, Sallallahu alaihi wa sallam,
+[3382.24 -> 3385.60]  said in two hadiths that there are a people
+[3385.60 -> 3393.56]  pray all night and all they achieve is tiredness and fatigue and there are
+[3393.56 -> 3401.20]  people who fast all day and all they achieve is hunger and thirst. As you
+[3401.20 -> 3407.72]  heard from the words of Sheikh Ahmed Abbas, Ramadan was here to change us but
+[3407.72 -> 3413.20]  maybe our relationship with people hasn't changed, maybe our relationship in
+[3413.20 -> 3418.40]  our family numbers has not changed maybe we are still carrying sins even to the
+[3418.40 -> 3423.20]  end of Ramadan now if you are someone like me who feels that they haven't
+[3423.20 -> 3429.24]  achieved they haven't used Ramadan in the way that they should then I'm here
+[3429.24 -> 3433.60]  to tell you that you should not be hopeless you see Allah subhanahu wa ta'ala
+[3433.60 -> 3439.86]  has hidden a secret in the end of things in the end of the night we have
+[3439.86 -> 3445.92]  tahajjud. In the end of your meal you have the barakah and in the end of Ramadan we have
+[3445.92 -> 3452.90]  Laylatul Qadr. So this moment can be that moment for change and so this
+[3452.90 -> 3459.22]  masjid in collaboration with Sacred Compass we are hosting a three-day
+[3459.22 -> 3464.90]  retreat starting from tomorrow at 12 and ending Monday at Maghreb and this is
+[3464.90 -> 3472.90]  open to the entire community. In this retreat, we will be teaching you how you can practically take
+[3473.54 -> 3479.38]  the Barakah of Ramadan so that Ramadan doesn't end for you, that actually Ramadan starts what you
+[3479.38 -> 3484.90]  should be doing in the remaining 11 months. So when next Ramadan comes, you are building your
+[3484.90 -> 3489.70]  connection with Allah, you are building your relationships with people, and ultimately you
+[3489.70 -> 3494.26]  are improving yourself. So practically, we will be teaching this over the next few days. It's open
+[3494.26 -> 3498.98]  It's open to brothers, it's open to sisters, and we'll be joined by Shaykh Salman, Hassan,
+[3498.98 -> 3503.46]  Shaykh Muhammad Mahmood, myself and others, and the teacher of teachers which is Shaykh
+[3503.46 -> 3504.46]  Ahmed Abbas.
+[3504.46 -> 3508.30]  So for those who want to also benefit from their company, we do open our doors to all
+[3508.30 -> 3511.94]  of the community to attend for these next three days, and it's open to brothers and
+[3511.94 -> 3512.94]  sisters.
+[3512.94 -> 3516.42]  For those who want more information, inshallah you can go to the sacred compass door outside
+[3516.42 -> 3520.02]  the mosque where you'll be able to get leaflets and registration details.
+[3520.02 -> 3521.98]  As-salamu alaykum wa rahmatullahi wa barakatuh.
+[3524.26 -> 3541.62]  Allah is the Greatest, Allah is the Greatest, Allah is the Greatest, Allah is the Greatest.
+[3541.70 -> 3552.26]  I bear witness that there is none worthy of worship except Allah.
+[3552.26 -> 3566.02]  I bear witness that Muhammad is the Messenger of Allah
+[3566.02 -> 3589.02]  Come to prayer, come to prayer, come to success, come to success.
+[3589.02 -> 3596.94]  Allah is the Greatest, Allah is the Greatest.
+[3597.02 -> 3604.78]  There is none worthy of worship except Allah.
+[3604.78 -> 3609.30]  In the name of Allah, the Gracious, the Merciful.
+[3620.06 -> 3623.74]  All praise is due to Allah.
+[3623.82 -> 3626.22]  All praise is due to Allah for the number of His creation,
+[3626.30 -> 3631.78]  the pleasure of His soul, the weight of His breath and the extent of His words.
+[3631.78 -> 3638.46]  and peace and blessings be upon our Master Muhammad and upon his family and companions,
+[3638.46 -> 3645.30]  the number of his creation, the contentment of his soul, the weight of his throne, and the extent of his words.
+[3645.30 -> 3650.42]  And we bear witness that there is no god but Allah, alone, without a partner.
+[3650.42 -> 3655.94]  There is no partner for Him, nor a guide for Him, nor a guide for Him,
+[3655.94 -> 3659.94]  nor an example for Him, nor an example for Him.
+[3659.94 -> 3665.10]  وَنَشْهَدْ وَلنَّ سَيِّدِنَا وَنَبِيَّنَ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+[3665.98 -> 3670.86]  صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمٍ
+[3671.74 -> 3675.94]  أما بعد، فأعوذ بالله من الشيطان الرجيم
+[3676.34 -> 3678.34]  بسم الله الرحمن الرحيم
+[3679.74 -> 3685.34]  يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلًا سَبِيدًا
+[3685.34 -> 3692.34]  He will make your deeds right and fulfill your sins.
+[3692.34 -> 3698.34]  And whoever obeys Allah and His Messenger has won a great victory.
+[3698.34 -> 3702.34]  And He said, glory be to Him,
+[3702.34 -> 3707.34]  Those who deny Our signs and are arrogant about them,
+[3707.34 -> 3713.34]  The gates of Heaven will not be opened and they will not enter Paradise
+[3713.34 -> 3717.34]  until the camel reaches the top of the mountain.
+[3717.34 -> 3719.34]  And He said,
+[3719.34 -> 3725.34]  O you who believe, ask for help with patience and prayer.
+[3725.34 -> 3728.34]  Indeed, Allah is with the patient.
+[3728.34 -> 3731.34]  And He said,
+[3731.34 -> 3736.34]  And tell My servants to say what is best.
+[3736.34 -> 3738.34]  And He said,
+[3738.34 -> 3745.42]  Ya ayyuhalladheena amanu la tulhikum amwalukum wala awladukum an dhikrillah
+[3745.42 -> 3750.66]  waman yafa'al dhalika fa'ula'ikahum ul khasiroon
+[3750.66 -> 3754.38]  wa qala jalla wa ala
+[3754.38 -> 3759.58]  Ya ayyuhalladheena amanu taqullah haqqa tuqatih
+[3759.58 -> 3763.46]  wa la tamootunna illa wa antum muslimoon
+[3763.46 -> 3769.18]  Sadaqallahul-Azim, wa nafa'na wa iya'kum bil-ayati wa dhikri l-hakeem.
+[3769.18 -> 3773.34]  Inna hu ta'ala jabbaadun qadeemun kareem.
+[3773.34 -> 3777.34]  Al-Malikun bar'un ra'oofun raheem.
+[3793.46 -> 3806.46]  Alhamdulillah, wa kafa wa salamunna ala ibadihi alladhi nastaba, khususana ala sayyidil rusub
+[3806.46 -> 3815.70]  wa khatamil anbiya, wa ala alihi al-adqiya, wa ala ashabihi al-asfiya, wa nashhadu an la
+[3815.70 -> 3823.02]  ilaha illa allahu waliyu s-saliheen, wa waliyu al-muttaqeen, wa waliyu al-muhsinine, wa
+[3823.02 -> 3838.02]  And we bear witness that our master, our prophet, our intercessor, Muhammad, his servant and messenger, his prophet, his khalil and his beloved, peace be upon him and upon his family and companions and peace be upon him.
+[3838.02 -> 3860.02]  Inna aradna al-amanata ala al-samawati wal-ardi wal-jibali fa-abayna an-yahmelnaha, wa-shfaqn minha wa-hamalaha al-insaan, inna hu kana zaluman jahula.
+[3860.02 -> 3863.02]  And He said, Glory be to Him,
+[3863.02 -> 3870.02]  Say, O My servants who have transgressed against themselves, do not give in to the mercy of Allah.
+[3870.02 -> 3876.02]  Indeed, Allah forgives all sins. Indeed, He is the Forgiving, the Merciful.
+[3876.02 -> 3885.02]  And turn to your Lord and submit to Him before the punishment comes to you, and then you will not be helped.
+[3885.02 -> 3895.02]  wa attabi'u ma hasarun zilalaykum mirabbikum min qabl an ya'ti agumul azaabu bautatan wa antum la tash'aroon
+[3895.02 -> 3904.02]  an taqool anafsun ya hasratu ala ma farratu fi jambillah wa in kuntu lamina as-sakhirin
+[3904.02 -> 3910.02]  au taqool law anna allaha hadani lakuntu min al-muttaqeen
+[3910.02 -> 3919.02]  Or you say, when you see the punishment, if only I had a chance, I would be of the good-doers.
+[3919.02 -> 3924.02]  Yes, my signs have come to you, but you denied them and were arrogant.
+[3924.02 -> 3927.02]  And you were of the disbelievers.
+[3927.02 -> 3930.02]  And he said, Glory be to my beloved.
+[3930.02 -> 3934.02]  Indeed, Allah and His angels send blessings upon the Prophet.
+[3934.02 -> 3939.02]  O you who believe, send blessings upon him and greet him with peace.
+[3939.02 -> 3944.92]  Allahumma salli wa sallim wa barika ala sayyidina Muhammadan abdika wa rasooli
+[3944.92 -> 3949.52]  wa salli ala jameel anbiya ala mursalin wa al malayat al ajma'in
+[3949.52 -> 3952.32]  wa al khulafa al rashideen al mahdideen
+[3952.32 -> 3958.32]  khasusana ala ameer al mu'mineen Abi Bakr al Siddiq radiya allahu ta'ala anhu
+[3958.32 -> 3964.32]  wa ala ameer al mu'mineen sayyidina Umar ibn al-Khattab radiya allahu ta'ala anhu
+[3964.32 -> 3968.32]  wa ala ameer al mu'mineen Dhul Nurayn
+[3968.32 -> 3976.08]  Sayyidna Uthman Ibn Affan, radiAllahu ta'ala, wa'ala mazharil aja'ib wal ghar'aib,
+[3976.08 -> 3984.64]  Baab Madinatul Ilm, Asadullahil Ghalib, Ameel al-Mu'mineen, Sayyidna Ali Ibn Abi Talib,
+[3984.64 -> 3991.20]  tarram Allah wajhahu l-kareem, wa'ala ibnaihima Sayyidna Mam Hassan wal-Husayn,
+[3991.20 -> 3997.52]  radiAllahu ta'ala, wa'ala ummihima Sayyidatun Nisa'i Ahlul Jannah,
+[3997.52 -> 4003.52]  Sayyidatuna Fatimah al-Zahra, radiallahu ta'ala, anha wa salamu ala alayha
+[4003.52 -> 4009.52]  wa ala baqiyah min ahlul bayt wa as-sahaba wa tabi'in wa al-khiyar ila yawm al-deen
+[4009.52 -> 4017.52]  ya hayu ya qayyum farrij ani al-muslimin fi al-mashariq al-ardi wa maghari biha
+[4017.52 -> 4023.52]  khasusan fi ardi al-muqaddasa wa fi Filistin, wa fi Kashmir, wa fi al-iran,
+[4023.52 -> 4026.52]  wa fi Sudan, wa fi Yemen, wa fi kulli makan
+[4026.52 -> 4032.42]  Ya hayu, ya qiyyum, furrij ala al-muslimin fi al-mashariq al-arri wal-mugari biha.
+[4032.42 -> 4035.42]  Allahumma izz al-Islam wa al-muslimin.
+[4035.42 -> 4039.42]  Ya musarrif al-quloob, sarrif qaloobana ala tu'atik.
+[4039.42 -> 4043.42]  Ya muqallib al-quloob, thabbit qaloobana ala deenik.
+[4043.42 -> 4048.42]  Allahumma inna nas'aluka min kulli khayrin ma ahata bihi ilmuk.
+[4048.42 -> 4053.42]  Allahumma inna na'auzubika min kulli sharrin ma ahata bihi ilmuk.
+[4053.42 -> 4057.92]  Allahumma inna nas'aluka al-'aafiyataka fi jami'a amulina
+[4057.92 -> 4062.92]  Allahumma inna na'awudhu bika min khizya ad-duniya wa azaab al-akhirah
+[4062.92 -> 4065.92]  Allahumma inna nas'aluka husna al-khatima
+[4065.92 -> 4068.92]  wa na'awudhu bika min suwi al-khatima
+[4068.92 -> 4071.92]  Allahumma ansurna wa ufil lana
+[4071.92 -> 4074.42]  wa li walideyna, wa li mashaikhina
+[4074.42 -> 4078.92]  wa li jami'a ummati sayyidina Muhammad sallallahu alayhi wa sallam
+[4078.92 -> 4082.42]  Ya Rabb al-alamin, ya arham al-rahimin
+[4082.42 -> 4084.42]  In the name of Allah, the Most Gracious, the Most Merciful.
+[4084.42 -> 4086.42]  In the name of Allah, the Most Merciful.
+[4112.42 -> 4114.42]  A'idhu'l-Bashara'l-Bismillah
+[4142.42 -> 4146.58]  In the name of Allah, the Most Gracious, the Ever Merciful.
+[4146.66 -> 4152.42]  And the prayer has been established.
+[4152.50 -> 4156.66]  Allah is the Greatest, Allah is the Greatest.
+[4156.74 -> 4161.70]  There is none worthy of worship except Allah.
+[4165.78 -> 4167.78]  There is no god but Allah.
+[4172.42 -> 4176.42]  Allah is the Greatest.
+[4176.42 -> 4195.42]  In the name of Allah, the Most Gracious, the Ever Merciful.
+[4195.42 -> 4212.42]  Alhamdulillah, O Lord of the worlds, the Gracious, the Merciful,
+[4212.42 -> 4218.82]  Maliki yawm al-deen
+[4220.62 -> 4229.62]  Iyaka na'budu wa iyaka nast'een
+[4231.62 -> 4239.22]  Ihdina sirata al-mustaqeem
+[4239.22 -> 4246.22]  In the name of Allah, the Gracious, the Merciful.
+[4269.22 -> 4284.22]  Alhamdulillahi alladhi yansala ala abdihi al-kitab wa lam yaj'al lahu a'i wajam
+[4284.22 -> 4297.22]  Qayyiman li yunzir ba'san shadeedan min ladun huwa yubashshir al-mu'mineen
+[4297.22 -> 4313.34]  And give good tidings to the believers, those who do good deeds, that they will have a good
+[4313.34 -> 4319.66]  reward, that they will remain therein forever.
+[4319.66 -> 4328.66]  wa yunzir alladheena qaalut takhad Allah waladahum
+[4328.66 -> 4339.66]  ma lahum bihi min a'ilmin wa la li aba'ihim
+[4339.66 -> 4352.66]  keburat kalimatan takhruj min afwahihim min yaqulun illa keziban
+[4352.66 -> 4365.66]  fal'al laka bakhi'un nafsaka ala asarihim in lam yu'minu
+[4365.66 -> 4374.66]  If they do not believe in this Hadith, I am sorry.
+[4377.66 -> 4380.66]  Allah is the Greatest.
+[4395.66 -> 4408.46]  Allah has heard all praise be due to Him.
+[4408.54 -> 4412.70]  Allah is the Greatest.
+[4425.66 -> 4443.66]  Allah is the Greatest, Allah is the Greatest.
+[4455.66 -> 4482.26]  In the name of Allah, the Most Gracious, the Ever Merciful.
+[4482.26 -> 4498.98]  All praise is due to Allah, Lord of all the worlds, the Gracious, the Merciful.
+[4498.98 -> 4504.74]  Maliki yawm al-deen
+[4506.34 -> 4513.70]  Iyaaka na'bud wa iyaaka na'sta'een
+[4515.22 -> 4521.70]  Ihdina al-siraat al-mustaqeem
+[4521.70 -> 4529.70]  the path of those on whom Thou hast bestowed Thy blessings,
+[4529.70 -> 4549.70]  those who are not angry with them, and those who are astray.
+[4549.70 -> 4571.70]  We have not made for him eyes, and tongue, and two lips, and We have guided them in two ways.
+[4571.70 -> 4585.70]  Falaqtuhamal ʿaqaban wa mā adrākamal ʿaqaban
+[4585.70 -> 4603.70]  Fakkur qabat or ita'am fi yawmin dheem asghaban yateeman dha maqraban
+[4603.70 -> 4621.24]  or miskeenan daam at-tara ban, thumma kaan min alladheena aaman wa tawasahu bissabri
+[4621.24 -> 4626.92]  wa tawasahu bil marhaman.
+[4626.92 -> 4639.08]  Those are the companions of the Righteous One.
+[4639.16 -> 4642.84]  Allah is the Greatest.
+[4656.92 -> 4664.28]  In the name of Allah, the Gracious, the Merciful.
+[4664.36 -> 4677.40]  May Allah hear from those who praise Him.
+[4677.40 -> 4682.40]  Allah Akbar.
+[4702.20 -> 4706.20]  Allah Akbar.
+[4737.40 -> 4740.40]  In the name of Allah, the most Gracious, the most Merciful.
+[4797.40 -> 4825.40]  Peace be upon you and the mercy of Allah, peace be upon you and the mercy of Allah.
+[4827.40 -> 4833.64]  Allah is the Greatest, ask forgiveness from Allah, ask forgiveness from Allah, ask forgiveness from Allah.
+[4833.72 -> 4837.72]  There is none worthy of worship except Allah.
+[4837.80 -> 4841.24]  He is the One and Only, and has no partner.
+[4841.32 -> 4844.80]  Allah is the Greatest, ask forgiveness from Allah, ask forgiveness from Allah.
+[4844.88 -> 4848.16]  And they benefit not from the hands of Allah.
+[4848.24 -> 4850.12]  Peace be upon you.
+[4850.20 -> 4852.28]  Peace be upon you.
+[4857.40 -> 4863.40]  Praise be to Allah, praise be to Allah, and peace and blessings be upon the Messenger of Allah and upon his family and companions.
+[4863.40 -> 4869.40]  O Allah, accept our prayers and supplicate us and our needs, O Merciful, Merciful.
+[4869.40 -> 4877.40]  O Allah, we ask You for the best of what Your Prophet and Beloved Muhammad, peace and blessings be upon him, asked of You.
+[4877.40 -> 4884.40]  And we seek refuge with You from the evil of what your Prophet Muhammad, peace and blessings be upon him, asked of you.
+[4884.40 -> 4889.60]  In the name of Allah, the Gracious, the Merciful.
+[4889.68 -> 4897.52]  O Allah, accept our prayers and prayers for all those who have been asked for prayers
+[4897.60 -> 4903.48]  and have been declared for them.
+[4903.56 -> 4906.32]  May You grant us beautiful worship, beautiful deeds, beautiful recitation,
+[4906.40 -> 4910.80]  beautiful humanity, beautiful morals and beautiful end.
+[4910.80 -> 4913.80]  all Muslims who are in dire straits all over the world,
+[4913.88 -> 4920.48]  please help them, especially those in Palestine, Iran, Yemen and Sudan who are oppressed.
+[4920.56 -> 4923.20]  O merciful, please help every oppressed person.
+[4923.28 -> 4927.52]  Help every oppressor to reach their kith and kin and guide them.
+[4927.60 -> 4929.80]  Help every disbeliever to receive the light of faith.
+[4929.88 -> 4934.20]  Help every sinner to repent and to accept the good deeds of others.
+[4934.28 -> 4937.64]  O merciful, please give us the love of the Holy Prophet,
+[4937.64 -> 4945.08]  and may Allah enable us to carry the message of faith all over the world.
+[4945.16 -> 4949.60]  May Allah enable us to fulfil the needs of everyone.
+[4949.68 -> 4953.20]  This is the last Friday of Ramadan, we have no knowledge of it.
+[4953.28 -> 4957.24]  Perhaps this will be our last Friday and we will not be able to sleep the rest of the day.
+[4957.32 -> 4961.16]  As the righteous people used to pray,
+[4961.16 -> 4965.72]  Allahumma la tajjal aakhirul ahlul hussainamir ya Allah
+[4965.80 -> 4968.72]  This is not our last Ramadan.
+[4968.80 -> 4972.72]  If this is our last Ramadan, then have mercy on us
+[4972.80 -> 4977.32]  because Ramadan is coming, You are the Gracious, You are with us.
+[4977.40 -> 4980.88]  O Gracious, have mercy on us.
+[4980.96 -> 4982.92]  And may Allah send peace and blessings upon the Holy Prophet,
+[4983.00 -> 4984.60]  his mother, his family and his companions.
+[4984.68 -> 4985.64]  And may He peace and mercy be upon them.
+[4985.72 -> 4986.28]  Ameen.
+[4986.36 -> 4988.72]  And may the Gracious, the Merciful be upon them.
+[4988.72 -> 4992.68]  Allah, Allah, Allah, Allah, Allah.

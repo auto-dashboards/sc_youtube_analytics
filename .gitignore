@@ -4,3 +4,5 @@ test_scripts/
 credentials.json
 backup.dump
 token.json
+load_env.ps1
+logs/

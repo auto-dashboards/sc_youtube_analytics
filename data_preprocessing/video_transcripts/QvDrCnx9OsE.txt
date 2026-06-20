@@ -1,0 +1,975 @@
+[0.00 -> 2.06]  you
+[30.00 -> 32.06]  you
+[60.00 -> 62.06]  you
+[90.00 -> 92.06]  you
+[120.00 -> 147.00]  The bathrooms are downstairs for both brothers and sisters, so if you need a bathroom break,
+[147.00 -> 152.12]  please make your way downstairs and you'll find the amenities there.
+[152.12 -> 156.20]  If you have registered you will be on the registration group
+[156.20 -> 159.32]  and receive announcements. If you haven't
+[159.32 -> 164.04]  then Radha Adnan who should be hovering around somewhere
+[164.04 -> 167.80]  can register you and then you can have access to the announcements.
+[167.80 -> 171.88]  That will be very very helpful because then you'll see if there are any
+[171.88 -> 175.72]  changes to the schedule or any specific announcements that
+[175.72 -> 185.16]  you need to be aware of during the course of the three days. Now, if you have any needs, any issues,
+[185.16 -> 190.52]  please feel free to reach out to the members of the team. They're here. We're here at the front.
+[190.52 -> 196.76]  We're here today for your Hidna. We're here to serve you. So please don't hesitate to ask. Please,
+[197.32 -> 202.04]  if you're having an issue or a problem, do not suffer in silence. Please, please, please reach
+[202.04 -> 206.56]  and ask we are here to help you. Our objective in these three days is to make
+[206.56 -> 210.52]  you as comfortable as possible so that your learning environment is as
+[210.52 -> 214.92]  conducive as possible inshallah. Now without further ado I'm going to
+[214.92 -> 224.80]  introduce Shaykh Haroon who will take the first session and introduce the
+[224.80 -> 235.80]  on our program and introduce the first takeaway, the first learning for the program, insha'Allah.
+[235.80 -> 242.80]  Now, Sheikh Haroon is a multidisciplinary mentor whose work bridges the gap between traditional
+[242.80 -> 247.72]  Islamic scholarship and modern analytical thinking. He holds a degree in theoretical
+[247.72 -> 254.36]  physics from King's College London and has a background that informs his rigorous evidence-based
+[254.36 -> 259.08]  approach to personal development and self-mastery.
+[259.08 -> 262.80]  He has over a decade of experience in global tech industry.
+[262.80 -> 269.36]  Shaharoon has held senior leadership roles at Google, Meta, and TikTok.
+[269.36 -> 274.92]  Sometimes we are surprised by this, yes, the Shuyukh also work at Google, Meta, and TikTok.
+[274.92 -> 278.94]  He has delivered high-performance training programs at institutions such as the London
+[278.94 -> 282.26]  School of Economics and New York University.
+[282.26 -> 284.64]  His curriculum focuses on prophetic character,
+[284.64 -> 288.64]  akhlaq, discipline, and ethical leadership.
+[288.64 -> 291.72]  Beyond his professional work, he serves on the advisory board
+[291.72 -> 295.40]  of the Barakah Trust and was an advisor to the Queen's Young
+[295.40 -> 297.08]  Leaders program.
+[297.08 -> 298.08]  Sheikh Harun.
+[298.08 -> 324.92]  Before starting anything, we are taught to
+[324.92 -> 332.48]  to start in the name of Allah, subhanahu wa ta'ala.
+[332.48 -> 338.56]  And very interestingly, when we open the Mus'haf or the Quran,
+[338.56 -> 342.40]  the adab is not to begin recitation.
+[342.40 -> 349.24]  But the adab is that we first seek refuge from Shaitan.
+[349.24 -> 353.00]  Even before mentioning the name of Allah,
+[353.00 -> 358.28]  We perform isti'ada, seeking refuge in Allah.
+[358.28 -> 361.56]  A'udhu billahi minash shaytanir rajim.
+[361.56 -> 366.00]  Then we say, bismillahir rahmanir rahim.
+[366.00 -> 369.64]  So from this, our mashayikh, our teachers,
+[369.64 -> 373.64]  they derive a method, an etiquette,
+[373.64 -> 376.04]  that when coming to sacred knowledge, when
+[376.04 -> 378.60]  coming to sacred guidance, when coming
+[378.60 -> 383.60]  to matters of connection with Allah and the deen of Allah,
+[383.92 -> 386.30]  one should seek refuge.
+[387.20 -> 388.12]  What does that mean?
+[388.12 -> 392.48]  It means in order to connect to something new,
+[392.48 -> 394.08]  you've gotta be able to leave
+[394.08 -> 396.02]  what you think you know at the door.
+[398.50 -> 400.48]  You see the shaitan,
+[400.48 -> 402.68]  he doesn't come to you and say, don't pray.
+[404.60 -> 407.82]  He might come to you and try to disable your prayer
+[407.82 -> 412.14]  so that the prayer bears no fruit,
+[412.14 -> 414.62]  and you will eventually leave the prayer.
+[414.62 -> 416.42]  So he won't come to you and say, don't pray.
+[416.42 -> 419.66]  He will make it as difficult as possible
+[419.66 -> 424.78]  so that you will not benefit in your prayer.
+[424.78 -> 428.22]  It's like imagine you get somebody food, someone's eating,
+[428.22 -> 431.74]  but there's no nutrition in the food.
+[431.74 -> 433.78]  He's convinced you that there's no nutrition in the food.
+[433.78 -> 434.34]  Why?
+[434.34 -> 436.10]  Because maybe we might have the understanding
+[436.10 -> 438.74]  that Salah or my deen, my relation with Allah,
+[438.74 -> 439.58]  it should be this way.
+[439.58 -> 443.14]  But what if our way is incorrect?
+[443.14 -> 446.46]  What if our way was born from ignorance?
+[446.46 -> 447.90]  What if our way was born from what
+[447.90 -> 450.10]  we were told from childhood?
+[450.10 -> 451.78]  So this is why our Masha'ikh say that when
+[451.78 -> 455.66]  we come to circles of knowledge, when we come to learn,
+[455.66 -> 460.86]  we can summarize the method, the tarteed, the etiquette
+[460.86 -> 464.06]  of sacred gatherings in three ways.
+[464.06 -> 472.86]  Firstly, we come and that we enter gatherings,
+[472.86 -> 478.10]  and we take whatever advice personally,
+[478.10 -> 481.36]  as though I'm speaking or the speaker is speaking
+[481.36 -> 483.82]  to every single one of you.
+[483.82 -> 487.86]  That's the first piece of advice.
+[487.86 -> 490.84]  Because what ends up happening is maybe the speaker might say
+[490.84 -> 493.58]  something, and you think, you know what?
+[493.58 -> 495.72]  My friend needs to hear this.
+[495.72 -> 496.92]  My mother needs to hear this.
+[496.92 -> 499.04]  My father needs to hear this.
+[499.04 -> 500.68]  Well, that's good for them.
+[500.68 -> 503.00]  But now, whatever guidance and knowledge
+[503.00 -> 507.12]  has missed you and gone elsewhere,
+[507.12 -> 511.80]  hasn't settled in you now, just because of that thought.
+[511.80 -> 515.48]  The second is that whatever knowledge you have acquired
+[515.48 -> 519.68]  over the years, when you come to sacred knowledge
+[519.68 -> 524.24]  in secret gatherings, that you should park that at the door.
+[524.24 -> 525.16]  What does that mean?
+[525.16 -> 526.86]  If you're going to learn something new,
+[526.86 -> 529.72]  don't mix it with what you think.
+[529.72 -> 531.80]  It's like someone gives you a recipe,
+[531.80 -> 533.60]  and instead of following the recipe,
+[533.60 -> 535.12]  and you're learning to cook for the first time,
+[535.12 -> 537.00]  let's say, or second time, or third time,
+[537.00 -> 538.60]  you end up mixing it with your own recipe,
+[538.60 -> 540.28]  and then the result is different.
+[540.28 -> 543.72]  And then you say, oh, I didn't achieve the result.
+[543.72 -> 547.48]  Let me look at the method that you used.
+[547.48 -> 550.96]  And if it's a mix, then the outcome will be a mix.
+[550.96 -> 552.40]  Now, we say this temporarily.
+[552.40 -> 554.12]  We don't mean permanently.
+[554.12 -> 556.52]  It just means when you learn something new, park it.
+[556.52 -> 557.76]  And this is a very simple analogy.
+[557.76 -> 561.80]  Once, a sheikh, he brought a student in his house.
+[561.80 -> 566.60]  And to demonstrate the point, he served him water.
+[566.60 -> 572.12]  But when he served him water, he carried on pouring the jug
+[572.12 -> 573.44]  of water in the glass.
+[573.44 -> 577.00]  And what happened, it overspilled.
+[577.00 -> 579.84]  And the student said, Sheikh, please stop.
+[579.84 -> 581.56]  He says, this is akin to those who
+[581.56 -> 584.76]  come to me with their brims full of knowledge
+[584.76 -> 589.80]  asking for guidance, that they come fully cupped.
+[589.80 -> 592.48]  So whatever I say is like this water that spills out.
+[592.48 -> 599.20]  It doesn't go anywhere until you come with khashian.
+[599.20 -> 601.84]  Allah, subhanahu wa ta'ala, mentions in the Quran
+[601.84 -> 604.48]  that this is actually a condition of the ulama.
+[604.48 -> 606.98]  The ulama are not those who say, I know.
+[606.98 -> 609.70]  They are those with khashi'ah.
+[609.70 -> 613.30]  They are those who are humbled.
+[613.30 -> 616.78]  In fact, the more they know, the less they know.
+[616.78 -> 619.18]  The more they know, the more they
+[619.18 -> 623.20]  realize how little they know in relation to Allah.
+[623.20 -> 625.30]  That's true knowledge.
+[625.30 -> 626.18]  Not that I know.
+[626.18 -> 630.30]  Once a student came, and it was another great scholar.
+[630.30 -> 632.78]  He came in the mosque, and he saw
+[632.78 -> 637.18]  Sayyidina Ahmad bin Hanbal perform Rafi-yadain.
+[637.18 -> 639.58]  He saw he was performing Rafi-yadain.
+[639.58 -> 641.70]  Or he was performing a practice.
+[641.70 -> 645.82]  And he asked him, where did you get the delil for this?
+[645.82 -> 648.90]  As a scholar, he said, oh, where did he get the delil for this?
+[648.90 -> 652.10]  Sayyidina Ahmad bin Hanbal said, how many hadiths are there?
+[652.10 -> 654.10]  He said, maybe there are one million.
+[654.10 -> 655.38]  He goes, how many have you memorized,
+[655.38 -> 656.22]  and how many do you know?
+[656.22 -> 657.50]  He goes, 100,000.
+[657.50 -> 659.10]  So Sayyidina Ahmad bin Hanbal said,
+[659.10 -> 662.62]  This practice is from the 900,000 you haven't read.
+[662.62 -> 665.14]  So when people that I don't know, I've never heard,
+[665.14 -> 667.42]  ask yourself, what have you heard?
+[667.42 -> 668.80]  How much knowledge have you studied?
+[668.80 -> 670.22]  How many books have you read?
+[670.22 -> 671.50]  How many shi'kh have you been with?
+[671.50 -> 672.66]  What have you covered?
+[672.66 -> 675.66]  There are many books of hadith outside of the sayi siddham.
+[675.66 -> 677.42]  We only think the six books of it.
+[677.42 -> 679.74]  There are many, many, many, many others.
+[679.74 -> 683.98]  We have Imam Ahmad bin Hanbal has huge volumes of hadith
+[683.98 -> 687.50]  in there that have been largely not even shared,
+[687.50 -> 689.62]  Largely, not even tall.
+[689.62 -> 691.26]  So knowledge is vast.
+[691.26 -> 694.70]  And this is why going to our teachers, who
+[694.70 -> 698.30]  have a connected chain to Rasulullah,
+[698.30 -> 702.46]  they are doing equivalent of taking raw material,
+[702.46 -> 706.30]  like metal and wood, and creating technology out of it.
+[706.30 -> 707.42]  They're doing the hard work.
+[707.42 -> 709.22]  When you pick up your phone, you don't
+[709.22 -> 710.70]  need to know how the phone works.
+[710.70 -> 713.78]  You don't even know how glass and silicon and plastic
+[713.78 -> 715.30]  and metal all come together.
+[715.30 -> 718.06]  You just use ChatGPD.
+[718.06 -> 722.26]  You just punch some text in and say, show me this hadith.
+[722.26 -> 724.42]  But imagine how much technology and intelligence
+[724.42 -> 728.10]  had to go through that before you could do that.
+[728.10 -> 733.62]  So the mashayikh, their role, our ulama, our people,
+[733.62 -> 736.74]  knowledge, their role is to take that raw material
+[736.74 -> 738.30]  and make it easy and practical for you,
+[738.30 -> 740.90]  just like someone who invents technology.
+[740.90 -> 743.54]  That's what they're doing, to make it easy for you,
+[743.54 -> 747.90]  so that we can use it in everyday life.
+[747.90 -> 758.78]  Now, Salat, as we've titled this three-day retreat, you see,
+[758.78 -> 760.58]  and I want people to be honest here.
+[760.58 -> 764.42]  So I'll start with my honesty.
+[764.42 -> 766.98]  And think about this.
+[766.98 -> 770.58]  Among the people that pray, among all of us who pray,
+[770.58 -> 772.20]  and especially in the month of Ramadan,
+[772.20 -> 776.12]  where there's long nights of tarawih and 20 rakat,
+[776.12 -> 782.44]  ask yourself, how many of us still find salah burdensome?
+[782.44 -> 784.88]  Be honest.
+[784.88 -> 787.44]  Put your hands up.
+[787.44 -> 789.60]  How many of us still find it burdensome?
+[789.60 -> 790.80]  OK, good.
+[790.80 -> 794.24]  So we're not alone, are we?
+[794.24 -> 803.68]  You see, Salah is a comprehensive training for your life.
+[803.68 -> 807.88]  Now, do you think it's an abnormality, something
+[807.88 -> 810.32]  that's not known, do you think that it doesn't have
+[810.32 -> 812.96]  a solution that it's burdensome?
+[812.96 -> 815.10]  Do you think that it being burdensome
+[815.10 -> 817.96]  is just a me problem?
+[817.96 -> 818.68]  No.
+[818.68 -> 822.66]  Because you see, every problem, every challenge
+[822.66 -> 825.26]  that a human being has gone through or will go through,
+[825.26 -> 827.26]  Rasulullah Sallallahu Alaihi Wasallam
+[827.26 -> 829.46]  and Allah Subhanahu Wa Ta'ala has addressed.
+[831.02 -> 832.66]  Now there is a beautiful verse in Quran
+[832.66 -> 834.06]  that actually addresses this.
+[835.02 -> 839.06]  That actually tells you, you will find Salah burdensome.
+[840.46 -> 842.14]  Now this applies to all of us now
+[842.14 -> 843.38]  because all of us put our hands up
+[843.38 -> 844.82]  and we said we find it burdensome.
+[844.82 -> 848.94]  So there's something going wrong with our approach to Salah.
+[850.32 -> 852.62]  There's something going wrong with our approach to Salah.
+[852.62 -> 857.82]  Now Allah diagnoses this.
+[857.82 -> 863.86]  He explains exactly what is the reason for people finding it burdensome.
+[863.86 -> 864.86]  Why?
+[864.86 -> 872.90]  Firstly, we think that somehow Salah is doing God a favour.
+[872.90 -> 877.70]  Somehow Salah, attending the prayer, it's like disposing of a duty, like you just have
+[877.70 -> 880.70]  to do it and go.
+[880.70 -> 886.10]  You know, some of us enjoy going to the toilet more than salah.
+[886.10 -> 889.86]  People spend half an hour in the toilet now.
+[889.86 -> 892.94]  But only spend two minutes in the pram.
+[892.94 -> 894.78]  So it's a phenomenon now, I don't know if you know.
+[894.78 -> 898.54]  People spend half an hour watching Netflix and Instagram
+[898.54 -> 900.38]  in the toilet.
+[900.38 -> 903.86]  They enjoy it, that's why they get peace from everybody.
+[903.86 -> 907.70]  That's literally where they get relief.
+[907.70 -> 911.94]  But in the Salah, there's no relief.
+[911.94 -> 914.74]  So something is going wrong.
+[914.74 -> 916.26]  What is a right of the body?
+[916.26 -> 917.74]  It's the discharging of a right.
+[917.74 -> 920.10]  Salah isn't.
+[920.10 -> 922.46]  Imagine that.
+[922.46 -> 925.90]  So why is it that we come with this false understanding?
+[925.90 -> 927.42]  Firstly, we need to repivot this.
+[927.42 -> 929.02]  And that is the first topic that we're
+[929.02 -> 931.90]  going to be covering, inshallah, over this retreat.
+[931.90 -> 934.66]  We're going to be touching on, can you see the screen?
+[934.66 -> 937.42]  OK, you can't see the screen.
+[937.42 -> 941.54]  So one of the first topics that we're going to be covering
+[941.54 -> 948.22]  is, through the Quranic lens, what is the purpose of Salah?
+[948.22 -> 950.70]  Imagine we haven't even understood the purpose.
+[950.70 -> 953.98]  Then obviously, you might find it burdensome.
+[953.98 -> 956.82]  Imagine you're just attending these,
+[956.82 -> 959.66]  you think that Salah is giving Allah his rights only,
+[959.66 -> 961.22]  and then it's going to feel burdensome.
+[961.22 -> 963.78]  No matter what I tell you, yeah, listen to the Quran,
+[963.78 -> 967.02]  understand the Quran, do this, do that.
+[967.02 -> 970.00]  it's like the whole relationship is upside down.
+[970.00 -> 972.06]  So you're gonna always find it burdensome.
+[974.48 -> 977.02]  So this is the first thing we're gonna tackle.
+[977.02 -> 978.48]  How are we coming to the prayer?
+[978.48 -> 980.74]  Because that will frame the prayer.
+[980.74 -> 982.10]  That will frame the prayer.
+[985.10 -> 986.12]  Is this green up?
+[986.12 -> 988.04]  Okay, so this is the first one of the topics
+[988.04 -> 990.00]  that we're gonna be covering over this Salah.
+[990.00 -> 992.54]  How is Salah framed?
+[992.54 -> 998.90]  And secondly, how is Salah able to transform us? Before we can even talk about transformation,
+[998.90 -> 1005.06]  we first need to even correct the Salah. Why are we coming to the prayer?
+[1005.06 -> 1017.92]  Now I'll answer this partly. You see, one of the reasons why people find it burdensome,
+[1017.92 -> 1023.32]  On top of thinking that they're doing Allah a favor, or that this is just a right of Allah,
+[1023.32 -> 1036.52]  they just have to do, is that when they come to Salah, when they come to Salah, they are
+[1036.52 -> 1045.52]  not coming to Salah, they're not coming to Salah or treating Salah as a meeting.
+[1045.52 -> 1052.12]  They are focused on the ritual, that I am doing prayer, I am focusing on performing
+[1052.12 -> 1056.16]  the ritual, empty ritual.
+[1056.16 -> 1067.08]  It's like, imagine you go to the cinema, now if you focus on sitting down on the seat in
+[1067.08 -> 1073.20]  the cinema for two hours, then cinema will feel burdensome.
+[1073.20 -> 1075.88]  If you focus on the screen and the movie,
+[1075.88 -> 1079.40]  well you can sit there for three hours now and not feel it.
+[1079.40 -> 1080.24]  What's the difference?
+[1080.24 -> 1082.80]  Both of them you're sitting in the same place,
+[1082.80 -> 1085.60]  in the same chair, but the difference is
+[1085.60 -> 1088.68]  in the purpose of why you're there and your focus.
+[1088.68 -> 1091.86]  One is focusing on, I'm just sitting here for three hours.
+[1091.86 -> 1093.84]  The other is focusing on what the purpose of sitting
+[1093.84 -> 1095.84]  in the cinema is, is to watch the movie.
+[1097.00 -> 1100.52]  It's to engage in the content and then time flies.
+[1100.52 -> 1101.84]  Then it's not burdensome.
+[1101.84 -> 1104.56]  So Allah, subhanahu wa ta'ala, mentions this in the Qur'an.
+[1104.56 -> 1108.04]  He says, subhanahu wa ta'ala,
+[1108.04 -> 1111.56]  wa sta'inu bissabari wa sala'a,
+[1111.56 -> 1115.52]  that seek help and patience in prayer.
+[1117.02 -> 1119.04]  So first of all, we're being told,
+[1119.04 -> 1122.98]  sala'a is a place where you can seek help.
+[1123.92 -> 1124.76]  But from who?
+[1126.52 -> 1127.64]  From who do we seek help?
+[1127.64 -> 1129.52]  From who are we meant to have that dialogue?
+[1129.52 -> 1131.72]  Who are we meant to run to with our stresses?
+[1131.72 -> 1134.20]  Who are we meant to run to with our needs?
+[1134.20 -> 1138.40]  Who are we meant to run to with our problems?
+[1138.40 -> 1140.68]  Then Allah follows up the verse.
+[1140.68 -> 1146.68]  And those who will find it difficult,
+[1146.68 -> 1148.96]  those people will find it difficult,
+[1148.96 -> 1152.72]  except for those who have khushur.
+[1152.72 -> 1155.52]  Those people will find it burdensome
+[1155.52 -> 1160.12]  to come to this meeting, unless they have khushur.
+[1160.12 -> 1162.72]  Now, you might say, well, that's for sure.
+[1162.72 -> 1165.24]  Now, the amazing thing about the Quran
+[1165.24 -> 1167.08]  is it elaborates on itself.
+[1167.08 -> 1170.64]  It doesn't leave you there at cliffhanger and says,
+[1170.64 -> 1173.64]  good luck.
+[1173.64 -> 1174.56]  It explains itself.
+[1174.56 -> 1178.92]  It explains exactly what their mindset is going to the Salah.
+[1178.92 -> 1187.28]  It says, those who are alladina yuzununa annahum,
+[1187.28 -> 1196.52]  those who are certain that they will meet their Lord those who are certain
+[1196.52 -> 1204.16]  that they are they will meet their Lord and those who know that they will return
+[1204.16 -> 1207.88]  to him now someone can read this and this is interpreted in different ways
+[1207.88 -> 1211.88]  some people read this as those who know that they will meet their Lord on the
+[1211.88 -> 1219.40]  day of judgment. That's one meaning. Another meaning is those people who have
+[1219.40 -> 1225.80]  presence with Allah are those who have awareness that guess what? The Salat is a
+[1225.80 -> 1233.32]  meeting with Allah. If I don't know that the Salat is a meeting with Allah, what
+[1233.32 -> 1236.48]  am I meant to be present with? It's like if I don't know I'm meeting Sheikh Salman or
+[1236.48 -> 1239.80]  I don't know I'm meeting you, well I'm gonna sit here and talk to my thumbs and
+[1239.80 -> 1246.08]  maybe go on my phone, while you guys all sit there.
+[1246.08 -> 1248.72]  So the first thing we need to repivot
+[1248.72 -> 1255.52]  is that Salah is a meeting between you and your Lord.
+[1255.52 -> 1258.32]  When we approach the Salah, and many of us,
+[1258.32 -> 1261.80]  because for years we've treated Salah as just,
+[1261.80 -> 1266.92]  we have to do it, that's going to affect the prayer.
+[1266.92 -> 1269.36]  So what I want you to do is every time we say,
+[1269.36 -> 1271.32]  Salah is going to be at this time.
+[1271.32 -> 1272.74]  Maybe some of you get the dread awe,
+[1272.74 -> 1275.04]  I have to leave what I'm doing,
+[1275.04 -> 1277.16]  I have to just do the Salah again.
+[1277.16 -> 1279.20]  That's the time to start to reprogram.
+[1279.20 -> 1282.80]  No, no, actually, I've just been told,
+[1282.80 -> 1287.04]  I've been invited to my next meeting with Allah.
+[1287.04 -> 1288.44]  What do I want to talk about?
+[1289.72 -> 1291.72]  What do I want to thank Allah about?
+[1291.72 -> 1293.28]  What help do I need?
+[1293.28 -> 1295.04]  What difficulty am I going through?
+[1295.04 -> 1304.56]  You see, when the Adhan was given, Sayyida Aisha Siddiqa, she would say, it was as if
+[1304.56 -> 1309.92]  Rasulullah Sallallahu Alaihi Wasallam, he would treat us like he would not even know
+[1309.92 -> 1310.92]  us.
+[1310.92 -> 1311.92]  Imagine that.
+[1311.92 -> 1318.72]  The Adhan is given and it's as though Rasulullah was behaving as though now he doesn't even
+[1318.72 -> 1326.04]  know his family, meaning that his entire mindset is now you're meeting Allah. What
+[1326.04 -> 1332.48]  am I gonna, what is that preparation gonna be? Now Salah is in a burden. You will
+[1332.48 -> 1339.52]  value that meeting. You will value that meeting with the King. If I said oh you
+[1339.52 -> 1344.12]  get a special invite to meet a Shaykh and you're gonna really appreciate that,
+[1344.12 -> 1348.68]  you're gonna want to prepare for that. For some of you who meet their manager's
+[1348.68 -> 1351.76]  manager's manager if they are at work you're gonna want to prepare for that
+[1351.76 -> 1356.08]  you're gonna make you're gonna want to give your best impression so that's
+[1356.08 -> 1362.24]  what Salah is you're meeting the king of kings so Khushu before we talk about the
+[1362.24 -> 1365.96]  art of how to behave in the meeting we first have to understand what is the
+[1365.96 -> 1370.88]  meeting about what is Salah about it is a meeting between the servant and Allah
+[1370.88 -> 1376.64]  that's what it is so that's the first thing we're gonna correct and that's
+[1376.64 -> 1380.20]  That's how we're going to approach Salah throughout this entire retreat.
+[1380.20 -> 1385.88]  That when we approach Salah, this is not going to be how to perform Salah, you know, put
+[1385.88 -> 1389.16]  your fingers here, do this with your posture.
+[1389.16 -> 1390.52]  No, that's performing Salah.
+[1390.52 -> 1392.88]  We're going to teach you how to have a meeting with Allah.
+[1392.88 -> 1399.52]  If you know how to do that, then you can have as many meetings as you want.
+[1399.52 -> 1400.52]  So this is the first topic.
+[1400.52 -> 1404.64]  It's called the Essence of Salah, and we'll be exploring this through the Qur'an and the
+[1404.64 -> 1406.44]  the first 10 ayahs of Surah Al-Mukminun, which
+[1406.44 -> 1408.72]  are the incredible ayahs.
+[1408.72 -> 1410.80]  They actually explain what the role of Salah is
+[1410.80 -> 1415.52]  and how Salah completely transforms your life.
+[1415.52 -> 1418.16]  One of our teachers were mentioning earlier today,
+[1418.16 -> 1419.52]  they said, if you think about rituals,
+[1419.52 -> 1424.24]  if we take Salah as just a ritual, we miss the point.
+[1424.24 -> 1426.88]  When you're born, what is recited in your air?
+[1426.88 -> 1428.00]  Who knows?
+[1428.00 -> 1429.28]  The Adhan.
+[1429.28 -> 1431.04]  And what else is recited?
+[1431.04 -> 1432.24]  The Iqama.
+[1432.24 -> 1436.68]  That is, adhan is recited in one ear and iqama is recited in the other.
+[1436.68 -> 1438.44]  So what do you do at the beginning of prayer?
+[1438.44 -> 1443.38]  The adhan is recited and the iqama.
+[1443.38 -> 1446.08]  So from the moment you're born, your salah has started.
+[1446.08 -> 1447.12]  That's what salah is representing.
+[1447.12 -> 1448.76]  Salah is representing your entire life.
+[1451.80 -> 1455.08]  And at death, the salah that's prayed at your death
+[1455.08 -> 1457.56]  is the janaza prayer.
+[1457.56 -> 1459.48]  Is there any adhan or iqama for janaza?
+[1459.48 -> 1462.92]  No, because it's already been given.
+[1462.92 -> 1466.40]  This is just the closing chapter of your life.
+[1466.40 -> 1469.04]  So Salah is a ritual that reflects
+[1469.04 -> 1471.68]  the entire life of a person.
+[1471.68 -> 1474.56]  Now repeating it throughout your life is just training.
+[1474.56 -> 1476.56]  That's all it's doing.
+[1476.56 -> 1477.44]  That's all it's doing.
+[1477.44 -> 1480.24]  In fact, when we give Salam at the end of Salah,
+[1480.24 -> 1485.48]  this Salam is the Salam that we want from the angels of death.
+[1485.48 -> 1487.96]  Instead of us giving the Salam, we
+[1487.96 -> 1493.80]  want to be addressed by salamu alaikum from the angels.
+[1493.80 -> 1497.00]  That's what is mentioned.
+[1497.00 -> 1500.20]  Those believers, their aim is to come to them.
+[1503.84 -> 1506.64]  That's the piece that we want at the end of our life.
+[1506.64 -> 1508.32]  All of these, and we'll be exploring
+[1508.32 -> 1510.00]  what the purpose of these rituals are.
+[1510.00 -> 1512.52]  If you just see the ritual as a ritual, then it's burdensome.
+[1512.52 -> 1514.96]  It's like you're doing it and you don't know why you're doing it.
+[1514.96 -> 1516.80]  You don't know how it's a meeting with Allah.
+[1516.80 -> 1519.92]  You've just been told you have to do a bit of hopscotch
+[1519.92 -> 1523.76]  five times a day with a bit of recitation.
+[1523.76 -> 1525.26]  And as crudely as I put it, that's
+[1525.26 -> 1526.68]  what it is for a lot of people.
+[1529.36 -> 1531.16]  So this is one of the topics.
+[1531.16 -> 1533.36]  The next topic we're going to be covering is,
+[1533.36 -> 1535.96]  you see, Salah is one part of our life.
+[1535.96 -> 1539.36]  But our life did not begin in this world.
+[1539.36 -> 1542.16]  So how does Salah fit within our broader journey,
+[1542.16 -> 1543.04]  our broader purpose?
+[1543.04 -> 1544.92]  If you can see the screen, this is
+[1544.92 -> 1550.52]  a diagrammatic representation of the entire journey
+[1550.52 -> 1553.20]  a human being goes through in their life.
+[1553.20 -> 1555.60]  Salah is only one part of it.
+[1555.60 -> 1558.20]  So when we say Salah is training you for your life,
+[1558.20 -> 1560.28]  it's not just training you for your life in dunya.
+[1560.28 -> 1565.32]  It's training you in your entire existence.
+[1565.32 -> 1567.04]  It's preparing you for what's to come.
+[1567.04 -> 1570.08]  And it is something that is inherited from the heavens,
+[1570.08 -> 1571.68]  not even from this world.
+[1571.68 -> 1573.28]  So it wasn't even given in this world.
+[1573.28 -> 1575.34]  it's given from a heavenly world.
+[1575.34 -> 1577.18]  So we need to know what the big picture is
+[1577.18 -> 1579.52]  before we even tackle salah.
+[1579.52 -> 1582.32]  So inshallah, we'll be covering this over a few sessions
+[1582.32 -> 1583.56]  over the next three days.
+[1583.56 -> 1586.20]  And like I mentioned, salah is comprehensive
+[1586.20 -> 1587.56]  and inshallah these three days,
+[1587.56 -> 1589.86]  we're gonna go through it more comprehensively.
+[1591.60 -> 1593.56]  This topic, and I'm not going through it in a particular
+[1593.56 -> 1597.00]  order, so we might spare that, just giving you an overview,
+[1598.24 -> 1601.48]  is how we mentioned the first part of a meeting
+[1601.48 -> 1602.52]  is preparing for it.
+[1603.28 -> 1605.64]  The second part of the meeting is the meeting itself.
+[1605.64 -> 1606.98]  Where is my thoughts?
+[1606.98 -> 1609.56]  Where is my attention in the meeting?
+[1609.56 -> 1611.92]  If I'm sitting with Sheikh Salman
+[1611.92 -> 1613.76]  and I'm on my phone looking down,
+[1613.76 -> 1616.00]  like some of our new generation now,
+[1616.00 -> 1618.04]  so it's hard to get them off their phones.
+[1619.24 -> 1622.16]  In Norway, for example, in Scandinavia,
+[1623.68 -> 1625.48]  they've adapted traffic lights.
+[1625.48 -> 1627.14]  I don't know if anyone knows this.
+[1627.14 -> 1629.84]  So we normally have traffic lights up there, isn't it?
+[1629.84 -> 1633.20]  But because people walk into the road on their phones
+[1633.20 -> 1635.12]  and they'll get run over, now they
+[1635.12 -> 1636.64]  project the light on the ground.
+[1639.44 -> 1642.84]  Because people don't look up anymore.
+[1642.84 -> 1646.72]  So Salah is a meeting with Allah.
+[1646.72 -> 1649.24]  We need to be taught what to do in that meeting.
+[1649.24 -> 1651.06]  Now, one of the biggest misconceptions
+[1651.06 -> 1655.92]  we've been given is that when we come to this meeting with Allah,
+[1655.92 -> 1661.28]  we can't speak or think about anything other than Allah.
+[1661.28 -> 1663.20]  This is problematic.
+[1663.20 -> 1667.96]  Because when you come to a meeting, what do you discuss?
+[1667.96 -> 1671.28]  If you meet your friend, do you only discuss your friend,
+[1671.28 -> 1673.32]  or do you also discuss other matters?
+[1673.32 -> 1675.44]  Imagine, I'm sitting here with Sheikh Salman,
+[1675.44 -> 1679.04]  and he's got a very nice phone cover.
+[1679.04 -> 1682.44]  And he puts it in the middle of us.
+[1682.44 -> 1685.44]  And now my attention is on this cover.
+[1685.44 -> 1687.40]  But I'm not asking, where do you get this?
+[1687.40 -> 1688.68]  Can I get one?
+[1688.68 -> 1689.88]  I need a phone cover.
+[1689.88 -> 1694.44]  Now, is this distracting me from my conversation with Sheikh Salman?
+[1694.44 -> 1695.40]  Is it?
+[1695.40 -> 1696.12]  No.
+[1696.12 -> 1698.20]  Is it adding to it?
+[1698.20 -> 1700.00]  OK, so it's adding to it.
+[1700.00 -> 1704.64]  So now I want you to rephrase and repivot your thoughts now.
+[1704.64 -> 1706.60]  This is another teaching point.
+[1706.60 -> 1713.20]  Any thought that comes in Salah is not a distracting thought.
+[1713.20 -> 1717.20]  It is only distracting if you make it distracting.
+[1717.20 -> 1721.42]  Otherwise, any thought that comes in prayer
+[1721.42 -> 1723.22]  to say, talk to Allah that way.
+[1723.22 -> 1724.06]  That's it.
+[1724.06 -> 1725.18]  That becomes presence.
+[1725.18 -> 1726.32]  That becomes connection.
+[1727.92 -> 1729.68]  That becomes the presence of Allah.
+[1731.14 -> 1733.16]  So we're gonna be exploring this in more detail.
+[1733.16 -> 1735.64]  But this one tip, and I say this because
+[1735.64 -> 1737.24]  we've got Dhur prayer not far from now,
+[1737.24 -> 1740.40]  and then Adhan is gonna be given in 15 minutes.
+[1740.40 -> 1744.34]  So I'm very keen for this to be practical, not lecture-based.
+[1744.34 -> 1747.14]  So we're gonna be putting this into practice in 15 minutes.
+[1747.14 -> 1747.98]  Yes?
+[1748.90 -> 1751.78]  So we're gonna say any thought that comes to mind,
+[1751.78 -> 1753.18]  could be about work, children,
+[1753.18 -> 1754.46]  what you're gonna have for iftar.
+[1754.46 -> 1755.46]  You might think, oh, you know,
+[1755.46 -> 1758.62]  why am I thinking about iftar and meeting with Allah?
+[1758.62 -> 1761.50]  Well, maybe that's what's stressing you out, huh?
+[1763.54 -> 1764.78]  That's what's stressing you out.
+[1764.78 -> 1765.62]  Allah says,
+[1765.62 -> 1768.86]  wa sta'inu bissabari, wa sala'a, in the prayer.
+[1768.86 -> 1771.60]  Get help and patience from the sala'a,
+[1771.60 -> 1773.70]  in the sala'a, in that meeting with Allah.
+[1773.70 -> 1775.04]  Not out of the meeting with Allah.
+[1775.04 -> 1776.74]  What we do is we come into the meeting,
+[1776.74 -> 1780.62]  We don't speak to Allah about it, and then we come out stressed.
+[1780.62 -> 1782.78]  We come out stressed and then talk to our friend about it,
+[1782.78 -> 1784.78]  who just makes it worse sometimes.
+[1784.78 -> 1786.74]  Or talk to ourselves, even worse.
+[1786.74 -> 1788.74]  We just wind ourselves up.
+[1788.74 -> 1790.90]  Who here talks to themselves when they're stressed?
+[1790.90 -> 1793.58]  I think everybody does.
+[1793.58 -> 1795.26]  But that dialogue was not meant for you.
+[1795.26 -> 1797.26]  That was for Allah.
+[1797.26 -> 1799.74]  But we come into the meeting completely blanket,
+[1799.74 -> 1802.66]  blanked mind, and then we come out and think,
+[1802.66 -> 1804.90]  oh, this salah was so difficult.
+[1804.90 -> 1805.78]  Yeah, it's going to be difficult,
+[1805.78 -> 1808.88]  because you're not engaging in the meaning.
+[1808.88 -> 1811.44]  So ihsan, as you can see on the board,
+[1811.44 -> 1814.74]  ihsan are the teachings related to
+[1814.74 -> 1817.84]  how to come into prayer with presence.
+[1817.84 -> 1819.38]  What Allah mentions,
+[1819.38 -> 1821.36]  wa aqeemu s-salati li dhikri.
+[1821.36 -> 1825.30]  Establish prayer for my remembrance, my presence.
+[1825.30 -> 1827.70]  That in the salah, be present with me.
+[1828.62 -> 1831.80]  Now if thoughts come, we are gonna explore
+[1831.80 -> 1834.58]  how you can direct, and it's a skill.
+[1834.58 -> 1835.48]  It's not a theory.
+[1835.48 -> 1839.40]  You have to practice it and try and fail and try again
+[1839.40 -> 1843.84]  until you adapt to the skill of re-channeling thoughts
+[1843.84 -> 1845.76]  to Allah, speaking to Allah.
+[1845.76 -> 1848.32]  Even something as small as crying of children.
+[1848.32 -> 1850.48]  Many mothers say, how do you pray
+[1850.48 -> 1852.52]  when you've got children around you?
+[1852.52 -> 1855.48]  Rasulullah did, sallallahu alayhi wa sallam.
+[1855.48 -> 1859.52]  He was leading a salah once, famously.
+[1859.52 -> 1860.96]  He was leading a salah.
+[1860.96 -> 1862.76]  Now there's a difference between praying your own prayer
+[1862.76 -> 1863.66]  and leading a prayer.
+[1863.66 -> 1865.46]  Leading a prayer, you have the responsibility
+[1865.46 -> 1867.66]  for the whole congregation.
+[1867.66 -> 1872.22]  He was leading a salah, and he shortened them.
+[1872.22 -> 1873.26]  Why did he shorten them?
+[1873.26 -> 1875.70]  Who can tell me?
+[1875.70 -> 1877.30]  Because of crying of?
+[1877.30 -> 1878.86]  Of a child.
+[1878.86 -> 1880.38]  At the end of Masjid Nabawi, he could
+[1880.38 -> 1883.30]  hear the crying of children.
+[1883.30 -> 1888.50]  Now, imagine leading the salah, leading the Sahaba,
+[1888.50 -> 1889.50]  being the Rasulullah.
+[1889.50 -> 1891.30]  Is there anyone who's going to have a higher
+[1891.30 -> 1893.26]  presence than the Rasulullah in salah?
+[1893.26 -> 1906.14]  No, he is upon perfection, perfection starts at his feet.
+[1906.14 -> 1909.82]  So nobody's Salah will compare to him.
+[1909.82 -> 1912.66]  Nobody's Salah will compare to his meeting with Allah.
+[1912.66 -> 1914.90]  But look what he's showing us.
+[1914.90 -> 1917.54]  He shortened the meeting for what?
+[1917.54 -> 1921.34]  To have compassion upon children and the mothers.
+[1921.34 -> 1924.22]  But that means his mind was aware of it.
+[1924.22 -> 1926.22]  His mind went to it.
+[1926.22 -> 1928.30]  So now I'm speaking in the meaning of this hadith.
+[1928.30 -> 1930.26]  It's just teaching us that even to think
+[1930.26 -> 1934.06]  of helping others, the stress of others, the problems of others,
+[1934.06 -> 1935.26]  this is part of Salah.
+[1935.26 -> 1938.10]  And so we're going to be exploring this in the next topic,
+[1938.10 -> 1941.06]  which is we have categorized from the teachings of Shaykh
+[1941.06 -> 1947.54]  Ahmad Abbas 14 practical methods or types of prayer
+[1947.54 -> 1948.94]  that you can practice.
+[1948.94 -> 1951.54]  Some connect you to death.
+[1951.54 -> 1954.06]  They bring the thought of death and urgency.
+[1954.06 -> 1956.22]  Some people say, pray as if it's your last prayer.
+[1956.22 -> 1958.50]  But how do you pray as if it's your last prayer?
+[1958.50 -> 1961.34]  What mindset should you have during the Salah?
+[1961.34 -> 1963.22]  Some Salahs connect us to problems,
+[1963.22 -> 1964.86]  meaning how to solve problems.
+[1964.86 -> 1976.78]  Say, now, Omar bin Zubayr, he said,
+[1976.78 -> 1981.78]  I would count on them to collect the tax.
+[1981.78 -> 1983.40]  Some of you might be thinking, well,
+[1983.40 -> 1985.10]  how does that fit in with the meeting?
+[1985.10 -> 1986.94]  Well, who is he meeting?
+[1986.94 -> 1990.02]  Who is he consulting on organizing the armies?
+[1990.02 -> 1991.82]  Who is saying what I've been so very speaking to
+[1991.82 -> 1993.46]  about tax with Allah?
+[1995.46 -> 1997.70]  You can speak to Allah about anything.
+[1997.70 -> 1999.06]  You can get the best advice.
+[2001.28 -> 2002.46]  So we'll be covering some.
+[2002.46 -> 2004.32]  I can't promise you'll go over all of them,
+[2004.32 -> 2006.20]  and it's not a sprint.
+[2006.20 -> 2007.20]  It's a marathon.
+[2007.20 -> 2008.48]  So we'll be covering some of them.
+[2008.48 -> 2012.04]  And for those who attended the Tarawi program,
+[2012.04 -> 2013.74]  you will be familiar with some of these.
+[2013.74 -> 2015.44]  Can I just have a quick show of hands?
+[2015.44 -> 2018.24]  Who here has attended any of the Salah clinics or workshops
+[2018.24 -> 2019.60]  that we've been doing over the last few weeks?
+[2019.60 -> 2022.36]  If you could just put your hands up so I can see.
+[2022.36 -> 2023.76]  OK.
+[2023.76 -> 2025.76]  And then who, I assume, of everybody else hasn't.
+[2025.76 -> 2027.28]  So it looks like 50-50.
+[2027.28 -> 2028.52]  50% of you have come.
+[2028.52 -> 2031.80]  So for you, it will be a refresher today.
+[2031.80 -> 2035.64]  But for the new people, it will be something new, inshallah,
+[2035.64 -> 2041.40]  for you to experience.
+[2041.40 -> 2044.52]  Now, the last topic we're going to cover
+[2044.52 -> 2048.52]  is what Salah actually, in the Salah,
+[2048.52 -> 2050.92]  I mentioned to you, Salah doesn't just connect us to Allah.
+[2050.92 -> 2052.92]  It connects us to many different things.
+[2052.92 -> 2055.32]  And so we're also going to be exploring,
+[2055.32 -> 2059.76]  what is Salah actually connecting us to in the prayer?
+[2059.76 -> 2061.72]  Is Allah the only thing we can think about?
+[2061.72 -> 2063.96]  Or are there other things?
+[2063.96 -> 2068.20]  Any topic of the Quran, as a principle,
+[2068.20 -> 2070.80]  can be connected to in the Salah.
+[2070.80 -> 2072.16]  What do we mean by that?
+[2072.16 -> 2074.28]  Let's say in the Salah, we're reciting,
+[2074.28 -> 2077.20]  inna fi khalqis sanawati wala ardi uqtilafil.
+[2077.20 -> 2078.80]  Indeed, in the heavens and the earth
+[2078.80 -> 2080.52]  and the alternation of the day and night,
+[2080.52 -> 2084.28]  indeed, these are signs of people of understanding.
+[2084.28 -> 2086.56]  Now, I recite that, and I never think
+[2086.56 -> 2087.96]  about the heavens and the earth.
+[2087.96 -> 2091.72]  And I don't think about the alternation of the day and night.
+[2091.72 -> 2093.80]  So have I achieved what this Quranic verse is telling me
+[2093.80 -> 2104.20]  think about. I've just recited it. It's like reading the sign of the fire exit
+[2104.20 -> 2108.92]  but not walking through the fire exit. Seeing the fire exit above
+[2108.92 -> 2112.80]  these doors. Looking at the fire exit doesn't mean that's the fire exit, does it?
+[2112.80 -> 2118.20]  Looking at the sign of the fire exit, I mean. No, the door is beneath it. So ayat
+[2118.20 -> 2121.52]  are pointing to something. That's literally what the word in Arabic means.
+[2121.52 -> 2124.48]  Ayat means sign. They're signposting you
+[2125.16 -> 2128.24]  Some of the signposts say think about prophets
+[2128.84 -> 2130.00]  stories
+[2130.00 -> 2131.08]  Quran
+[2131.08 -> 2135.08]  Kalam of Allah hell heaven reward, you know
+[2135.08 -> 2138.32]  Think of all the topics of the Quran we say 12 connections
+[2138.32 -> 2141.28]  Hey, really anything you mention in the Quran is what you can connect to
+[2141.48 -> 2143.84]  So you need to be taught how to engage the Quran
+[2143.88 -> 2148.48]  You need to be taught how to engage that in the salah. So inshallah. We will also be exploring them
+[2148.48 -> 2154.14]  So, as mentioned, this is going to be a comprehensive retreat and we're going to try our best to
+[2154.14 -> 2157.14]  go through this slowly, slowly, and it's going to be practical, not lecture-based.
+[2157.14 -> 2161.02]  There'll be lectures, but only so that you can practice that in our Salahs, and we have
+[2161.02 -> 2164.70]  all like to practice because we have Taraweeh as well, so inshallah your Taraweeh should
+[2164.70 -> 2168.94]  be better than it has been before.
+[2168.94 -> 2177.18]  Now, I would like to spend some time because we have now Dhur coming in 25 minutes, and
+[2177.18 -> 2182.10]  Now I want to start with, let's improve our Dhuhr prayer, OK?
+[2182.10 -> 2192.74]  So very simply, if you want to start to experience Khushu
+[2192.74 -> 2201.70]  and presence with Allah, it starts with these three triggers,
+[2201.70 -> 2202.68]  meaning these buttons.
+[2202.68 -> 2206.58]  If you press these buttons, it's like you entered the door
+[2206.58 -> 2208.38]  to the meeting now.
+[2208.38 -> 2210.94]  After that, we'll tell you, OK, you can talk about this.
+[2210.94 -> 2212.06]  You can do this.
+[2212.06 -> 2214.38]  But if you can't get into the door, me telling you,
+[2214.38 -> 2215.66]  yeah, think about angels.
+[2215.66 -> 2217.62]  Yeah, speak to Allah about this.
+[2217.62 -> 2220.30]  You haven't come through the door yet.
+[2220.30 -> 2221.70]  Do you understand this?
+[2221.70 -> 2223.42]  So let's first learn, what does it
+[2223.42 -> 2226.58]  mean to stay in the room and come through the door?
+[2226.58 -> 2228.86]  If you can't do that, me telling you,
+[2228.86 -> 2230.34]  yeah, focus on the Quran.
+[2230.34 -> 2231.90]  Focus on the meaning.
+[2231.90 -> 2234.02]  You're still outside the room.
+[2234.02 -> 2237.74]  You're not even present with Allah yet.
+[2237.74 -> 2240.46]  Do you understand this?
+[2240.46 -> 2245.22]  So the first, you could say the first three buttons
+[2245.22 -> 2247.98]  that open the door, that get you into the room,
+[2247.98 -> 2249.86]  into the meeting with the presence of Allah
+[2249.86 -> 2252.26]  subhanahu wa ta'ala is very simple.
+[2252.26 -> 2254.82]  And that is what Allah mentions in the Quran
+[2254.82 -> 2258.82]  to Sayyidina Musa, alayhi salam, and Sayyidina Harun.
+[2258.82 -> 2261.78]  Sayyidina Musa, alayhi salam, and Sayyidina Harun.
+[2264.02 -> 2272.02]  Now, when you enter a meeting, do you enter meeting blank-minded?
+[2272.02 -> 2275.02]  If you think about when you meet your friend, you normally have an idea of,
+[2275.02 -> 2279.02]  I want to update them about something major in my life, what's going on.
+[2279.02 -> 2281.02]  I want to mention to them what stress I'm going through.
+[2281.02 -> 2285.02]  I want to mention to them, I want to keep them updated what's going on in my life.
+[2285.02 -> 2288.02]  Don't we? Even for friends, we don't have a formal agenda,
+[2288.02 -> 2291.02]  but in our mind, we roughly know what we're meeting for, isn't it?
+[2291.02 -> 2293.02]  Don't we?
+[2293.02 -> 2295.02]  Okay.
+[2295.02 -> 2297.02]  So look at how Allah introduces these keys.
+[2297.02 -> 2299.02]  He doesn't just say, come to Salah blank-minded.
+[2299.02 -> 2305.02]  He says to Sayyidina Haroon, alayhi salam, and Sayyidina Musa, alayhi salam,
+[2305.02 -> 2307.02]  qala la ta khafa.
+[2307.02 -> 2315.02]  So even before mentioning, coming into the presence of Allah, Allah mentions qala la ta khafa.
+[2315.02 -> 2318.02]  Don't be anxious.
+[2318.02 -> 2320.02]  Don't be afraid.
+[2320.02 -> 2333.10]  I am with you, I hear you, and I see you.
+[2333.10 -> 2340.70]  Now what's amazing about this, before talking about that Allah is with you, he is seeing
+[2340.70 -> 2347.54]  you, that he is hearing you, Allah first addresses the state of the person.
+[2347.54 -> 2353.54]  This is very important, because some of us say, I don't know what to speak to Allah now.
+[2353.54 -> 2355.82]  Ask, how do you feel?
+[2355.82 -> 2358.22]  What is your state coming into salah?
+[2358.22 -> 2360.70]  What is occupying your mind out of prayer?
+[2360.70 -> 2366.42]  Because when Allah says, seek help and patience, it's saying something.
+[2366.42 -> 2370.30]  This is a refuge, so use it.
+[2370.30 -> 2372.90]  Ride the wave of that state.
+[2372.90 -> 2377.90]  You know emotions, they're considered,
+[2377.90 -> 2380.10]  in Arabic they're called ahwal, states.
+[2381.06 -> 2384.54]  They're like wind in the sails of a boat.
+[2384.54 -> 2388.82]  It comes and if you just change the direction of the sail
+[2388.82 -> 2392.22]  to catch the wind, now it takes you to your destination.
+[2392.22 -> 2395.22]  But you need to learn the art of just pivoting.
+[2395.22 -> 2397.26]  If you don't pivot, it can crash the boat.
+[2397.26 -> 2399.58]  If you change the sail in the wrong way
+[2399.58 -> 2401.02]  and the wind goes in the opposite direction,
+[2401.02 -> 2408.56]  like walking against the wind you can crush through mindset that's what we're
+[2408.56 -> 2413.76]  going to be covering but if you pivot the sail of the boat in the right way
+[2413.76 -> 2420.28]  well it takes you gently it takes you by walking in the direction of the wind it
+[2420.28 -> 2427.64]  will support you now so you're going through these states use those states to
+[2427.64 -> 2433.80]  connect to Allah. Bring that state to Allah. If you're happy, bring that
+[2433.80 -> 2437.52]  hakanah to Allah. Use that to be thankful with Allah. Speak to Allah about all the
+[2437.52 -> 2441.92]  blessings. If you're stressed, bring that stress to Allah. Speak to Allah
+[2441.92 -> 2449.24]  from your heart about your needs. So Allah is saying do not be
+[2449.24 -> 2458.74]  afraid. Innani ma'ukuma asma'u wa'ara. Now this is how to come into the house, this is how to come
+[2458.74 -> 2465.90]  into the meeting with Allah. You bring these three thoughts that Allah subhanahu wa ta'ala is
+[2465.90 -> 2473.22]  hearing me. Allah, he can hear all of these thoughts, this communication, this inner dialogue, the
+[2473.22 -> 2477.34]  things that we're saying in our heart, all of that Allah subhanahu wa ta'ala is aware of and he
+[2477.34 -> 2483.90]  responds that Allah subhanahu wa ta'ala, he's seeing me. Being seen doesn't mean
+[2483.90 -> 2490.34]  judged and watched, it means that you are being seen for who you are. If people
+[2490.34 -> 2496.38]  were to see all our private life and if it was exposed, how many people would
+[2496.38 -> 2503.58]  accept you? Probably no one. If all of your flaws in their private life were
+[2503.58 -> 2510.54]  shown. Do you think your best friend would be your best friend anymore? No. But guess
+[2510.54 -> 2518.30]  what? Who does see that? Allah is seeing you. And he ain't destroying you. He hasn't taken
+[2518.30 -> 2522.66]  your life yet, has he? He didn't take your life in that state, did he? That's what it
+[2522.66 -> 2530.10]  means by Allah is seeing you. Is that you're being seen. You're being seen. Allah saw the
+[2530.10 -> 2536.10]  the Sahaba when they were drinking alcohol. Allah saw the Sahaba who were dealing in prostitution.
+[2536.10 -> 2542.26]  And guess what? Allah saw them through the entire seerah until they were with Awliya.
+[2542.26 -> 2549.62]  That's what Allah is seeing you. Do you understand? So Allah is seeing the full timeline. Not partial.
+[2549.62 -> 2554.54]  We see partial, Allah sees the full timeline. He sees us for where we are in our journeys.
+[2554.54 -> 2556.94]  Yes, that is acceptance.
+[2558.70 -> 2559.54]  Yes?
+[2562.06 -> 2564.10]  The third is Allah is with us.
+[2564.10 -> 2567.16]  Allah is with us means that not only are we with him
+[2567.16 -> 2568.86]  in this meeting, but we're always with him.
+[2568.86 -> 2571.98]  He's always with us, even when we're not with him.
+[2571.98 -> 2574.92]  He is Khabir, he is all aware of you.
+[2575.86 -> 2578.12]  It's only when you become aware of him,
+[2578.12 -> 2580.24]  you're now doing what Allah is doing,
+[2580.24 -> 2581.94]  which is he's always aware of you.
+[2581.94 -> 2590.22]  So, deeply pondering, deeply thinking about these three thoughts, this brings you into
+[2590.22 -> 2592.22]  the meeting now.
+[2592.22 -> 2595.66]  So in this upcoming Doha prayer, this is what we're going to practice.
+[2595.66 -> 2601.62]  These two very simple techniques, but these are profound.
+[2601.62 -> 2611.14]  In the prayer, firstly before the Salah, we're going to start to think about and ask yourself,
+[2611.14 -> 2614.26]  What is it that I want to speak to Allah about and what are the things that I'm going through?
+[2614.26 -> 2615.26]  What are the states that I'm going through?
+[2615.26 -> 2616.26]  What are the feelings that I'm going through?
+[2616.26 -> 2621.70]  What are the most dominant things that are going in my life that I want from Allah?
+[2621.70 -> 2624.98]  It might be going amazingly for you, great, then thank Allah.
+[2624.98 -> 2629.02]  It might not be difficult for you, then be patient and ask Allah for patience and ask
+[2629.02 -> 2631.34]  Allah for help.
+[2631.34 -> 2633.38]  Ask Allah for guidance.
+[2633.38 -> 2634.98]  So think through that before the prayer.
+[2634.98 -> 2638.02]  Don't just come into prayer and then I don't know what to think about.
+[2638.02 -> 2639.02]  Spend this one minute.
+[2639.02 -> 2644.70]  takes one minute asking yourself then in the salah we're gonna practice these
+[2644.70 -> 2648.10]  three keys of presence that's what we call them the keys of presence because
+[2648.10 -> 2654.78]  they open the door like keys open a door that in the in the side let's say is a
+[2654.78 -> 2659.70]  lot of work but and you're gonna be in Kiam you're gonna bring to mind a lot
+[2659.70 -> 2665.18]  you are listening to me you're hearing me you're watching me and you're with me
+[2665.18 -> 2670.50]  okay now that state I feel that I've been watched I feel I'm with Allah now
+[2670.50 -> 2677.92]  speak to Allah again when you're going to report change of posture and you say
+[2677.92 -> 2683.06]  Allahu Akbar Allahu Akbar should trigger Allah is greater than any of my
+[2683.06 -> 2687.36]  sins Allah is greater than any of my deeds Allah is greater than any of my
+[2687.36 -> 2693.14]  problems should trigger Allah is watching me he's hearing me and he's
+[2693.14 -> 2700.58]  We say Allahu Akbar again. What does that mean? Allah is greater. If there's something
+[2700.58 -> 2706.58]  problem, remember Allah is greater than that. It should trigger the presence of Allah. So
+[2706.58 -> 2713.20]  every posture when we say Allahu Akbar, it should be triggering. Who are we present with?
+[2713.20 -> 2720.54]  We are present with Al-Mutakabbir. Nothing is too great for Allah. Your sins might be
+[2720.54 -> 2727.54]  great for you, but they're not great for Allah. Your greatest blessings might be great, but
+[2727.54 -> 2736.54]  Allah is a greater blessing than that. Secondly, any thought that comes to mind, really, the
+[2736.54 -> 2740.26]  salah is like a huge conversation with Allah. Speak to Allah about anything. You might think
+[2740.26 -> 2746.54]  it's mundane, but Rasulullah ﷺ, he's speaking to Allah about everything. All of the sunnah
+[2746.54 -> 2753.26]  du'as, eating, drinking, going to the toilet. Who's Rasulullah speaking to? Allah. About
+[2753.26 -> 2760.84]  what? Day to day human things. Day to day human things. So if Rasulullah, the best of
+[2760.84 -> 2764.82]  creation is showing us, this is how you connect to Allah in your day to day life. So definitely
+[2764.82 -> 2770.54]  you can connect to him in salah. Maybe you can save the big things for the salah. But
+[2770.54 -> 2774.46]  Equally, you can thank Allah for anything.
+[2774.46 -> 2776.48]  So insha'Allah, this is the two things
+[2776.48 -> 2777.86]  that we're going to be practicing.
+[2777.86 -> 2781.10]  Now, after Dhur prayer, I want you to practice this in Dhur.
+[2781.10 -> 2782.64]  And we're going to prepare you up here
+[2782.64 -> 2783.90]  for the next 10 minutes.
+[2783.90 -> 2788.26]  We'll do a short exercise of how to bring presence of Allah
+[2788.26 -> 2789.06]  out of the prayer.
+[2789.06 -> 2791.74]  We're going to do this over the next 10 minutes.
+[2791.74 -> 2794.74]  And then we're going to take you down.
+[2794.74 -> 2797.22]  And I don't want anyone to speak.
+[2797.22 -> 2798.30]  I don't want anyone to speak.
+[2798.30 -> 2799.66]  You're here to be trained.
+[2799.66 -> 2801.10]  You're not here for lectures.
+[2801.10 -> 2803.22]  So if you don't try this, you're not
+[2803.22 -> 2804.66]  going to achieve the outcome.
+[2804.66 -> 2807.62]  So normally, prayer for us is like, we're on the phone,
+[2807.62 -> 2809.90]  and as soon as we take it off, we're in the prayer.
+[2809.90 -> 2812.26]  And then we think we're going to have the most amazing khushu.
+[2812.26 -> 2813.86]  Now, planes don't take off that way.
+[2813.86 -> 2815.36]  You're not going to take off that way.
+[2815.36 -> 2816.58]  You need a runway.
+[2816.58 -> 2819.02]  So your runway is that one minute from this door
+[2819.02 -> 2821.74]  or these doors down to the masjid
+[2821.74 -> 2825.34]  where we're going to pray in the congregational prayer.
+[2825.34 -> 2827.38]  And that, I just want everyone to be silent,
+[2827.38 -> 2831.32]  because everybody needs to be in the thought that I am.
+[2831.32 -> 2832.42]  Allah is calling me.
+[2832.42 -> 2833.26]  That's what Adhan is.
+[2833.26 -> 2835.42]  Adhan is Allah is making an announcement.
+[2835.42 -> 2837.22]  I am calling my servants.
+[2837.22 -> 2839.06]  Hayal as-salah, hayal al-fala.
+[2839.06 -> 2842.26]  Come to Salah, come to Falaah, success.
+[2842.26 -> 2844.46]  Come, you're being invited.
+[2844.46 -> 2846.06]  You're privileged to be invited.
+[2848.30 -> 2849.54]  Now you need to be thinking,
+[2849.54 -> 2851.00]  okay, what do I want that meeting to be?
+[2851.00 -> 2853.36]  What do I want to discuss with Allah?
+[2853.36 -> 2855.34]  Even if you don't know what to discuss with Allah,
+[2855.34 -> 2859.54]  Let's say you're completely blank-minded.
+[2859.54 -> 2862.54]  Speak to Allah about the fact that you're blank-minded.
+[2862.54 -> 2864.46]  That's something you can speak to Allah about.
+[2864.46 -> 2866.26]  Say, yeah, Allah, I don't know what to speak to you about.
+[2866.26 -> 2867.70]  Cry to me.
+[2867.70 -> 2870.06]  And then maybe you might get inspired with a thought
+[2870.06 -> 2872.78]  that you actually should be speaking to Allah about.
+[2872.78 -> 2873.86]  It's like coming to a doctor and you say,
+[2873.86 -> 2875.02]  something's wrong with me, but I don't know.
+[2875.02 -> 2875.86]  Tell me.
+[2877.42 -> 2879.50]  And then Allah might show you.
+[2879.50 -> 2882.14]  Allah might inspire you through thought.
+[2882.14 -> 2883.10]  Allah might inspire you.
+[2883.10 -> 2884.98]  Be cognizant of your thoughts.
+[2884.98 -> 2890.78]  When Allah communicates, don't think it's through voice.
+[2890.78 -> 2892.50]  The Sahaba, when revelation came,
+[2892.50 -> 2895.30]  it wasn't a voice from the heavens that everybody heard.
+[2895.30 -> 2897.34]  It was descended into the heart of Rasulullah,
+[2897.34 -> 2898.62]  sallallahu alayhi wa sallam.
+[2898.62 -> 2902.70]  And then he articulated it through the Arabic language.
+[2902.70 -> 2908.22]  So Allah communicates in the ghayb, thoughts, states,
+[2908.22 -> 2910.70]  feelings, emotions.
+[2910.70 -> 2915.90]  These can be communications from Allah, subhanahu wa ta'ala.
+[2915.90 -> 2918.06]  So when we come into the prayer, we're
+[2918.06 -> 2919.18]  going to be practicing this.
+[2919.18 -> 2921.26]  And we're going to do a short practical now.
+[2921.26 -> 2923.82]  Insha'Allah, I'll ask Shaykh Salman if he can lead us
+[2923.82 -> 2927.70]  into this short practical, going into the three keys of presence
+[2927.70 -> 2929.94]  of Allah, subhanahu wa ta'ala, and speaking to Allah
+[2929.94 -> 2931.38]  from the heart.
+[2931.38 -> 2936.26]  And really, I want everybody to ask Allah for his help
+[2936.26 -> 2940.38]  and ask for him in this practice for his guidance
+[2940.38 -> 2942.82]  on how to be in a meeting with him in the Salah.
+[2942.82 -> 2945.42]  In the Salah, I want you to ask for advice for the Salah.
+[2945.42 -> 2947.86]  Everyone personally get advice.
+[2947.86 -> 2950.06]  Say, Allah, I'm coming to the meeting.
+[2950.06 -> 2952.30]  How should I prepare?
+[2952.30 -> 2955.14]  From what I've heard, how should I meet you
+[2955.14 -> 2957.50]  at my government prayer?
+[2957.50 -> 2959.10]  What should I be thinking at this time?
+[2959.10 -> 2960.06]  Midday.
+[2960.06 -> 2963.62]  You know, I haven't touched on this, but in this book,
+[2963.62 -> 2966.22]  everything we're teaching is really in this book.
+[2966.22 -> 2968.86]  And this is authored by Shagahan al-Dabbagh.
+[2968.86 -> 2974.22]  And in my opinion, having gone through many books of Salah
+[2974.22 -> 2978.74]  from the great Shuyukh, this is the most comprehensive
+[2978.74 -> 2982.02]  practical manual I've ever come across in my life.
+[2982.02 -> 2986.10]  Because they have summarized all of the teachings of Masha'ikh.
+[2986.10 -> 2989.26]  And in addition to giving you definitions and theory,
+[2989.26 -> 2991.62]  they made it practical.
+[2991.62 -> 2996.06]  So all of what we're explaining is in this text.
+[2996.06 -> 2998.78]  Inshallah, all this text is not for profit.
+[2998.78 -> 3000.46]  It goes to charity.
+[3000.46 -> 3003.04]  You can purchase it throughout the retreat or after if you want.
+[3003.04 -> 3004.08]  And there's no need.
+[3004.08 -> 3005.56]  Books are books.
+[3005.56 -> 3006.96]  We want to give you the practice.
+[3006.96 -> 3008.16]  The books doesn't give you the practice.
+[3008.16 -> 3010.28]  So don't think by buying the book, I have Khushu.
+[3010.28 -> 3011.44]  No, you don't.
+[3011.44 -> 3015.48]  You still need to come to train.
+[3015.48 -> 3017.68]  So inshallah now, we've got 10 minutes.
+[3017.68 -> 3022.00]  The next five minutes, Sheikh Salman will cover practical.
+[3022.00 -> 3024.92]  And then inshallah, again, I want everyone to remain silent.
+[3024.92 -> 3027.68]  And then we're going to go down into the Dhur prayer.
+[3027.68 -> 3029.56]  And then after the Dhuhr prayer, I
+[3029.56 -> 3033.40]  want everybody to continue to remain silent after the Sunnah
+[3033.40 -> 3034.60]  and come back.
+[3034.60 -> 3037.92]  Because up here, we're going to be honored with the company
+[3037.92 -> 3040.76]  of Sheikh Ahmed Abbas themselves.
+[3040.76 -> 3042.36]  They're going to be here, insha'Allah.
+[3042.36 -> 3045.08]  And we're going to have the privilege of praying
+[3045.08 -> 3048.16]  a very special prayer that Rasulullah
+[3048.16 -> 3050.56]  Sallallahu Alaihi Wasallam said.
+[3050.56 -> 3055.08]  If you can pray this prayer, at least pray once in your life.
+[3055.08 -> 3056.52]  That's how valuable it is.
+[3056.52 -> 3057.84]  If you can, try to pray every day.
+[3057.84 -> 3059.04]  If you can't, every other day.
+[3059.04 -> 3060.52]  If not, at least once.
+[3060.52 -> 3062.40]  So the surah is almost like begging people,
+[3062.40 -> 3064.40]  at least do this once.
+[3064.40 -> 3066.20]  And this is Salat al-Tasbeer.
+[3066.20 -> 3068.72]  Who here has prayed Salat al-Tasbeer?
+[3068.72 -> 3070.04]  OK.
+[3070.04 -> 3071.72]  OK, a lot of you haven't.
+[3071.72 -> 3074.44]  So insha'Allah, when we come up, it's a very special prayer.
+[3074.44 -> 3077.24]  And we're going to be doing it insha'Allah in congregation.
+[3077.24 -> 3081.08]  But I want it to be done with presence, conversation
+[3081.08 -> 3081.96]  with Allah.
+[3081.96 -> 3082.46]  OK?
+[3082.46 -> 3084.92]  So insha'Allah, now I'm going to hand over to Sheikh Salman, who's
+[3084.92 -> 3089.08]  and he'll be guiding us through a practical, inshallah.
+[3089.08 -> 3092.68]  So we're going to learn how to bring ourselves
+[3092.68 -> 3094.04]  into the presence of Allah.
+[3094.04 -> 3096.36]  This is called Fadhur Ma'Allah.
+[3096.36 -> 3099.52]  So I'd like you all to relax.
+[3099.52 -> 3101.24]  Quietly stay still.
+[3101.24 -> 3103.36]  Close your eyes.
+[3103.36 -> 3105.36]  And just let my voice guide you.
+[3108.28 -> 3110.04]  So you don't need to say anything yourself.
+[3110.04 -> 3113.56]  Just let the meanings enter your heart and your mind.
+[3113.56 -> 3118.56]  and bring yourselves into the presence of Allah.
+[3123.08 -> 3125.68]  Allah is with me.
+[3127.16 -> 3128.96]  Allah is hearing me.
+[3130.36 -> 3131.76]  Allah is seeing me.
+[3133.68 -> 3136.28]  Allah is always with me.
+[3136.28 -> 3137.76]  He's never left my side.
+[3139.76 -> 3143.04]  He was with me even before I existed.
+[3143.56 -> 3151.88]  When I was in his knowledge and with love, with his wood, he is Alwadood.
+[3151.88 -> 3159.08]  With his eternal and immense and utter love, he brought me into existence.
+[3159.08 -> 3169.24]  And he has been by my side throughout my existence.
+[3169.24 -> 3179.24]  Mother, He was there, waiting for me, catching me, holding me, keeping me alive when I was helpless.
+[3180.24 -> 3187.24]  And He has been there by my side at every moment, at every turn of my life.
+[3189.24 -> 3196.24]  Every ni'ma, every ease that I've enjoyed is from Him. He was there to give it to me.
+[3196.24 -> 3204.24]  Every difficulty, every pain, every anguish, every challenge, every hardship I've faced,
+[3204.24 -> 3211.24]  he carried me through it with his love and his care and his nurturing.
+[3211.24 -> 3214.24]  He's always been with me.
+[3214.24 -> 3220.24]  I haven't always been with him, but he's always been with me.
+[3220.24 -> 3223.96]  And He's loved me more than anyone else.
+[3223.96 -> 3230.72]  He's loved me more than my mother, my father, my children, my family.
+[3230.72 -> 3234.00]  He's loved me more than them.
+[3234.00 -> 3240.76]  And I feel that love in my heart as I bring myself into His presence.
+[3240.76 -> 3246.60]  And I feel that He's seeing me. I am seen. I am not alone.
+[3246.60 -> 3251.60]  I'm acknowledged, I'm heard.
+[3251.60 -> 3258.60]  He sees everything about me.
+[3258.60 -> 3267.60]  He sees my outward, he sees my inward, he sees my heart.
+[3267.60 -> 3274.60]  He sees all the darkness and the sins and the wrongs that I've done, and yet he still loves me.
+[3274.60 -> 3277.12]  He does not reject me.
+[3277.12 -> 3282.00]  He still keeps me with him.
+[3282.00 -> 3286.96]  He sees the voice in my mind.
+[3286.96 -> 3289.92]  He hears the voice in my mind.
+[3289.92 -> 3293.72]  He hears the voice of my heart.
+[3293.72 -> 3296.48]  The things I dare not say.
+[3296.48 -> 3301.80]  He hears those things. He knows those things.
+[3301.80 -> 3305.80]  Allah knows and sees everything about me.
+[3317.80 -> 3320.80]  And now remain in this state of presence,
+[3322.80 -> 3325.80]  basking in Allah's love.
+[3327.80 -> 3330.80]  Remember that He is hearing you, now with your inner voice,
+[3330.80 -> 3333.80]  with the voice of your heart.
+[3333.80 -> 3336.80]  While your tongue remains silent,
+[3336.80 -> 3338.80]  your heart will come to life
+[3338.80 -> 3342.80]  and speak to Allah about whatever you want.
+[3342.80 -> 3346.80]  This is now the time to set
+[3346.80 -> 3348.80]  your meeting with Allah,
+[3348.80 -> 3352.80]  your agenda, what's worrying you.
+[3352.80 -> 3355.80]  Maybe you want to ask forgiveness for a sin.
+[3355.80 -> 3358.80]  Maybe you want to thank Him for a blessing.
+[3358.80 -> 3380.80]  Maybe you want to ask him for something you need, maybe you have a problem, you want to talk to him about that, or you have confusion in a decision, you'd like some clarity, some guidance, whatever it is, now with your heart speak to Allah.
+[3388.80 -> 3416.56]  If you feel distracted, just bring yourself back into the presence by repeating the three
+[3416.56 -> 3422.56]  Allah is with me. He hears me. He sees me.
+[3422.56 -> 3427.56]  And then talk to him about the destruction.
+[3427.56 -> 3432.56]  If you're finding it difficult, you can say, Allah, I'm finding this difficult.
+[3446.56 -> 3451.56]  .
+[3451.56 -> 3456.56]  .
+[3456.56 -> 3461.56]  .
+[3491.56 -> 3515.56]  If you find yourself restless, that's fine. Just bring yourself back. Allah is with me.
+[3515.56 -> 3525.56]  Allah is hearing me. Allah is hearing me. Allah is seeing me.
+[3525.56 -> 3529.56]  And then talk to Allah.
+[3529.56 -> 3533.56]  Have that conversation you always wanted to have.
+[3545.56 -> 3574.56]  Now gently bring yourself back, to open your eyes, to feel your breath.
+[3574.56 -> 3576.96]  Open your eyes.
+[3576.96 -> 3581.76]  The instruction is to remain in this state of presence.
+[3581.76 -> 3584.76]  And as you go down, please don't speak to anybody else.
+[3584.76 -> 3588.06]  The sisters are going to speak over here, please, if that's okay.
+[3588.06 -> 3589.96]  The brothers are going to go down.
+[3589.96 -> 3595.26]  After the Vara, we're going to come up again here to pray Salat-e-Tasbih.
+[3595.26 -> 3598.66]  So please remain in this state.
+[3598.66 -> 3600.16]  Let's go down silently.
+[3600.16 -> 3608.16]  Let's take our positions in the Saf and refresh our lives with Me, hearing Me, seeing Me.
+[3608.16 -> 3616.16]  And then prepare your right hand on the way for the salaah.
