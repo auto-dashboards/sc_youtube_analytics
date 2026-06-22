@@ -5,6 +5,8 @@ import numpy as np
 import math
 import os
 from dotenv import load_dotenv
+import io
+import psycopg2
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -197,3 +199,105 @@ Column headers:
 - retain_pct - max_run / total_rows - percentage of video covered by the max run
 '''
 
+'''
+Code below is used when we lose the data in video audio timestamps stage table and need to refresh
+'''
+
+load_dotenv()
+api_key = os.getenv('YI_API_KEY')
+channel_id = os.getenv('CHANNEL_KEY')
+client_id = os.getenv('YOUTUBE_CLIENT_ID')
+client_secret = os.getenv('YOUTUBE_CLIENT_SECRET')
+refresh_token = os.getenv('YOUTUBE_REFRESH_TOKEN')
+dbl_url = os.getenv('DBL_URL')
+print('Loaded environment variables')
+
+
+def video_transcript_clean(video_id):
+
+    video_transcript_path = f'data_preprocessing/video_transcripts/{video_id}.txt'
+
+    df_transcript = pd.read_csv(
+        video_transcript_path,
+        sep=']',
+        names=['time', 'text']
+    )
+
+    df_transcript['video_id'] = id
+
+    df_transcript['time'] = df_transcript['time'].str.replace('[', '')
+
+    df_transcript[['start_time', 'end_time']] = (
+        df_transcript['time']
+        .str.split('->', expand=True)
+        .astype(float)
+    )
+
+    empty_rows = []
+
+    for i in range(len(df_transcript) - 1): # this current logic won't work for the last row, as there's no next_start for it, so we need '-1'
+
+        current_end = df_transcript.iloc[i]['end_time']
+        next_start = df_transcript.iloc[i+1]['start_time']
+
+        if current_end != next_start:
+            empty_rows.append({
+                'start_time': current_end,
+                'end_time': next_start,
+                'text': '',
+                'video_id': id
+            })
+
+    df_empty_rows = pd.DataFrame(empty_rows)
+    df_transcript = pd.concat([df_transcript, df_empty_rows]).sort_values('start_time', ascending=True)[['video_id', 'start_time', 'end_time', 'text']]
+
+    return df_transcript
+
+
+def insert_records_to_postgres(dbl_url, pg_table_name, df, action):
+
+    if action not in ('truncate', 'append'):
+        raise ValueError('action must be truncate or append')
+
+    conn = psycopg2.connect(dbl_url)
+    cur = conn.cursor()
+
+    try:
+        # === Copy video data into memory buffer ===
+        if action == 'truncate':
+            truncate_message = f"TRUNCATE TABLE stage.{pg_table_name};"
+            cur.execute(truncate_message) ## since full refresh, truncate table first
+
+        buffer = io.StringIO()
+        df.to_csv(buffer, index=False, header=True)
+        buffer.seek(0)
+
+        column_headers = df.columns
+        column_headers = ", ".join(c for c in column_headers)
+
+        copy_message = f"COPY stage.{pg_table_name} ({column_headers}) FROM STDIN WITH CSV HEADER"
+
+        cur.copy_expert(
+            copy_message, ## specify json_rows so it knows which column to fill and rest will take default value
+            buffer
+        ) 
+
+        conn.commit()
+    
+    except Exception as e:
+        conn.rollback()
+        raise e
+
+    finally:
+        cur.close()
+        conn.close()
+
+
+video_ids_all = []
+for id in os.listdir('data_preprocessing/video_transcripts'):
+    video_id = id.split('.txt')[0]
+    video_ids_all.append(video_transcript_clean(video_id))
+
+video_ids_all = pd.concat(video_ids_all, ignore_index=True)
+
+insert_records_to_postgres(dbl_url, 'sc_yt_video_transcript', video_ids_all, 'truncate')
