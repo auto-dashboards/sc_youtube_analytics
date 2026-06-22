@@ -81,7 +81,6 @@ with src_clean as (
     from src
 
 )
-
 -- For each video, dedupe duplicate hash diffs
 , final_pull_dedupe as (
     select 
