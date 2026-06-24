@@ -60,6 +60,7 @@ def main(mode):
     df_transcript_all = []
     video_ids_transcript = list(df_video_date['video_id'].unique())
     for id in video_ids_transcript:
+        print(id)
         url = f'https://www.youtube.com/watch?v={id}'
         video_timestamps.download_video_audio(url)
         video_timestamps.download_video_transcript(id)
