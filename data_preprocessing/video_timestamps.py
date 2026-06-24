@@ -71,57 +71,39 @@ def download_video_transcript(video_id):
 
 
 def video_transcript_clean(video_id):
-    '''
-    Convert a raw transcript file into 60-second livestream chunks and merge with minute-level viewership metrics 
 
-    Processing steps: 
-    1. Load transcript segments from the video's transcript file
+    """
+    Clean and standardise a YouTube transcript file.
 
-    2. Parse transcript timestamps into start time and end time columns 
+    Steps:
+    1. Load the transcript text file for the specified video.
+    2. Split transcript timestamps into start_time and end_time columns.
+    3. Add the video_id to each transcript row.
+    4. Identify gaps between transcript segments.
+    5. Create empty transcript rows for any missing time periods.
+    6. Combine original and generated rows.
+    7. Sort by start_time and return a clean transcript DataFrame.
 
-    3. Identify gaps between consecutive transcript segments and create empty rows to represent periods where no transcript
-    text exists (typically due to audio dropouts, livestream issues, or transcript extraction failures)
+    Parameters
+    ----------
+    video_id : str
+        YouTube video ID.
 
-    4. Split transcript segments that span multiple 60-second buckets.
-    Example: 354.12 -> 368.08
-    Becomes: 354.12 -> 360.00 and 360.00 -> 368.08
-    This ensures each transcript segment belongs entirely to a single 60-second bucket and prevents text from being incorrectly 
-    assigned across minute boundaries 
+    Returns
+    -------
+    pandas.DataFrame
+        Transcript data containing:
+        - video_id
+        - start_time
+        - end_time
+        - text
 
-    5. Calculate transcript coverage statistics: 
-    - duration_secs: Total duration of the transcript segment 
-    - duration_secs_valid: Duration contributed by non-empty transcript text only 
-    - duration_text_coverage_pct: Percentage of the 60 second bucket covered by valid transcript text. 
-
-    6. Aggregate transcript text into 60-second buckets:
-    - Concant all transcript text belonging to the same minute 
-    - Sum valid transcript duration within the minute
-
-    7. Merge aggregated transcript buckets with min-level livestream numbers (avg viewers, peak viewers etc)
-
-    Returns:
-    pd.DataFrame
-
-    One row per 60-second livestream interval containing: 
-
-    - video_id
-
-    - livestream position - lower boundary of the min bucket 
-
-    - peak_concurrent_viewers - Peak viewers observed during the min 
-
-    - average_concurrent_viewers - Average viewers observed during the min 
-
-    - text - All transcript text occuring within the min bucket 
-
-    - duration_secs_valid - Number of seconds of valid transcript text avaialble in the min bucket
-
-    - duration_text_coverage_pct - Fraction of the min covered by transcript text (duration_secs_valid / 60)
-
-    Notes: 
-    - Missing transcript periods are preserved as empty text rather than discarded. 
-    This allows checks between content and audio/transcript dropouts and also alignment with min-level viewership metrics
-    '''
+    Notes
+    -----
+    Empty rows are inserted whenever there is a gap between the
+    end_time of one transcript segment and the start_time of the
+    next segment. This ensures continuous timestamp coverage.
+    """
 
     video_transcript_path = f'data_preprocessing/video_transcripts/{video_id}.txt'
 

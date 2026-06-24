@@ -77,7 +77,7 @@ def main(mode):
     print('Inserted day data records into Postgres')
 
     # === Insert transcript data into postgreSQL ===
-    helper_functions.insert_records_to_postgres(dbl_url, 'sc_yt_video_transcript', df_transcript_all, mode)
+    helper_functions.insert_records_to_postgres(dbl_url, 'sc_yt_video_transcript', df_transcript_all, 'append')
     print('Inserted transcript data records into Postgres')
 
 
