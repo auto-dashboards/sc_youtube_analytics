@@ -104,6 +104,7 @@ def fetch_video_min_data(video_ids, analytics_api):
     all_videos_min_list = []
     failed_videos = []
     for video_id in video_ids:
+        print(video_id)
         try: 
             response = safe_execute(
                 analytics_api.reports().query(
