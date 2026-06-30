@@ -62,6 +62,8 @@ def download_video_transcript(video_id, model):
     print(f'Audio transcription written in {time.time() - start_time:.2f} seconds')
 
 
+
+
 def video_transcript_clean(video_id):
 
     """
@@ -136,3 +138,11 @@ def video_transcript_clean(video_id):
 
     return df_transcript
 
+
+
+# df = video_transcript_clean('tt1_5_5h4yqK7uiIE')
+
+# combined = '\n'.join(df['text'].astype(str))
+# pd.Series([combined]).to_clipboard(index=False, header=False)
+
+  
