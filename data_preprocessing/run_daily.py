@@ -1,13 +1,9 @@
 import os 
 import argparse
-from datetime import datetime, date, timedelta
 from dotenv import load_dotenv
 import helper_functions
 import fetch_video_data
 import fetch_day_data
-import pandas as pd
-import json
-import video_timestamps
 
 def main(mode):
 
@@ -45,30 +41,6 @@ def main(mode):
     day_metrics = fetch_day_data.fetch_day_full_data(analytics_api, mode)
     print('Fetched day metrics')
 
-    # === Fetch video transcript - Step 1 - Fetch latest video id ===
-    df_video_date = video_metrics_comb.copy()
-    df_video_date['video_publish_dt'] = [json.loads(video_metrics_comb['video_data'][i])['snippet']['publishedAt'] for i in range(len(video_metrics_comb))]
-    df_video_date = df_video_date[['video_id', 'video_publish_dt']].drop_duplicates()
-    df_video_date['video_publish_dt'] = pd.to_datetime(df_video_date['video_publish_dt']).dt.date
-    # Get the video ids published between prev Wednesday and the Thursday before
-    days_since_weds = (date.today().weekday() - 2)
-    most_recent_weds = (date.today()) - timedelta(days=days_since_weds)
-    prev_thurs = most_recent_weds - timedelta(days=6)
-    df_video_date = df_video_date[df_video_date['video_publish_dt'].between(prev_thurs, most_recent_weds)]
-
-    # === Fetch video transcript - Step 2 - Fetch transcript of videos ===
-    df_transcript_all = []
-    video_ids_transcript = list(df_video_date['video_id'].unique())
-    for id in video_ids_transcript:
-        print(id)
-        url = f'https://www.youtube.com/watch?v={id}'
-        video_timestamps.download_video_audio(url)
-        video_timestamps.download_video_transcript(id)
-        df_transcript = video_timestamps.video_transcript_clean(id)
-        df_transcript_all.append(df_transcript)
-
-    df_transcript_all = pd.concat(df_transcript_all, ignore_index=True)
-
     # === Insert video data into postgreSQL ===
     helper_functions.insert_records_to_postgres(dbl_url, 'sc_yt_video_data', video_metrics_comb, mode)
     print('Inserted video data records into Postgres')
@@ -76,10 +48,6 @@ def main(mode):
     # === Insert day data into postgreSQL ===
     helper_functions.insert_records_to_postgres(dbl_url, 'sc_yt_day_data', day_metrics, mode)
     print('Inserted day data records into Postgres')
-
-    # === Insert transcript data into postgreSQL ===
-    helper_functions.insert_records_to_postgres(dbl_url, 'sc_yt_video_transcript', df_transcript_all, 'append')
-    print('Inserted transcript data records into Postgres')
 
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ from googleapiclient.errors import HttpError
 from dotenv import load_dotenv
 import os
 import pandas as pd
-from datetime import date
+from datetime import datetime, date, timedelta
 import json
 import time
 from helper_functions import safe_execute, get_channel_videos_ids, connect_yt_data_api, connect_yt_analytics_api, insert_records_to_postgres
@@ -226,3 +226,70 @@ def fetch_video_est_watched(video_ids, analytics_api):
         print(f'Failed videos: {len(failed_videos)}')
 
     return video_est_watched_all
+
+
+def fetch_recent_videos(video_ids, youtube_api, lookback_days):
+
+    '''
+    Fetches recently published YouTube videos for a channel 
+
+    This function: 
+    1. Split the list of videos IDs into batches of 50 (max supported by the YouTube Data API)
+    2. Retrieves each video's snippet metadata using the API
+    3. Extracts the video ID and published date 
+    4. Filters videos published within the last 'lookback_days' days
+    5. Returns the filtered videos as a DF
+
+    Args: 
+        video_ids (list): List of Youtube video IDs 
+        youtube_api: Authenticated Youtube API client for connection 
+        lookback_days: Number of days to look back from today's date when filtering recently published videos
+
+    Returns: 
+        Dataframe with columns:
+            - video_id: YouTube video ID
+            - video_publish_dt: Video publish date
+
+    '''
+
+    # Batch video requests (50 IDs per call) and call fields
+    def batch_video(lst, n):
+        for i in range(0, len(lst), n):
+            yield lst[i:i+n]
+
+    # Add try and except logic. If batch fails then add to a list. 3 retry attempts
+    records = []
+    failed_batches = []
+    for batch in batch_video(video_ids, 50):
+        try:
+            video_response = safe_execute(
+                youtube_api.videos().list(
+                    part="snippet",
+                    id=",".join(batch), 
+                )
+            )
+
+            for item in video_response.get('items', []):
+                records.append(json.dumps(item))
+
+        except Exception as e:
+            print(f'Batch failed: {batch} | Error: {e}')
+            failed_batches.append(batch)
+
+    # Convert list of json records to DataFrame. Single column of data. If it doesn't exist then return empty DF. Otherwise carry on with rest of code. 
+    if not records:
+        print('No video data to insert - skipping')
+        return pd.DataFrame(columns=['video_id', 'video_data'])
+    
+    video_metrics = pd.DataFrame(records, columns=['video_data'])
+
+    # Create a video id column for each video data row. Pull from video data column
+    video_metrics['video_id'] = [json.loads(record).get('id') for record in records]
+    video_metrics['video_publish_dt'] = [json.loads(record).get('snippet', {}).get('publishedAt') for record in records]
+
+    video_metrics = video_metrics[['video_id', 'video_publish_dt']].drop_duplicates()
+    video_metrics['video_publish_dt'] = pd.to_datetime(video_metrics['video_publish_dt']).dt.date
+
+    video_metrics = video_metrics[video_metrics['video_publish_dt'].between(date.today() - timedelta(days=lookback_days), date.today())]
+
+    return video_metrics

@@ -13,3 +13,18 @@ Runtime Error
 [0m09:13:06.540968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0F37A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0D08BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9A0C04560>]}
 [0m09:13:06.541967 [debug] [MainThread]: Flushing usage events
 [0m09:13:08.123902 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:06:12.169741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B0DC21D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B09EED7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B0E26BCB0>]}
+
+
+============================== 16:06:12.183928 | 73fb1259-6222-4745-8115-94564586dba4 ==============================
+[0m16:06:12.183928 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:06:12.185930 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --select fct_video_transcript_segment', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\adnan\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m16:06:12.186930 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\adnan\OneDrive\Documents\github\sc_youtube_analytics\data_pipeline\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:06:12.188930 [debug] [MainThread]: Command `dbt run` failed at 16:06:12.188930 after 0.36 seconds
+[0m16:06:12.189931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B0DB6A7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B0E779D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B0E73BB30>]}
+[0m16:06:12.190930 [debug] [MainThread]: Flushing usage events
+[0m16:06:13.920561 [debug] [MainThread]: An error was encountered while trying to flush usage events
