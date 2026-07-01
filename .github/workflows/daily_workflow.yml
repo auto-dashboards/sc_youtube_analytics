@@ -1,18 +1,9 @@
-name: Youtube Pipeline
+name: Daily Workflow
 
 on:
   schedule:
     - cron: "0 6 * * *" # Every day at 06:00 UTC
   workflow_dispatch: # Allows manual run from the Actions tab
-    inputs:
-      full_refresh:
-        description: "Run full refresh?"
-        required: false
-        default: "false"
-        type: choice 
-        options:
-          - "false"
-          - "true"
 
 jobs:
   run_yt_pipeline:
@@ -36,9 +27,6 @@ jobs:
         run: | 
           dbt deps --project-dir data_pipeline/data_pipeline
 
-      # -----------------------
-      # STAGE (Python Pipeline)
-      # -----------------------
       - name: Run stage pipeline
         env:
           DBL_URL: ${{ secrets.NEON_DBL_URL }}
@@ -48,19 +36,9 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: |
-          MODE="${{ github.event.inputs.full_refresh || 'false'}}"
-          
-          if [ "$MODE" = "true" ]; then
-            echo "RUNNING PIPELINE REFRESH -> SKIPPING STAGE"
-          else 
-            echo "RUNNING STAGE FULL INCREMENTAL"
           python data_preprocessing/run_daily.py --mode append
-          fi
 
-      # -----------------------
-      # RDV (DBT Models)
-      # -----------------------
-      - name: Run DBT RDV models
+      - name: Run dbt RDV models
         env:
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_USER: ${{ secrets.DB_USER }}
@@ -68,12 +46,4 @@ jobs:
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_PORT: ${{ secrets.DB_PORT }}
         run: |
-          MODE="${{ github.event.inputs.full_refresh || 'false' }}"
-
-          if [ "$MODE" = "true" ]; then
-            echo "RUNNING RDV FULL REFRESH (TRUNCATE AND RELOAD)"
-            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --vars '{"truncate_reload": true}'
-          else 
-            echo "RUNNING RDV FULL INCREMENTAL"
-            dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv --vars '{"truncate_reload": false}'
-          fi
+          dbt run --project-dir data_pipeline/data_pipeline --profiles-dir data_pipeline/data_pipeline --select rdv
