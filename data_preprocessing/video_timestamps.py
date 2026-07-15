@@ -10,32 +10,65 @@ def download_video_audio(url):
     ydl_opts = {
         "format": "bestaudio/best",
         "outtmpl": "data_preprocessing/video_audio/%(id)s.%(ext)s",
-        "postprocessors": [{"key": "FFmpegMetadata"}],
         "noplaylist": True,
+        # "cookiefile": "cookies.txt",
         "extractor_args": {
             "youtube": {"player_client": ["android"]}
-        }
-        # "ffmpeg_location": r"C:\tools\ffmpeg\bin\ffmpeg.exe"
+        },
+        "postprocessors": [
+            {
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "mp3",
+                "preferredquality": "192"
+            }
+        ],
+        'quiet': False,
     }
 
-    with YoutubeDL(ydl_opts) as ydl:
-        print(f'Downloading video: {url}')
-        ydl.download([url])
+    try:
+        with YoutubeDL(ydl_opts) as ydl:
+            print(f'Downloading video: {url}')
+
+            # Check availability of downloadable videos first
+            info = ydl.extract_info(url, download=True)
+            video_id = info.get('id')
+
+            expected_file = f'data_preprocessing/video_audio/{video_id}.mp3'
+
+            if os.path.exists(expected_file):
+                print(f'SUCCESS: {expected_file}')
+                return True
+            else:
+                print('File not found after download')
+                return False
+    
+    except Exception as e:
+        print(f'yt-dlp exception but file may exist: {e}')
+        return False
 
 
 def load_whisper_model():
 
+    device = os.getenv('WHISPER_DEVICE', 'cpu')
+
+    if device == 'cuda':
+        return WhisperModel(
+            'medium', 
+            device='cuda',
+            compute_type='float16',
+        ) 
+    
     return WhisperModel(
-        'medium', 
-        device='cpu',
-        compute_type='int8',
+        "medium",
+        device="cpu",
+        compute_type="int8",
         cpu_threads=8
-    ) 
+    )
 
 
 def download_video_transcript(video_id, model):
 
-    audio_path = f'data_preprocessing/video_audio/{video_id}.mp4'
+    audio_path = f'data_preprocessing/video_audio/{video_id}.mp3'
     transcript_path = f'data_preprocessing/video_transcripts/{video_id}.txt'
 
     start_time = time.time()
