@@ -5,9 +5,11 @@ import pandas as pd
 import numpy as np
 import os
 
-url = 'https://www.youtube.com/watch?v=p1BGhYMAjeM'
 
 def download_video_audio(url):
+
+    # test - url = 'https://www.youtube.com/watch?v=p1BGhYMAjeM'
+
     ydl_opts = {
         "format": "bestaudio/best",
         "outtmpl": "data_preprocessing/video_audio/%(id)s.%(ext)s",
@@ -103,8 +105,6 @@ def download_video_transcript(video_id, model):
     print(f'Audio transcription written in {time.time() - start_time:.2f} seconds')
 
 
-
-
 def video_transcript_clean(video_id):
 
     """
@@ -178,12 +178,5 @@ def video_transcript_clean(video_id):
     df_transcript = pd.concat([df_transcript, df_empty_rows]).sort_values('start_time', ascending=True)[['video_id', 'start_time', 'end_time', 'text']]
 
     return df_transcript
-
-
-
-# df = video_transcript_clean('tt1_5_5h4yqK7uiIE')
-
-# combined = '\n'.join(df['text'].astype(str))
-# pd.Series([combined]).to_clipboard(index=False, header=False)
 
   
