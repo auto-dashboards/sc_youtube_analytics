@@ -5,23 +5,31 @@ import pandas as pd
 import numpy as np
 import os
 
+url = 'https://www.youtube.com/watch?v=p1BGhYMAjeM'
 
 def download_video_audio(url):
     ydl_opts = {
         "format": "bestaudio/best",
         "outtmpl": "data_preprocessing/video_audio/%(id)s.%(ext)s",
         "noplaylist": True,
-        # "cookiefile": "cookies.txt",
+        "cookiefile": "cookies.txt",
+
         "extractor_args": {
-            "youtube": {"player_client": ["android"]}
-        },
-        "postprocessors": [
-            {
-                "key": "FFmpegExtractAudio",
-                "preferredcodec": "mp3",
-                "preferredquality": "192"
+            "youtube": {
+                "player_client": ['android']
             }
-        ],
+        },
+
+        # "postprocessors": [
+        #     {
+        #         "key": "FFmpegExtractAudio",
+        #         "preferredcodec": "mp4",
+        #         "preferredquality": "192"
+        #     }
+        # ],
+
+        "retries": 3,
+        "fragment_retries": 3,
         'quiet': False,
     }
 
@@ -33,7 +41,7 @@ def download_video_audio(url):
             info = ydl.extract_info(url, download=True)
             video_id = info.get('id')
 
-            expected_file = f'data_preprocessing/video_audio/{video_id}.mp3'
+            expected_file = f'data_preprocessing/video_audio/{video_id}.mp4'
 
             if os.path.exists(expected_file):
                 print(f'SUCCESS: {expected_file}')
@@ -68,7 +76,7 @@ def load_whisper_model():
 
 def download_video_transcript(video_id, model):
 
-    audio_path = f'data_preprocessing/video_audio/{video_id}.mp3'
+    audio_path = f'data_preprocessing/video_audio/{video_id}.mp4'
     transcript_path = f'data_preprocessing/video_transcripts/{video_id}.txt'
 
     start_time = time.time()
