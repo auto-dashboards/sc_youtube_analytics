@@ -4,15 +4,28 @@ from faster_whisper import WhisperModel
 import pandas as pd
 import numpy as np
 import os
+from pathlib import Path
 
 
 def download_video_audio(url):
 
     # test - url = 'https://www.youtube.com/watch?v=p1BGhYMAjeM'
 
+    # __file__ = the path of THIS Python file (e.g. video_timestamps.py)
+    # .resolve() = convert it to an absolute path
+    # .parent = the folder containing this file
+    # .parent.parent = go up one more level to the project root
+    BASE_DIR = Path(__file__).resolve().parent 
+
+    # Construct the path to the video_audio folder
+    VIDEO_AUDIO_DIR = BASE_DIR / "data_preprocessing" / "video_audio"
+
+    # Create the folder if it doesn't already exist
+    VIDEO_AUDIO_DIR.mkdir(parents=True, exist_ok=True)
+
     ydl_opts = {
         "format": "bestaudio/best",
-        "outtmpl": "data_preprocessing/video_audio/%(id)s.%(ext)s",
+        "outtmpl": str(VIDEO_AUDIO_DIR / "%(id)s.%(ext)s"),        
         "noplaylist": True,
         "cookiefile": "cookies.txt",
 
