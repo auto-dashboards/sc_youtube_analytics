@@ -15,7 +15,7 @@ def download_video_audio(url):
     # .resolve() = convert it to an absolute path
     # .parent = the folder containing this file
     # .parent.parent = go up one more level to the project root
-    BASE_DIR = Path(__file__).resolve().parent 
+    BASE_DIR = Path(__file__).resolve().parent.parent
 
     # Construct the path to the video_audio folder
     VIDEO_AUDIO_DIR = BASE_DIR / "data_preprocessing" / "video_audio"
