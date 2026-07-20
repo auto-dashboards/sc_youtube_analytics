@@ -231,7 +231,7 @@ def fetch_video_est_watched(video_ids, analytics_api):
 def fetch_recent_videos(video_ids, youtube_api, lookback_days):
 
     '''
-    Fetches recently published YouTube videos for a channel 
+    Fetches recently published YouTube videos for a channel. With the option of fetching all
 
     This function: 
     1. Split the list of videos IDs into batches of 50 (max supported by the YouTube Data API)
@@ -243,7 +243,7 @@ def fetch_recent_videos(video_ids, youtube_api, lookback_days):
     Args: 
         video_ids (list): List of Youtube video IDs 
         youtube_api: Authenticated Youtube API client for connection 
-        lookback_days: Number of days to look back from today's date when filtering recently published videos
+        lookback_days: Number of days to look back from today's date when filtering recently published videos. When this value is 0, all videos are fetched
 
     Returns: 
         Dataframe with columns:
@@ -290,6 +290,9 @@ def fetch_recent_videos(video_ids, youtube_api, lookback_days):
     video_metrics = video_metrics[['video_id', 'video_publish_dt']].drop_duplicates()
     video_metrics['video_publish_dt'] = pd.to_datetime(video_metrics['video_publish_dt']).dt.date
 
-    video_metrics = video_metrics[video_metrics['video_publish_dt'].between(date.today() - timedelta(days=lookback_days), date.today())]
-
-    return video_metrics
+    if lookback_days == 0:
+        return video_metrics
+    
+    else:
+        video_metrics_filter = video_metrics[video_metrics['video_publish_dt'].between(date.today() - timedelta(days=lookback_days), date.today())]
+        return video_metrics_filter
