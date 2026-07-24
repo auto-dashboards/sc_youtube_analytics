@@ -7,3 +7,6 @@ token.json
 load_env.ps1
 logs/
 cookies.txt
+data_preprocessing/video_audio/*
+!data_preprocessing/video_audio/.gitkeep
+__pycache__/
