@@ -7,8 +7,8 @@ import os
 from dotenv import load_dotenv
 import io
 import psycopg2
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+# from sentence_transformers import SentenceTransformer
+# from sklearn.metrics.pairwise import cosine_similarity
 
 load_dotenv()
 
@@ -29,6 +29,14 @@ def run_sql_query(query):
         return df 
     finally: 
         conn.close()
+
+
+query = """
+    select * from bdv.fct_video_transcript_segment
+"""
+
+df_orig = run_sql_query(query)
+
 
 query = """
     with min_viewers as (
