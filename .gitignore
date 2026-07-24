@@ -10,3 +10,4 @@ cookies.txt
 data_preprocessing/video_audio/*
 !data_preprocessing/video_audio/.gitkeep
 __pycache__/
+*.py[cod]
