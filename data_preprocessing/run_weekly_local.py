@@ -1,6 +1,8 @@
 import os 
 import argparse
 from dotenv import load_dotenv
+from pathlib import Path
+import boto3
 import helper_functions
 import fetch_video_data
 import video_timestamps
@@ -11,8 +13,20 @@ def main(lookback_days):
     load_dotenv()
     api_key = os.getenv('YI_API_KEY')
     channel_id = os.getenv('CHANNEL_KEY')
-    dbl_url = os.getenv('DBL_URL')
-    print('Loaded environment variables')
+    print('Loaded youtube environment variables')
+
+    r2_account_id = os.getenv('R2_ACCOUNT_ID')
+    r2_access_key_id = os.getenv('R2_ACCESS_KEY_ID')
+    r2_secret_access_key = os.getenv('R2_SECRET_ACCESS_KEY')
+    r2_bucket_name = os.getenv('R2_BUCKET_NAME')
+    print('Loaded Cloudflare R2 variables')
+
+    s3 = boto3.client(
+        's3', 
+        endpoint_url=f'https://{r2_account_id}.r2.cloudflarestorage.com',
+        aws_access_key_id=r2_access_key_id,
+        aws_secret_access_key=r2_secret_access_key
+    )
 
     # === Fetch youtube video IDs ===
     video_ids = helper_functions.get_channel_videos_ids(api_key, channel_id)
@@ -27,6 +41,19 @@ def main(lookback_days):
     for id in video_metrics['video_id'].unique():
         url = f'https://www.youtube.com/watch?v={id}'
         video_timestamps.download_video_audio(url)
+
+        video_path = Path('data_preprocessing') / 'video_audio' / f'{id}.mp4'
+
+        BASE_DIR = Path(__file__).resolve().parent.parent
+        VIDEO_AUDIO_DIR = BASE_DIR / "data_preprocessing" / "video_audio" / f'{id}.mp4'
+
+        s3.upload_file(
+            str(VIDEO_AUDIO_DIR),
+            r2_bucket_name,
+            f'incoming/{VIDEO_AUDIO_DIR.name}'
+        )
+
+        print(f'Uploaded {video_path.name} successfully!')
 
 
 if __name__ == "__main__":

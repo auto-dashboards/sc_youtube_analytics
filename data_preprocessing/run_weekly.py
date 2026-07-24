@@ -1,41 +1,71 @@
 import os 
 import argparse
-from datetime import datetime, date, timedelta
 from dotenv import load_dotenv
 import helper_functions
-import fetch_video_data
-import fetch_day_data
+import boto3
+from pathlib import Path
 import pandas as pd
-import json
 import video_timestamps
 
 def main(mode):
 
     # === Load environment variables from .env file ===
     load_dotenv()
-    api_key = os.getenv('YI_API_KEY')
-    channel_id = os.getenv('CHANNEL_KEY')
-    dbl_url = os.getenv('DBL_URL')
-    print('Loaded environment variables')
+    r2_account_id = os.getenv('R2_ACCOUNT_ID')
+    r2_access_key_id = os.getenv('R2_ACCESS_KEY_ID')
+    r2_secret_access_key = os.getenv('R2_SECRET_ACCESS_KEY')
+    r2_bucket_name = os.getenv('R2_BUCKET_NAME')
+    print('Loaded Cloudflare R2 variables')
 
-    # === Fetch youtube video IDs ===
-    video_ids = helper_functions.get_channel_videos_ids(api_key, channel_id)
-    print('Fetched video IDs')
+    s3 = boto3.client(
+        's3', 
+        endpoint_url=f'https://{r2_account_id}.r2.cloudflarestorage.com',
+        aws_access_key_id=r2_access_key_id,
+        aws_secret_access_key=r2_secret_access_key
+    )
 
-    # === Connect to the youtube data and youtube analytics API's ===
-    youtube_api = helper_functions.connect_yt_data_api(api_key)
-    print('Connected to Youtube Data API')
+    response = s3.list_objects_v2(
+        Bucket=r2_bucket_name,
+        Prefix='incoming/'
+    )
 
-    df_transcript_all = []
-    video_metrics = fetch_video_data.fetch_recent_videos(video_ids, youtube_api, lookback_days=7)
     model = video_timestamps.load_whisper_model()
+    df_transcript_all= []
 
-    for id in video_metrics['video_id'].unique():
-        url = f'https://www.youtube.com/watch?v={id}'
-        video_timestamps.download_video_audio(url)
+    for obj in response.get('Contents', []):
+        object = obj['Key']          # e.g. incoming/abc123.mp4
+        filename = Path(object).name # e.g. abc123.mp4
+        local_path = Path.cwd().parent / "data_preprocessing" / "video_audio" / filename
+
+        # local_path = Path(__file__).resolve().parent.parent / "data_preprocessing" / "video_audio" / filename
+
+        # Ensure the folder exists
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+
+        s3.download_file(
+            r2_bucket_name,
+            object, 
+            str(local_path)
+        )
+
+        id = Path(filename).stem
         video_timestamps.download_video_transcript(id, model)
         df_transcript = video_timestamps.video_transcript_clean(id)
         df_transcript_all.append(df_transcript)
+
+        s3.copy_object(
+            r2_bucket_name,
+            CopySource={
+                'Bucket': r2_bucket_name,
+                'Key': object,
+            },
+            Key=f'processed/{filename}'
+        )
+
+        s3.delete_object(
+            r2_bucket_name,
+            object
+        )
 
     df_transcript_all = pd.concat(df_transcript_all, ignore_index=True)
 
