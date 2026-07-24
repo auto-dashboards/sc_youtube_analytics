@@ -35,6 +35,8 @@ models:
       +schema: stage
     rdv:
       +schema: rdv
+    bdv:
+      +schema: bdv
     pl:
       +schema: pl
 
