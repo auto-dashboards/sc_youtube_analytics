@@ -2,7 +2,7 @@ import time
 from yt_dlp import YoutubeDL
 from faster_whisper import WhisperModel
 import pandas as pd
-import numpy as np
+from pathlib import Path
 import os
 from pathlib import Path
 
@@ -153,7 +153,10 @@ def video_transcript_clean(video_id):
     next segment. This ensures continuous timestamp coverage.
     """
 
-    video_transcript_path = f'data_preprocessing/video_transcripts/{video_id}.txt'
+    video_id_file = f'{video_id}.txt'
+
+    filename = Path(video_id_file).name # e.g. abc123.mp4
+    video_transcript_path = Path.cwd().parent / "data_preprocessing" / "video_transcripts" / filename
 
     df_transcript = pd.read_csv(
         video_transcript_path,

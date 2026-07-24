@@ -17,6 +17,10 @@ def main(mode):
     r2_bucket_name = os.getenv('R2_BUCKET_NAME')
     print('Loaded Cloudflare R2 variables')
 
+     # === Load environment variables from .env file ===
+    dbl_url = os.getenv('DBL_URL')
+    print('Loaded youtube environment variables')
+
     s3 = boto3.client(
         's3', 
         endpoint_url=f'https://{r2_account_id}.r2.cloudflarestorage.com',
